@@ -1,0 +1,38 @@
+name: Sync from axpatterns.design
+
+# The site generates this repo's content from its own source. This workflow
+# fetches the latest export and commits it here when anything changed.
+# It runs every 6 hours, and on demand from the Actions tab (Run workflow).
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/sync.mjs
+      - name: Commit if anything changed
+        run: |
+          git config user.name "axpatterns-sync"
+          git config user.email "noreply@axpatterns.design"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+          else
+            git commit -m "Sync from axpatterns.design ($(date -u +%Y-%m-%d))"
+            git push
+          fi
