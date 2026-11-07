@@ -15,7 +15,7 @@ Ask before data is used for training or shared, and make the choice easy to find
 > When an AI product wants to use what I share to train its models, I want to be asked in plain words and find my answer again easily, so my clients' work stays where I put it.
 
 - **Setting:** Fatima opens a new AI tool to build a glossary for a client contract.
-- **Trigger:** The product wants to train its AI on what people share.
+- **Trigger:** The product wants to use what people share to train its AI (teach it from real examples).
 - **Without it:** A pre-ticked box at sign-up says yes for her. Her client's contract may now be used for training.
 - **With it:** A clear question, what is used, 2 equal buttons. She taps Don't allow. Her file says "Not used for training".
 - **Outcome:** Months later she finds the same choice in 1 place in Settings, 1 tap to change.
@@ -60,7 +60,7 @@ Ask before data is used for training or shared, and make the choice easy to find
 - **Do:** Says what is used, and gives 2 equal choices. (Use your chats to train our AI?Used: messages, files. Never: temporary chats.Don’t allowAllow)
 - **Avoid:** "Help us improve" hides what happens, and "maybe later" is small and grey. People say yes without knowing to what. (Help us improve!Sounds goodmaybe later)
 - **Do:** The choice shows again where it matters, and lives in 1 obvious place. (📄 client-contract.pdfNot used for trainingSettings › Data)
-- **Avoid:** The choice was made once and hidden 4 levels deep. People forget what they chose. (📄 client-contract.pdfSettings › Account › Privacy › Advanced)
+- **Avoid:** People chose once. Then the product buried the choice 4 levels deep, and people forget what they chose. (📄 client-contract.pdfSettings › Account › Privacy › Advanced)
 
 ## Writing
 
@@ -71,7 +71,7 @@ Ask before data is used for training or shared, and make the choice easy to find
 
 ## Accessibility
 
-- Both buttons are real buttons with the same size, contrast and focus style. Neither has focus by default.
+- Both buttons are real buttons with the same size, contrast and focus style. Neither has focus (the keyboard's current spot) by default.
 - If the question blocks the product, it is a dialog with a clear heading and no close button that means yes.
 - Switches in Settings have a visible text state ("On", "Off") and a label that names the use.
 - The short version of what is used is real text, not an image, and is read before the buttons.

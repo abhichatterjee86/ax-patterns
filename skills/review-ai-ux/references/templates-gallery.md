@@ -36,11 +36,11 @@ Show finished examples people can start from, instead of a blank box.
 
 - **Phone:** 2 small cards per row. Filter chips scroll sideways. Use this opens the ask full width, above the keyboard.
 - **Tablet:** 2 or 3 cards per row. The ask opens at the bottom, with the example still visible.
-- **Desktop:** 3 or 4 cards per row with search. Hover shows the full ask; Use this opens it beside the gallery.
+- **Desktop:** 3 or 4 cards per row with search. Hover shows the full ask. Use this opens it beside the gallery.
 
 ## Use when
 
-- The output is visual or has a set shape - flyers, menus, slides, apps, reports.
+- The result is visual or has a set shape - flyers, menus, slides, apps, reports.
 - People don't know what a good ask looks like for this tool.
 - Seeing the result first helps people choose faster than reading a description.
 
@@ -74,9 +74,9 @@ Show finished examples people can start from, instead of a blank box.
 ## Accessibility
 
 - Each card is 1 list item with a heading (its title) and 1 button named "Use this: Fresh Bread Saturday".
-- Thumbnails have alt text that describes the result, not "template image".
+- Thumbnails have alt text (the words a screen reader reads for an image) that describes the result, not "template image".
 - Blanks in the ask are real form fields with labels, so Tab moves from 1 to the next.
-- Filter chips are toggle buttons with aria-pressed, and the result count is announced politely.
+- Filter chips are toggle buttons that tell screen readers whether they are on (with aria-pressed). The result count is announced without interrupting.
 
 ## Seen in
 
@@ -89,7 +89,7 @@ Show finished examples people can start from, instead of a blank box.
 - Alternative to Suggested prompts: Example asks in words, for short questions.
 - Often combined with Structured prompt: The blanks in the ask become a small form.
 - Often combined with Variations: After the first result, show a few to choose from.
-- Often combined with Capability disclosure: The gallery shows the cans; the card says the can'ts.
+- Often combined with Capability disclosure: The gallery shows the cans. The card says the can'ts.
 
 ## Sources
 

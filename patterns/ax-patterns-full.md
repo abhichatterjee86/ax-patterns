@@ -25,7 +25,7 @@ Give the AI 1 clear door in the product, so people know where it lives.
 
 - **Setting:** Inês is checking the March rota for 4 nurses in a shared doc.
 - **Trigger:** Something looks wrong. She wants the AI to count the nights.
-- **Without it:** 3 sparkle icons sit on different buttons. She tries 2 before 1 opens a blank chat, and then she has to describe the rota.
+- **Without it:** 3 sparkle icons sit on different buttons. She tries 2 before 1 opens a blank chat. Then she has to describe the rota.
 - **With it:** A button named "Ask AI" sits top right. It opens beside the rota, already looking at it.
 - **Outcome:** She asks 1 short question and learns Ana has 3 nights too many.
 
@@ -37,7 +37,7 @@ Give the AI 1 clear door in the product, so people know where it lives.
 | Finds the door | The button has a sparkle and a name. Hover or focus shows the shortcut. | Idle. | - | - |
 | Opens | The assistant opens beside the page with a chip: "Looking at: Rota - March". | Ready, with the page as context. | on tap or shortcut | Assistant opened |
 | Asks | A short ask, because the page is already shared. | Idle. | - | - |
-| Answering | The answer streams in the panel. The page stays visible. | Writes. | - | Generating a response |
+| Answering | The answer streams into the panel (it arrives word by word). The page stays visible. | Writes. | - | Generating a response |
 | Answered | The answer, next to the work it is about. The same button closes the panel. | Idle. | when done | Response complete |
 
 ### On each device
@@ -80,10 +80,10 @@ Give the AI 1 clear door in the product, so people know where it lives.
 
 ### Accessibility
 
-- The button's accessible name matches its visible label, so voice control users can say "Click Ask AI".
-- The button shows its state with aria-expanded and is at least 44 px on touch screens.
-- Opening moves focus into the panel's box; closing returns focus to the button.
-- The keyboard shortcut is listed in the button's tooltip and in help, and does not clash with the product's own shortcuts.
+- The button's accessible name (what a screen reader calls it) matches its visible label. So voice control users can say "Click Ask AI".
+- The button tells screen readers whether the panel is open (with aria-expanded). It is at least 44 px on touch screens.
+- Opening moves focus into the panel's box. Closing returns focus to the button.
+- The keyboard shortcut is listed in the button's tooltip and in help. It does not clash with the product's own shortcuts.
 
 ### Seen in
 
@@ -125,7 +125,7 @@ Say what the AI can and cannot do before the first ask.
 - **Setting:** Rahul opens the new study helper for his ACC101 course.
 - **Trigger:** He is not sure what it is for - homework, marks, or both.
 - **Without it:** "Ask me anything!" So he asks for his mid-term mark and gets "Sorry, I can't help with that."
-- **With it:** A short card says it explains and quizzes from the course notes, and that marks are in the Student Portal.
+- **With it:** A short card says it explains and quizzes from the course notes. Marks are in the Student Portal.
 - **Outcome:** He asks for an example of depreciation and gets 1 from chapter 4.
 
 ### States over time
@@ -136,14 +136,14 @@ Say what the AI can and cannot do before the first ask.
 | Reads the card | Each limit says where to go instead. 1 example ask sits under the card. | Idle. | about 10 s | - |
 | Asks | An ask that fits what the card said. The placeholder names the scope. | Idle. | - | - |
 | Goes elsewhere | For a thing the AI can't do, the link in the card takes him to the right place. | Idle. | on tap | - |
-| Answering | The answer streams in. | Writes. | - | Generating a response |
+| Answering | The answer streams in (it arrives word by word). | Writes. | - | Generating a response |
 | Done | On a phone the card folds to 1 line, "What I can and can't do", still 1 tap away. | Idle. | after the first ask | Response complete |
 
 ### On each device
 
 - **Phone:** The card is short - 1 intro line, 3 cans, 2 can'ts. After the first ask it folds to 1 line above the chat.
 - **Tablet:** As on desktop.
-- **Desktop:** The card sits in the empty chat, above the box. It stays at the top of the thread, and help links to the full list.
+- **Desktop:** The card sits in the empty chat, above the box. It stays at the top of the thread. Help links to the full list.
 
 ### Use when
 
@@ -182,9 +182,9 @@ Say what the AI can and cannot do before the first ask.
 ### Accessibility
 
 - Give the card a heading ("What I can and can't do") so screen reader users can jump to it.
-- Use real lists for can and can't, and don't rely on the tick and cross icons alone - the words say it.
+- Use real lists for can and can't. Don't rely on the tick and cross icons alone - the words say it.
 - Links to other places say where they go: "Student Portal", not "here".
-- The folded line is a button with aria-expanded, so the card can be opened again from the keyboard.
+- The folded line is a button that tells screen readers whether the card is open (with aria-expanded). So the card can be opened again from the keyboard.
 
 ### Seen in
 
@@ -235,14 +235,14 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 | Empty state | A greeting, 1 line on what the AI can do, 3 or 4 examples, and the box. | Idle. | on open | - |
 | Focus | The example under the finger or the mouse lifts. | Idle. | on hover or focus | - |
 | Picked | The chosen example is marked. | Idle. | on tap | - |
-| Filled the box | An editable example lands in the box with its changeable parts ready to edit. | Idle. | at once | Prompt added to the message box |
+| Filled the box | The example lands in the box. Its changeable parts are ready to edit. | Idle. | at once | Prompt added to the message box |
 | Edited | The person changes the parts that are theirs, then sends. | Idle. | as typed | - |
 | Sent | A ready-to-go example sends straight away, like any message. | Starts answering. | on tap | Message sent |
-| Answering | The examples are gone; the conversation has started. | Answers. | after send | Generating a response |
+| Answering | The examples are gone. The conversation has started. | Answers. | after send | Generating a response |
 
 ### On each device
 
-- **Phone:** 3 or 4 pills just above the box, where the thumb already is. They scroll sideways if they do not fit - never 2 rows of tiny chips.
+- **Phone:** 3 or 4 pills (small rounded buttons) just above the box, where the thumb already is. They scroll sideways if they do not fit - never 2 rows of tiny chips.
 - **Tablet:** Cards with 1 line of detail fit 2 to a row, above the box.
 - **Desktop:** Cards in a row of 3 or 4 above the box, or beside a greeting. Each card can carry a short line on what you will get.
 
@@ -262,7 +262,7 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 
 - **A. Greeting and scope:** 1 line on what the AI can do, so the examples make sense.
 - **B. A suggestion:** A specific, real ask - a place, a goal, a format - not a category.
-- **C. What a tap does:** A pencil means it fills the box to edit; an arrow means it sends at once.
+- **C. What a tap does:** A pencil means it fills the box to edit. An arrow means it sends at once.
 - **D. The box:** Right below, so the examples read as "things you could type here".
 - **E. More ideas:** A shuffle for people the first 4 did not fit.
 
@@ -275,7 +275,7 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 
 ### Writing
 
-- Write each example as a whole ask a real person would type, in their words - not a feature name.
+- Write each example as a whole ask a real person would type, in their words. Not a feature name.
 - Keep pills to about 6 words. Put detail on a second line of a card, not in the pill.
 - Mark the parts people should change - "[Kyoto]", "[April]" - when the example fills the box.
 - No exclamation marks, no "please". Sentence case.
@@ -284,7 +284,7 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 
 - Each suggestion is a real button whose name is the whole ask, not just the short label.
 - Say in the name what a tap does: "Fill the message box with: Plan a 3-day trip…".
-- After filling the box, move focus into it, so a keyboard or screen reader user can edit at once.
+- After filling the box, move focus into it. Then a keyboard or screen reader user can edit at once.
 - Suggestions are reachable by Tab in reading order, before the box.
 
 ### Seen in
@@ -347,11 +347,11 @@ Show finished examples people can start from, instead of a blank box.
 
 - **Phone:** 2 small cards per row. Filter chips scroll sideways. Use this opens the ask full width, above the keyboard.
 - **Tablet:** 2 or 3 cards per row. The ask opens at the bottom, with the example still visible.
-- **Desktop:** 3 or 4 cards per row with search. Hover shows the full ask; Use this opens it beside the gallery.
+- **Desktop:** 3 or 4 cards per row with search. Hover shows the full ask. Use this opens it beside the gallery.
 
 ### Use when
 
-- The output is visual or has a set shape - flyers, menus, slides, apps, reports.
+- The result is visual or has a set shape - flyers, menus, slides, apps, reports.
 - People don't know what a good ask looks like for this tool.
 - Seeing the result first helps people choose faster than reading a description.
 
@@ -385,9 +385,9 @@ Show finished examples people can start from, instead of a blank box.
 ### Accessibility
 
 - Each card is 1 list item with a heading (its title) and 1 button named "Use this: Fresh Bread Saturday".
-- Thumbnails have alt text that describes the result, not "template image".
+- Thumbnails have alt text (the words a screen reader reads for an image) that describes the result, not "template image".
 - Blanks in the ask are real form fields with labels, so Tab moves from 1 to the next.
-- Filter chips are toggle buttons with aria-pressed, and the result count is announced politely.
+- Filter chips are toggle buttons that tell screen readers whether they are on (with aria-pressed). The result count is announced without interrupting.
 
 ### Seen in
 
@@ -400,7 +400,7 @@ Show finished examples people can start from, instead of a blank box.
 - Alternative to Suggested prompts: Example asks in words, for short questions.
 - Often combined with Structured prompt: The blanks in the ask become a small form.
 - Often combined with Variations: After the first result, show a few to choose from.
-- Often combined with Capability disclosure: The gallery shows the cans; the card says the can'ts.
+- Often combined with Capability disclosure: The gallery shows the cans. The card says the can'ts.
 
 ### Sources
 
@@ -455,7 +455,7 @@ Let the AI offer help at the right moment, and make it easy to say no.
 
 ### Don't use when
 
-- People are in the middle of typing or a task with a deadline - wait, or offer it on demand. Use Inline action on selection instead.
+- People are in the middle of typing or a task with a deadline - wait, or offer it when they ask. Use Inline action on selection instead.
 - The offer is general, like "Need help?" - show example asks instead. Use Suggested prompts instead.
 - The AI would act, not just offer - ask first, before acting. Use Approval gate instead.
 
@@ -472,7 +472,7 @@ Let the AI offer help at the right moment, and make it easy to say no.
 - **Do:** Waits for a pause, and sits below the work. (…if it stays dry.412 words. Shorten to 5 lines?Shorten · Not now · Stop these tips)
 - **Avoid:** Same offer, but it arrives mid-sentence and covers the text. People lose their place. (Next week we pour th412 words. Shorten to 5 lines?Shown over the text, mid-sentence)
 - **Do:** Says why it is showing and what it will do. (This email is 412 words.Shorten it to 5 lines for the site team?Shorten · Not now)
-- **Avoid:** A vague offer that is really an upsell. People learn to close every nudge without reading. (✦ Want me to help?Try AI Pro free for 7 daysTry it · ✕)
+- **Avoid:** A vague offer that is a sales pitch in disguise. People learn to close every nudge without reading. (✦ Want me to help?Try AI Pro free for 7 daysTry it · ✕)
 
 ### Writing
 
@@ -483,9 +483,9 @@ Let the AI offer help at the right moment, and make it easy to say no.
 
 ### Accessibility
 
-- Announce the nudge once in the polite status region ("Suggestion: shorten this email"). Never move focus to it.
+- Announce the nudge once through a live region (the part of the page a screen reader announces on its own), without interrupting: "Suggestion: shorten this email". Never move focus to it.
 - Make it reachable as the next item after the text field, and dismissable with Escape.
-- Do not auto-hide it on a timer while a screen reader user may still be reaching it - hide it when typing starts.
+- Do not hide it on a timer while a screen reader user may still be reaching it. Hide it when typing starts.
 - Buttons are at least 44 px on touch screens, and name the action: Shorten, Not now.
 
 ### Seen in
@@ -523,11 +523,11 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 ### Story
 
-> When I start using an AI tool, I want it to ask me only the 1 or 2 things it really needs, and show me what it set, so its first answers fit me and I can change them later.
+> When I start using an AI tool, I want it to ask me only the 1 or 2 things it truly needs, and show me what it set, so its first answers fit me and I can change them later.
 
 - **Setting:** Mei opens a new lesson planning helper the school has bought.
 - **Trigger:** "2 questions · about 20 seconds." She taps Start.
-- **Without it:** A form of 8 fields. She fills 2, skips, and the first lesson plan is pitched at young children.
+- **Without it:** A form of 8 fields. She fills 2, skips, and the first lesson plan is written for young children.
 - **With it:** She taps Science, Year 9, then Lesson plans. A card says what it set, with Change.
 - **Outcome:** She taps the first starter and gets a Year 9 plan she can use next week.
 
@@ -547,7 +547,7 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 - **Phone:** 1 question per screen, answers as large chips, Skip always in the same corner. The keyboard never opens.
 - **Tablet:** As on the phone, with room for both answer rows on 1 screen.
-- **Desktop:** The questions can sit in the empty chat as 1 card, instead of full screens, so people can see the tool behind them.
+- **Desktop:** The questions can sit in the empty chat as 1 card, instead of full screens. Then people can see the tool behind them.
 
 ### Use when
 
@@ -557,7 +557,7 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 ### Don't use when
 
-- The AI can learn the fact from the first ask - ask then, in context, not up front.
+- The AI can learn the fact from the first ask - ask then, in the moment, not up front.
 - People only need to know what the tool does, not set it up. Use Capability disclosure instead.
 - The facts are personal and change often - let people manage what the AI remembers. Use Memory controls instead.
 
@@ -566,7 +566,7 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 - **A. Progress:** "2 of 2" - people see the end from the start.
 - **B. Question and why:** 1 question, and 1 line on what the answer changes.
 - **C. Tap answers:** Chips, not text fields. 1 tap each. An Other chip for the rest.
-- **D. Skip:** Always there. Skipping gives sensible defaults, not a broken tool.
+- **D. Skip:** Always there. Skipping gives sensible defaults (settings the tool picks for you), not a broken tool.
 - **E. So far:** The answers given, in 1 chip, so people can check them as they go.
 
 ### Do and Avoid
@@ -585,10 +585,10 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 ### Accessibility
 
-- Each question is a group with a label; the chips are radio buttons or toggle buttons with aria-pressed.
+- Each question is a group with a label. The chips are radio buttons, or toggle buttons that tell screen readers whether they are on (with aria-pressed).
 - Announce progress when a question appears: "Question 2 of 2".
 - Skip is a real button with the same name on every screen, reachable before the answers in tab order.
-- Never time out a question. People who use switch access or a screen reader may take longer.
+- Never time out a question. People who use switch access (1 or 2 buttons instead of a keyboard) or a screen reader may take longer.
 
 ### Seen in
 
@@ -631,7 +631,7 @@ A box that grows with the ask and keeps its tools within reach.
 - **Setting:** Meera wants the top 5 support problems from last week, with an example of each.
 - **Trigger:** Her ask is 2 sentences long, and the tickets are in a file.
 - **Without it:** A 1-line box hides half of what she typed, and the file has to go in a separate message.
-- **With it:** The box grows as she types, the file sits in it as a chip, and Send lights up when it is ready.
+- **With it:** The box grows as she types. The file sits in it as a chip, and Send lights up when it is ready.
 - **Outcome:** 1 message, everything in it. The answer is right the first time.
 
 ### States over time
@@ -639,11 +639,11 @@ A box that grows with the ask and keeps its tools within reach.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Empty | A short hint, the tools on the left, the mic and a greyed Send on the right. | Idle. | 0 s | - |
-| Focused | The box lifts slightly; on a phone the keyboard opens. | Idle. | on tap | - |
-| Typing | Words appear; Send turns on with the first character. | Idle. | as typed | - |
+| Focused | The box lifts slightly. On a phone the keyboard opens. | Idle. | on tap | - |
+| Typing | Words appear. Send turns on with the first character. | Idle. | as typed | - |
 | Grows | The box grows to about 6 lines, then scrolls inside itself. | Idle. | after line 1 | - |
 | File added | The file appears as a chip with its name, size and an x to remove it. | Reads the file in the background. | on drop or pick | tickets.csv attached |
-| Ready | Send is fully on. Enter sends on desktop; on a phone, only the button does. | Idle. | - | - |
+| Ready | Send is fully on. Enter sends on desktop. On a phone, only the button does. | Idle. | - | - |
 | Sent | The box clears into the conversation and Send becomes Stop. | Starts working. | on send | Message sent |
 
 ### On each device
@@ -689,9 +689,9 @@ A box that grows with the ask and keeps its tools within reach.
 
 ### Accessibility
 
-- The input is a real textarea with a visible label or an aria-label that names it, like "Message".
-- Send and the tools button are real buttons with names; the disabled Send uses aria-disabled so it can still be found.
-- Announce attached files and errors in a polite status region: "tickets.csv attached".
+- The input is a real textarea with a visible label, or an aria-label (a name only screen readers hear), like "Message".
+- Send and the tools button are real buttons with names. The disabled Send uses aria-disabled (a tag that tells a screen reader it is off), so it can still be found.
+- Announce attached files and errors in a polite status region (the part of the page a screen reader announces on its own): "tickets.csv attached".
 - Never send on Enter on a phone - people use Return for new lines and lose half-written asks.
 - Keep focus in the input after sending, so a follow-up can be typed at once.
 
@@ -773,7 +773,7 @@ Let people add files, images and context to the ask, and see what is attached.
 
 - **A. Add:** 1 + button for files, photos and camera. Drag, drop and paste do the same.
 - **B. File chip:** The file's name and type icon, 1 chip per file.
-- **C. Size and status:** Pages or size when ready; progress while uploading; the reason when it failed.
+- **C. Size and status:** Pages or size when ready. Progress while uploading. The reason when it failed.
 - **D. Remove:** An X on each chip, so 1 file can go without starting again.
 - **E. Send:** Waits until every chip is ready, so nothing is sent half uploaded.
 
@@ -793,7 +793,7 @@ Let people add files, images and context to the ask, and see what is attached.
 
 ### Accessibility
 
-- Announce each change in the polite status region: "Kwik-invoice-0412.pdf attached", "Bains-Foods-Oct.pdf is too big".
+- Announce each change in the polite status region (the part of the page a screen reader announces on its own): "Kwik-invoice-0412.pdf attached", "Bains-Foods-Oct.pdf is too big".
 - Each remove button is named with the file: "Remove Kwik-invoice-0412.pdf".
 - Drag and drop always has a button that does the same thing.
 - Don't show a failed upload by colour alone - use an icon and words.
@@ -848,12 +848,12 @@ Let people speak the ask, and show them what was heard before it is sent.
 | Check the words | The words sit in the box, not sent. Unsure words are marked. | Idle. | on stop | Stopped listening. Check the text, then send |
 | Fix 1 word | Tapping a marked word offers other words it might be. 1 tap fixes it. | Idle. | on tap | - |
 | Sent at once | The avoid version: the message goes as soon as listening stops, mistakes and all. | Reads the misheard ask. | on stop | Message sent |
-| Answering | The sent message is marked "Spoken". The answer streams in. | Writes. | - | Generating a response |
+| Answering | The sent message is marked "Spoken". The answer streams in (arrives word by word). | Writes. | - | Generating a response |
 | Done | An answer for what he meant. | Idle. | when done | Response complete |
 
 ### On each device
 
-- **Phone:** The mic sits next to Send, by the thumb. Hold to talk suits noisy places; tap to start and stop suits longer asks.
+- **Phone:** The mic sits next to Send, by the thumb. Hold to talk suits noisy places. Tap to start and stop suits longer asks.
 - **Tablet:** As on the phone. In split view, the listening bar stays inside the app's own box.
 - **Desktop:** The mic sits in the box with a keyboard shortcut. Typing while listening stops listening and keeps the words.
 
@@ -882,7 +882,7 @@ Let people speak the ask, and show them what was heard before it is sent.
 - **Do:** The words wait in the box, and the unsure 1 is marked. (Check the words, then send.…for 10 acres of maize?)
 - **Avoid:** Sent at once. A misheard number becomes a wrong answer before anyone can see it. (…for 10 acres of maize?Sent as soon as he stopped.)
 - **Do:** Shows it is listening, for how long, the words so far, and how to stop or cancel. (How much fertiliser do I need…● 0:03 · Tap to stop · ✕)
-- **Avoid:** Just a dot. People can't tell if they are heard, or how to stop without sending. (…●)
+- **Avoid:** Only a dot. People can't tell if they are heard, or how to stop without sending. (…●)
 
 ### Writing
 
@@ -893,9 +893,9 @@ Let people speak the ask, and show them what was heard before it is sent.
 
 ### Accessibility
 
-- Announce "Listening" and "Stopped listening" in the polite status region. Never read the live words out while the person speaks.
+- Announce "Listening" and "Stopped listening" in the polite status region (the part of the page a screen reader announces on its own). Never read the live words out while the person speaks.
 - The mic button's name changes with its state: "Start dictation", "Stop dictation".
-- Keep a visible label on every button that matches its name, so voice control users can say it.
+- Keep a visible label on every button that matches its name, so people who use voice control can say it.
 - Never auto-send on silence. People who speak slowly, stammer or pause to think need time.
 
 ### Seen in
@@ -955,7 +955,7 @@ Let 1 ask mix text, images, camera and screen, and show how each part is read.
 
 ### On each device
 
-- **Phone:** The camera is the main use: photo or live. The on bar sits at the top; the OS indicator shows too. Screen sharing stops when the screen locks.
+- **Phone:** The camera is the main use: photo or live. The on bar sits at the top. The OS indicator (the phone's own camera-on dot) shows too. Screen sharing stops when the screen locks.
 - **Tablet:** As on the phone, plus screen sharing of the app beside it in split view.
 - **Desktop:** Paste or drop a screenshot, or share 1 window - never the whole screen by default. The on bar names what is shared.
 
@@ -969,7 +969,7 @@ Let 1 ask mix text, images, camera and screen, and show how each part is read.
 
 - People only need to attach documents to read - files are enough. Use Attachments and context chips instead.
 - Speech alone does the job - a spoken ask with no picture. Use Voice input instead.
-- The AI must act on the screen, not just look - that needs an agent people can watch. Use Watch mode and takeover instead.
+- The AI must act on the screen, not only look - that needs an agent (an AI that can take actions for you) people can watch. Use Watch mode and takeover instead.
 
 ### Anatomy
 
@@ -994,8 +994,8 @@ Let 1 ask mix text, images, camera and screen, and show how each part is read.
 
 ### Accessibility
 
-- Give a sent photo the alt text the AI read from it, so screen reader users get the same reading.
-- Announce "Camera sharing on" and "Camera sharing off" in the polite status region.
+- Give a sent photo the alt text (the words a screen reader says for an image) the AI read from it, so people who use a screen reader get the same reading.
+- Announce "Camera sharing on" and "Camera sharing off" in the polite status region (the part of the page a screen reader announces on its own).
 - Stop is a real button, reachable at any time, at least 44 px.
 - Never make an image the only way to ask - typing and voice always work too.
 
@@ -1050,7 +1050,7 @@ Turn a vague ask into fields, so people give the AI what it needs.
 | 1 is missing | She taps Make quiz with no class. An amber note by the field: "Choose a class, so the questions fit the age." | Idle - nothing is sent yet. | on tap | Choose a class to continue |
 | Ask is ready | The built ask reads in full: "10 multiple-choice questions on fractions for Class 5". Make quiz lights up. | Idle. | when all needed fields are in | - |
 | Sent | The form folds into 1 ask bubble, with Edit fields under it. | Starts work. | on tap | Message sent |
-| Answer | The quiz streams in, matching every field. | Writes. | - | Generating a response |
+| Answer | The quiz streams in (arrives word by word), matching every field. | Writes. | - | Generating a response |
 | Done | The full quiz. Edit fields reopens the form with her values kept. | Idle. | when done | Response complete |
 
 ### On each device
@@ -1081,7 +1081,7 @@ Turn a vague ask into fields, so people give the AI what it needs.
 
 ### Do and Avoid
 
-- **Do:** Only the values the AI really needs. The built ask shows what will be sent. (Topic · FractionsQuestions · 10Class · neededAsk: 10 questions on fractions for Class 5)
+- **Do:** Only the values the AI needs. The built ask shows what will be sent. (Topic · FractionsQuestions · 10Class · neededAsk: 10 questions on fractions for Class 5)
 - **Avoid:** Every setting becomes a required field. People give up, or type anything to get past. (Topic* · Tone* · Audience* · Format*Length* · Style* · Language* · Reading age*Persona* · Output* · Examples* · Rules*12 required fields)
 - **Do:** The note sits by the empty field and says why it is needed. (Class · Choose a classChoose a class, so the questions fit the age.Make quiz)
 - **Avoid:** The button is greyed out with no reason. People don't know what is missing. (Class · Choose a classMake quiz)
@@ -1095,8 +1095,8 @@ Turn a vague ask into fields, so people give the AI what it needs.
 
 ### Accessibility
 
-- Every field has a visible label tied to it. Placeholder text is never the only label.
-- Chips work as a radio group: arrow keys move, Space picks, and the picked one is announced.
+- Every field has a visible label tied to it. Placeholder text (the grey example inside the field) is never the only label.
+- Chips work as a radio group (a set where only 1 can be picked): arrow keys move, Space picks, and a screen reader announces the picked one.
 - When a needed value is missing, move focus to that field and announce the note: "Choose a class to continue".
 - The built ask is plain text, so a screen reader can read the whole ask before it is sent.
 
@@ -1155,7 +1155,7 @@ Offer to improve the ask before it is sent, and show the change.
 
 ### On each device
 
-- **Phone:** Enhance sits in the tool row of the box. The rewrite fills the box and grows it; Undo sits right under the text, by the thumb.
+- **Phone:** Enhance sits in the tool row of the box. The rewrite fills the box and grows it. Undo sits right under the text, by the thumb.
 - **Tablet:** As on the phone. In landscape there is room to show the original above the rewrite.
 - **Desktop:** As on the phone, with room for a "Show original" link beside Undo, so people can compare before they choose.
 
@@ -1195,7 +1195,7 @@ Offer to improve the ask before it is sent, and show the change.
 ### Accessibility
 
 - Announce "Improving your prompt" when it starts and "Prompt enhanced. 2 additions" when it ends.
-- Mark added words with an underline as well as colour, and expose them to screen readers as added text.
+- Mark added words with an underline as well as colour, and tell screen readers they are added text.
 - Keep focus in the prompt box after the rewrite, so people can read and edit it with the keyboard.
 - Undo is a real button, and the usual undo keys work too.
 
@@ -1230,11 +1230,11 @@ Act on the text or object a person has selected, right where it is.
 
 ### Story
 
-> When 1 part of my text needs work, I want to select it and ask the AI right there, so I can fix just that part and see the change before it goes in.
+> When 1 part of my text needs work, I want to select it and ask the AI right there, so I can fix only that part and see the change before it goes in.
 
 - **Setting:** Daniel is writing a cover letter for a new nursing job.
 - **Trigger:** 1 sentence is long and flat. He selects it.
-- **Without it:** He copies the sentence into a chat, asks for a shorter one, copies the answer back and fixes the spacing.
+- **Without it:** He copies the sentence into a chat and asks for a shorter one. Then he copies the answer back and fixes the spacing.
 - **With it:** A small menu appears by the selection. He taps Shorter and sees the new sentence before it goes in.
 - **Outcome:** He taps Replace. Only that sentence changes, and Undo is there if he wants it back.
 
@@ -1271,14 +1271,14 @@ Act on the text or object a person has selected, right where it is.
 
 - **A. Selection:** What the AI will work on, and nothing else. The rest of the text stays as it is.
 - **B. Preset actions:** 3 or 4 short actions that fit the selection. 1 tap each.
-- **C. Ask about this text:** A field for anything the presets don't cover, already scoped to the selection.
+- **C. Ask about this text:** A field for anything the presets don't cover. It already works on the selection only.
 - **D. Preview:** The new version, shown beside the old one. Nothing changes until he chooses.
 - **E. Result actions:** Replace, Insert below, Try again, Discard. Each says what it does to his text.
 
 ### Do and Avoid
 
 - **Do:** A preview first. He chooses to replace, add below, or throw it away. (I have worked on a busy ward for 6 years…For 6 years I have cared for patients before and after surgery.Replace · Insert below · Discard)
-- **Avoid:** The text is swapped at once. He never read the new sentence before it went in. (For 6 years I have cared for patients before and after surgery.Replaced. The old sentence is gone.)
+- **Avoid:** The text swaps at once. He never read the new sentence before it went in. (For 6 years I have cared for patients before and after surgery.Replaced. The old sentence is gone.)
 - **Do:** A few actions that fit 1 sentence, and a field for anything else. (Ask about this textShorter · Friendlier · Fix spelling)
 - **Avoid:** Every AI action in the product. People scan, give up, or pick one that makes no sense for 1 sentence. (Summarise · Translate · Make table · Brainstorm · Write poem · Continue · Explain · Outline · Action items · Find quotes · Make tweet · …)
 
@@ -1291,10 +1291,10 @@ Act on the text or object a person has selected, right where it is.
 
 ### Accessibility
 
-- The menu opens from the keyboard on a selection too, not only on mouse up.
+- The menu opens from the keyboard on a selection too, not only when the mouse button is released.
 - When the menu opens, focus moves into it. Escape closes it and puts focus back on the selection.
 - Announce "Suggestion ready" when the preview appears, and read the new text before the buttons.
-- On touch screens, buttons in the sheet are at least 44 px, and the menu never covers the system's copy and paste menu.
+- On touch screens, buttons in the sheet are at least 44 px. The menu never covers the system's copy and paste menu.
 
 ### Seen in
 
@@ -1356,7 +1356,7 @@ Act on the text or object a person has selected, right where it is.
 
 ### Use when
 
-- A few jobs cover most of what people want from this kind of item - summarise an email, translate a message, explain an error.
+- A few jobs cover most of what people want from this kind of item. For example: summarise an email, translate a message, explain an error.
 - Typing the ask is slow, like on a phone, or people type the same ask again and again.
 - The job is about the whole item on screen, so the AI already knows what "this" is.
 
@@ -1370,7 +1370,7 @@ Act on the text or object a person has selected, right where it is.
 
 - **A. Action chips:** 2 to 4 named jobs, on the item they act on. 1 tap each.
 - **B. Result title:** What it is and what it came from: "Summary of 14 replies".
-- **C. Result:** Short and scannable. Points for a summary, a draft for a reply.
+- **C. Result:** Short and easy to scan. Points for a summary, a draft for a reply.
 - **D. Next actions:** The likely next jobs, like Draft a reply. A draft is never sent by itself.
 
 ### Do and Avoid
@@ -1442,8 +1442,8 @@ Let people pick how the AI should work, in plain words, not model names.
 | Ask typed | His ask in the composer, with a "Fast" chip beside the + button. | Idle. | 0 s | - |
 | Picker open | Fast, Thinking and Research, each with 1 line on what it does and how long it takes. Research shows 3 left today. | Idle. | on tap | - |
 | Picked | The check moves to Research, and the chip now reads "Research". | Idle. | on tap | Research selected |
-| Working | "Researching · reading site 6 of 14 · about 5 min". A quick mode just shows it is writing. | Works in the chosen mode. | seconds to minutes | Researching |
-| Answer | The answer streams in. | Writes. | - | - |
+| Working | "Researching · reading site 6 of 14 · about 5 min". A quick mode only shows it is writing. | Works in the chosen mode. | seconds to minutes | Researching |
+| Answer | The answer streams in (arrives word by word). | Writes. | - | - |
 | Labelled | "Answered with Research · 14 sources" under the answer. | Idle. | when done | Response complete |
 
 ### On each device
@@ -1460,14 +1460,14 @@ Let people pick how the AI should work, in plain words, not model names.
 
 ### Don't use when
 
-- The product can pick well on its own. Offer Auto as the default, with the picker as an override.
+- The product can pick well on its own. Offer Auto as the default, and keep the picker for people who want to change it.
 - The difference is only how long or formal the answer is. Use Adjust length and tone instead.
 - The ask needs exact values, not a way of working. Use Structured prompt instead.
 
 ### Anatomy
 
 - **A. Mode chip:** Shows the current mode in the composer, and opens the picker.
-- **B. Mode name:** A plain word for how it works: "Research". Not a model name.
+- **B. Mode name:** A plain word for how it works: "Research". Not a model name (the name of the AI engine underneath).
 - **C. What it does and how long:** 1 line in everyday words, with the time: "Reads many websites and cites them · about 5 min".
 - **D. Limit:** "3 left today", in amber, before the pick - not after the run fails.
 - **E. Current mode:** A check on the mode in use, so it is clear what sending will do.
@@ -1489,7 +1489,7 @@ Let people pick how the AI should work, in plain words, not model names.
 ### Accessibility
 
 - The chip's name includes the current mode: "Mode: Research".
-- The picker is a group of radio options. Each option's description is part of its name, so it is read with it.
+- The picker is a group of radio options (a set where only 1 can be picked). Each option's description is part of its name, so a screen reader reads them together.
 - Announce the change: "Research selected".
 - Escape closes the picker and puts focus back on the chip.
 
@@ -1547,14 +1547,14 @@ Make 1 to 60 seconds of silence feel like progress, with steps people can open.
 | First step | A Thinking header, a timer and the first step in plain words. | Reads the input. | within 1 s | Thinking |
 | Next steps | Done steps get a tick; the current one pulses; the next one is faint. | Works step by step. | every 1-3 s | - |
 | Last step | The last step runs. The timer keeps counting. | Checks its work. | - | - |
-| Answer starts | The steps fold into 1 line - or stay open if set - and the answer streams below. | Writes the answer. | on the first word | - |
+| Answer starts | The steps fold into 1 line - or stay open if set. The answer streams (arrives word by word) below. | Writes the answer. | on the first word | - |
 | Done | 1 line, "Thought for 8 s · 5 steps", that opens the steps again. | Idle. | - | Response complete |
 
 ### On each device
 
-- **Phone:** Show only the current step, on 1 line, with the timer. The full list opens in a sheet. When the answer starts, fold to 1 line so the answer gets the screen.
+- **Phone:** Show only the current step, on 1 line, with the timer. The full list opens in a sheet (a panel that slides up from the bottom). When the answer starts, fold to 1 line so the answer gets the screen.
 - **Tablet:** The full list fits above the answer. Fold it when the answer starts.
-- **Desktop:** The list sits above the answer, or in a side panel for long agent runs. Each done step can open to show what it found.
+- **Desktop:** The list sits above the answer. For a long run by an agent (an AI that can take actions for you), it sits in a side panel. Each done step can open to show what it found.
 
 ### Use when
 
@@ -1593,9 +1593,9 @@ Make 1 to 60 seconds of silence feel like progress, with steps people can open.
 ### Accessibility
 
 - Announce only the start ("Thinking") and the end ("Response complete") - not every step.
-- The folded line is a real button with aria-expanded, so people can open the steps again.
-- The pulse on the current step stops under reduced motion; the tick and the words carry the meaning.
-- The timer is not announced every second. It sits in the visual layer only.
+- The folded line is a real button with aria-expanded (the code that tells a screen reader if it is open or closed), so people can open the steps again.
+- Under reduced motion (a device setting that turns off animation), the pulse on the current step stops. The tick and the words carry the meaning.
+- Screen readers do not read the timer every second. It is on screen only.
 
 ### Seen in
 
@@ -1636,7 +1636,7 @@ Show the answer as it is written, so waiting feels like reading.
 > When I ask the AI for something long, I want to start reading before it has finished, so the wait feels like progress and I can stop it if it goes the wrong way.
 
 - **Setting:** Arjun asks the assistant for a 3-step plan for next week's launch.
-- **Trigger:** A long answer takes the model 5 seconds to write.
+- **Trigger:** A long answer takes the AI 5 seconds to write.
 - **Without it:** A spinner for 5 seconds, then a wall of text. He cannot tell if it is stuck, and step 1 is already wrong.
 - **With it:** The first words land in under a second. By step 2 he sees it misread the date, and presses Stop.
 - **Outcome:** He keeps what was right, fixes the date in 1 line, and asks again.
@@ -1645,10 +1645,10 @@ Show the answer as it is written, so waiting feels like reading.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Message sent | His message, and the composer locked to a Stop button. | Receives the ask. | 0 s | - |
+| Message sent | His message, and the composer (the box where he types) locked to a Stop button. | Receives the ask. | 0 s | - |
 | Waiting | 3 quiet dots where the answer will be. Stop is already there. | Thinks before the first word. | 0 to 1.2 s | Generating a response |
 | Still working | Only on a slow answer: "Still working - long answers take a moment." | Still thinking. | after 4 s | - |
-| First words | The answer starts in place, with a caret at its end. | Sends the first tokens. | 1.2 s | - |
+| First words | The answer starts in place, with a caret (a blinking line) at its end. | Sends the first tokens (pieces of words). | 1.2 s | - |
 | Streaming | Text grows in whole words. The page does not jump; it follows only if he has not scrolled away. | Writes the rest. | 1.2 to 5 s | - |
 | Done | The caret goes, Stop becomes the composer again, and Copy, Retry and feedback appear. | Finished. | 5 s | Response complete |
 | Stopped | Everything written so far stays, with a note that he stopped it and a Continue button. | Stops at once. | on Stop | Response stopped |
@@ -1668,7 +1668,7 @@ Show the answer as it is written, so waiting feels like reading.
 
 ### Don't use when
 
-- The output is a table, chart or form that only makes sense when complete - show a skeleton, then the whole thing. Use Generative UI and structured output instead.
+- The output is a table, chart or form that only makes sense when complete. Show a skeleton (a grey outline of the shape to come), then the whole thing. Use Generative UI and structured output instead.
 - The AI is working for minutes on a task, not writing - show steps instead of text. Use Thinking and processing steps instead.
 - The answer is under 1 second. Streaming then only adds flicker.
 
@@ -1697,10 +1697,10 @@ Show the answer as it is written, so waiting feels like reading.
 
 ### Accessibility
 
-- The chat history is a log with aria-live off. The streaming text is never a live region - screen readers would re-read or drop it token by token.
-- A hidden status region, polite and atomic, announces only 4 things: "Generating a response", "Response complete", "Response stopped" and "Response failed".
+- The chat history is a log with aria-live off. The streaming text is never a live region (the part of the page a screen reader announces on its own). Screen readers would re-read it or drop it, token by token.
+- A hidden status region, set to polite (it waits for a pause) and atomic (it reads the whole message), announces only 4 things: "Generating a response", "Response complete", "Response stopped" and "Response failed".
 - Stop is a real button. Focus stays in the composer while the answer streams and returns there when Stop goes away.
-- Under reduced motion, text appears in sentence chunks instead of word by word, and the caret does not blink.
+- Under reduced motion (a device setting that turns off animation), text appears in sentence chunks, not word by word. The caret does not blink.
 - Do not auto-scroll if the person has scrolled up to read - offer a "Jump to latest" button instead.
 
 ### Seen in
@@ -1756,7 +1756,7 @@ Say what the AI is doing right now, not just that it is busy.
 | Reading | "Reading lease.pdf · page 20 of 40", with the count going up. | Reads the file. | after about 1 s | Reading lease.pdf |
 | Finding | The line changes: "Finding the parts about pets". | Searches the file. | - | Finding the parts about pets |
 | Checking | "Checking clause 14.2 and 3 others". | Checks the matches. | - | Checking 4 clauses |
-| Answer | The line goes away and the answer streams in its place. | Writes. | about 8 s | Generating a response |
+| Answer | The line goes away. The answer streams (arrives word by word) in its place. | Writes. | about 8 s | Generating a response |
 | Done | The answer, naming the clause it came from. | Idle. | when done | Response complete |
 
 ### On each device
@@ -1768,7 +1768,7 @@ Say what the AI is doing right now, not just that it is busy.
 ### Use when
 
 - The wait is longer than about 1 second, so people notice it.
-- The AI does work people would recognise - reading a file, searching, checking - and naming it shows it is on track.
+- The AI does work people would recognise - reading a file, searching, checking. Naming it shows it is on track.
 - There is 1 stage at a time, so 1 line is enough.
 
 ### Don't use when
@@ -1800,9 +1800,9 @@ Say what the AI is doing right now, not just that it is busy.
 
 ### Accessibility
 
-- Put the line in a polite status region. Announce when the stage changes, not every page count.
+- Put the line in a polite status region (a part of the page a screen reader announces on its own, when there is a pause). Announce when the stage changes, not every page count.
 - Don't move focus to the message. People keep their place.
-- With reduced motion, the dots stand still. The words still change.
+- With reduced motion (a device setting that turns off animation), the dots stand still. The words still change.
 - Stop stays a real button named "Stop" for the whole wait.
 
 ### Seen in
@@ -1851,7 +1851,7 @@ Let people leave a long task and be told when it is done.
 |---|---|---|---|---|
 | Asks | Her ask in the chat. | Plans the work. | 0 s | - |
 | Says how long | "This takes about 10 minutes. It keeps going if you close the app." A Notify me switch is on. Start. | Waits for Start. | before it starts | - |
-| Running | "Searching supplier sites · 4 of 10", a bar, "You can leave", and Stop. | Works in the cloud. | minutes | Research started. About 10 minutes |
+| Running | "Searching supplier sites · 4 of 10", a bar, "You can leave", and Stop. | Works in the cloud (on a server, not on her phone). | minutes | Research started. About 10 minutes |
 | She leaves | Another app. A small live status at the top: "Research · 6 of 10". | Keeps working. | - | - |
 | Told | A notification: "Supplier research is ready" with the result in 1 line - or "needs you" with the question. | Done, or paused for 1 answer. | when it ends or needs her | Supplier research is ready |
 | Opens | The result, "Done in 9 min", with the table - or the question with Allow once and Skip this site. | Idle, or goes on after her answer. | on tap | - |
@@ -1865,7 +1865,7 @@ Let people leave a long task and be told when it is done.
 
 ### Use when
 
-- The work takes minutes or more - research, long reports, agent tasks.
+- The work takes minutes or more - research, long reports, tasks for an agent (an AI that can take actions for you).
 - People have other things to do and shouldn't have to watch.
 - The task may stop to ask a question, so people need to know when it is waiting on them.
 
@@ -1899,7 +1899,7 @@ Let people leave a long task and be told when it is done.
 ### Accessibility
 
 - Announce the start with the time: "Research started. About 10 minutes".
-- Tapping the notification opens the result or the question with focus on its title, not at the top of the chat.
+- Tapping the notification opens the result or the question. Focus lands on its title, not at the top of the chat.
 - Progress has a text count ("4 of 10") as well as a bar.
 - Never rely on sound alone. The notification text and the chat both carry the news.
 
@@ -1951,11 +1951,11 @@ Let people add to or correct the ask while the AI is still working.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Asks | Her ask in the chat. | Starts work. | 0 s | - |
-| Working | "Checking venues · 3 of 12" with a bar. The composer says "Add to the task", with Stop beside it. | Works. | minutes | Researching |
+| Working | "Checking venues · 3 of 12" with a bar. The composer (the box where she types) says "Add to the task", with Stop beside it. | Works. | minutes | Researching |
 | Types a change | Her change in the composer. Update appears next to Stop. | Keeps working. | - | - |
 | Update sent | Her message in the thread, "Added while working". In the work card: "Got it - only step-free venues. Keeping the 7 already checked." | Takes it in without stopping. | on tap | Update added to the task |
 | Uses it | "Checking step-free access". The count keeps going from where it was. | Works with the change. | - | - |
-| Queued | If it can't be used now: her message in a drawer, "Queued · runs after this task", with Edit and Remove. | Finishes the run first. | on tap | Message queued |
+| Queued | If it can't be used now: her message in a drawer (a small panel that slides open), "Queued · runs after this task", with Edit and Remove. | Finishes the run first. | on tap | Message queued |
 | Starts again | The old way: "Sending stops the work". The count drops to 0 and 7 checked venues are lost. | Starts over. | on tap | Stopped. Starting again |
 | Answer | 5 venues, marked "Includes your update · step-free only". | Idle. | when done | Response complete |
 
@@ -1967,7 +1967,7 @@ Let people add to or correct the ask while the AI is still working.
 
 ### Use when
 
-- The work runs long enough that people think of something while it runs - research, reports, agent tasks.
+- The work runs long enough that people think of something while it runs - research, reports, tasks for an agent (an AI that can take actions for you).
 - Most of the work done so far is still useful after the change.
 - People often add a limit or a detail, rather than change the whole ask.
 
@@ -1983,7 +1983,7 @@ Let people add to or correct the ask while the AI is still working.
 - **B. Got it:** 1 line that says what was taken in and what was kept.
 - **C. Progress that keeps going:** The count carries on from where it was. Nothing resets.
 - **D. Stop:** Still there. Updating and stopping are 2 different buttons.
-- **E. Add to the task:** The composer's placeholder while it works, so people know they can add to it.
+- **E. Add to the task:** The composer's placeholder (the grey hint text in the box) while it works, so people know they can add to it.
 
 ### Do and Avoid
 
@@ -2001,7 +2001,7 @@ Let people add to or correct the ask while the AI is still working.
 
 ### Accessibility
 
-- The composer stays focusable while the AI works. Stop and Update are separate buttons with their own names.
+- People can still move keyboard focus to the composer while the AI works. Stop and Update are separate buttons with their own names.
 - Announce "Update added to the task" or "Message queued" when it is sent.
 - Don't move focus to the work card when the update is taken in.
 - Queued messages are a list people can reach by keyboard, with Edit and Remove on each.
@@ -2065,9 +2065,9 @@ Put long output beside the chat on desktop, and in a full sheet on a phone.
 
 ### On each device
 
-- **Phone:** A full-screen sheet with the composer still at the bottom and a clear way back to the chat. Never a squeezed split view.
+- **Phone:** A full-screen sheet. The composer (the box where you type) stays at the bottom, with a clear way back to the chat. Never a squeezed split view.
 - **Tablet:** Beside the chat in landscape. In portrait, a sheet from the bottom that can be dragged to full height.
-- **Desktop:** Beside the chat, about half the width or more. The chat narrows but stays readable; a close button sits in the pane header.
+- **Desktop:** Beside the chat, about half the width or more. The chat narrows but stays readable. A close button sits in the pane header.
 
 ### Use when
 
@@ -2079,7 +2079,7 @@ Put long output beside the chat on desktop, and in a full sheet on a phone.
 
 - The answer is short and read once - keep it in the chat. Use Streaming response instead.
 - The output is a small interactive card - a chart, a booking - that fits in the thread. Use Generative UI and structured output instead.
-- People need to watch an agent work, not read its output. Use Agent workspace and management instead.
+- People need to watch an agent (an AI that takes actions for you) work, not read its output. Use Agent workspace and management instead.
 
 ### Anatomy
 
@@ -2104,7 +2104,7 @@ Put long output beside the chat on desktop, and in a full sheet on a phone.
 
 ### Accessibility
 
-- The pane is a labelled region (aria-labelledby its title). On a phone, the sheet is a dialog with a visible close.
+- The pane is a labelled region (a named part of the page a screen reader can jump to), with aria-labelledby pointing at its title. On a phone, the sheet is a dialog with a visible close.
 - Opening the pane moves focus to its title; closing returns focus to the card that opened it.
 - Announce saves once: "Version 2 saved".
 - Marked changes use a background and text, not colour alone.
@@ -2158,16 +2158,16 @@ Answer with the right widget - a table, a chart, a card - not only prose.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Asked | The ask. | Starts work. | 0 s | - |
-| Skeleton | A grey outline in the shape of the widget, so the layout does not jump later. | Builds the data. | 0.5-2 s | Generating a response |
+| Skeleton | A grey outline in the shape of the widget (the table or cards the AI builds), so the layout does not jump later. | Builds the data. | 0.5-2 s | Generating a response |
 | Widget ready | 1 line that answers, then the table or cards, with at most 2 actions. | Idle. | when done | Response complete |
 | Change it in place | A switch inside the widget (Monthly / Yearly) changes the numbers. No new message. | Idle - the widget does it. | on tap | - |
-| Act | The person taps "Choose Flex"; the card shows what was done. | Records the choice. | on tap | Flex chosen |
+| Act | The person taps "Choose Flex". The card shows what was done. | Records the choice. | on tap | Flex chosen |
 
 ### On each device
 
 - **Phone:** A 4-column table does not fit. Show the same data as a row of cards to swipe, with the next card peeking in. Keep actions at the bottom, by the thumb, and at least 44 px tall.
-- **Tablet:** The table fits inline. Open full screen only for big tables, maps or editing.
-- **Desktop:** The widget sits inline in the thread. A big or long-lived widget can open side by side; the inline card then shrinks to a small chip so the chat keeps its place.
+- **Tablet:** The table fits inline (inside the chat thread). Open full screen only for big tables, maps or editing.
+- **Desktop:** The widget sits inline in the thread. A big or long-lived widget can open side by side. The inline card then shrinks to a small chip, so the chat keeps its place.
 
 ### Use when
 
@@ -2261,12 +2261,12 @@ Offer 2 to 4 versions to pick from, side by side.
 | Asked | The ask. | Starts work. | 0 s | - |
 | Writing | "Writing 3 versions", with all 3 filling in at once. | Writes 3 versions. | 0.5-3 s | Generating a response |
 | Pick 1 | "3 versions - pick 1 to use." Each has a label, the text and "Use this". "3 more" sits below. | Idle. | when all are done | 3 versions ready |
-| Picking | The chosen version lifts; the others fade. | Idle. | on tap | - |
+| Picking | The chosen version lifts. The others fade. | Idle. | on tap | - |
 | Kept | The pick becomes the answer. "2 other versions" opens the rest again. | Idle. | after the tap | Version 2 chosen |
 
 ### On each device
 
-- **Phone:** Versions stack in 1 column, 2 lines each, with the label on top. 3 fit on 1 screen; 6 do not, and people stop comparing.
+- **Phone:** Versions stack in 1 column, 2 lines each, with the label on top. 3 fit on 1 screen. 6 do not, and people stop comparing.
 - **Tablet:** 2 or 3 side by side. Images sit in a 2 x 2 grid.
 - **Desktop:** 3 or 4 side by side, so the eye moves across and compares. Hover shows the full text of a long version.
 
@@ -2291,7 +2291,7 @@ Offer 2 to 4 versions to pick from, side by side.
 
 ### Do and Avoid
 
-- **Do:** Each version is really different, and its label says how. Choosing is quick. (ShortStreet party Sat, 2 pm. Bring a dish!WarmHello neighbours! Games, music and food…With detailsRoad closes 1 pm, please move cars…)
+- **Do:** Each version is clearly different, and its label says how. Choosing is quick. (ShortStreet party Sat, 2 pm. Bring a dish!WarmHello neighbours! Games, music and food…With detailsRoad closes 1 pm, please move cars…)
 - **Avoid:** 3 versions that differ by 1 word. People cannot see the difference and pick at random. (Hello neighbours! Join our street party…Hi neighbours! Join our street party…Hello neighbours! Come to our street party…)
 - **Do:** The pick becomes the answer. The others are folded, not gone. (Hello neighbours! Street party on Saturday…✓ Using “Warm” · › 2 other versions)
 - **Avoid:** Picking deletes the rest. If the pick was wrong, people must ask again. (Hello neighbours! Street party on Saturday…The other versions were removed.)
@@ -2369,7 +2369,7 @@ Give the short version first, with a way into the long one.
 
 ### Use when
 
-- The source is long and people need the gist before deciding to read it - threads, meetings, reports.
+- The source is long and people need the short version before deciding to read it - threads, meetings, reports.
 - People come back to something that changed while they were away.
 - Several people need the same short picture - a handover, a stand-up.
 
@@ -2405,7 +2405,7 @@ Give the short version first, with a way into the long one.
 
 - Give the summary a heading ("Summary, made by AI") and put it before the thread in reading order.
 - Name each source link by its target: "Message 31, from Priya".
-- Announce "Summary updated" in the polite status region when it changes. Do not move focus.
+- Announce "Summary updated" when it changes. Use the polite status region (the part of the page a screen reader reads out when it is next free). Do not move focus.
 - Collapse is a real button that says if the summary is open or closed, and the choice is remembered.
 
 ### Seen in
@@ -2463,7 +2463,7 @@ Show how sure the AI is, so people know when to check.
 
 ### On each device
 
-- **Phone:** Fields stack. The flag sits on the field with its reason under it. "Show on scan" opens the crop full width above the field.
+- **Phone:** Fields stack. The flag sits on the field with its reason under it. "Show on scan" opens the crop (the cut-out part of the scan) full width above the field.
 - **Tablet:** The scan sits beside the fields, as on desktop.
 - **Desktop:** The scan sits beside the fields. Focus on a flagged field highlights the matching place on the scan.
 
@@ -2550,7 +2550,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Answer | The answer streams in. No suggestions yet. | Writes. | 0-2 s | Generating a response |
+| Answer | The answer streams in (arrives word by word). No suggestions yet. | Writes. | 0-2 s | Generating a response |
 | Suggestions | "Ask next" and 3 short asks under the answer, about this answer. | Idle. | when the answer is done | Response complete |
 | Tap | The tapped suggestion fills in. | Idle. | on tap | - |
 | Add to it | If a tap fills the box, the person can add words before sending. | Idle. | optional | - |
@@ -2560,7 +2560,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 ### On each device
 
 - **Phone:** Suggestions stack as full-width rows under the answer, each at least 44 px tall, so they are easy to tap with a thumb.
-- **Tablet:** A wrapping row of pills under the answer.
+- **Tablet:** A wrapping row of pills (small rounded buttons) under the answer.
 - **Desktop:** A wrapping row of pills under the latest answer. A long suggestion shows in full on hover and focus.
 
 ### Use when
@@ -2580,7 +2580,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 - **A. Label:** "Ask next" - says these are questions to send, not part of the answer.
 - **B. Specific ask:** Comes from this answer, in the person's own words, ready to send.
 - **C. Something to do:** Not only questions: "Quiz me on this", "Make a checklist".
-- **D. The box:** Always there. Suggestions help; they never replace typing.
+- **D. The box:** Always there. Suggestions help. They never replace typing.
 
 ### Do and Avoid
 
@@ -2600,7 +2600,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 
 - Make suggestions a list of real buttons named by their text, after the answer in reading order, under the heading "Ask next".
 - Do not read each suggestion aloud when it appears. "Response complete" is enough; people find them by moving on.
-- When a tap fills the box, move focus to the box with the caret at the end.
+- When a tap fills the box, move focus to the box with the caret (the typing cursor) at the end.
 - When old suggestions are removed, keep focus on the new message, not the top of the page.
 
 ### Seen in
@@ -2638,7 +2638,7 @@ Read the answer aloud and show the words as they are spoken.
 
 - **Setting:** Fatima has dough on her hands. She asks out loud for the next step.
 - **Trigger:** The answer has 2 times to remember: 10 minutes and 20 minutes.
-- **Without it:** An orb talks. Halfway through kneading she forgets the time and asks again.
+- **Without it:** An orb (a glowing ball on the screen) talks. Halfway through kneading she forgets the time and asks again.
 - **With it:** Each word appears in the chat as it is spoken. A glance shows "10 minutes".
 - **Outcome:** She ends the voice chat with a knuckle. The steps stay in the chat for later.
 
@@ -2648,11 +2648,11 @@ Read the answer aloud and show the words as they are spoken.
 |---|---|---|---|---|
 | Voice on | The text box becomes a voice bar: "Listening", mute and End. | Listens. | 0 s | Voice chat on. Listening |
 | Person speaks | Her words appear in her bubble as she says them. | Listens. | while she talks | - |
-| AI speaks | Each word appears as it is spoken; the current word is highlighted. The bar says "Speaking". | Speaks. | about 2-3 words a second | Speaking |
-| Cut in | She speaks; the AI stops at once. Its line ends with "stopped, you spoke". | Stops and listens. | within a moment | Listening |
+| AI speaks | Each word appears as it is spoken. The current word is highlighted. The bar says "Speaking". | Speaks. | about 2-3 words a second | Speaking |
+| Cut in | She speaks. The AI stops at once. Its line ends with "stopped, you spoke". | Stops and listens. | within a moment | Listening |
 | Short answer | A short answer to the new question, shown and spoken. | Speaks. | - | Speaking |
 | Done talking | The full answer as text. The bar goes back to "Listening". | Listens. | after the last word | Listening |
-| Ended | "Voice chat ended". The words stay in the thread; the text box is back. | Idle. | on End | Voice chat ended |
+| Ended | "Voice chat ended". The words stay in the thread. The text box is back. | Idle. | on End | Voice chat ended |
 
 ### On each device
 
@@ -2697,8 +2697,8 @@ Read the answer aloud and show the words as they are spoken.
 
 - Show every spoken word as text, in time with the voice. People who are deaf or hard of hearing need it.
 - Speech starts only when the person starts it, and can be paused or stopped at once.
-- Announce only state changes: "Listening", "Speaking", "Voice chat ended". Never read the transcript out through the status region - it would talk over the voice.
-- End and mute are real buttons, at least 44 px, reachable by keyboard and switch. The words stay after the voice chat ends.
+- Announce only state changes: "Listening", "Speaking", "Voice chat ended". Never read the transcript (the written words) out through the status region (the part of the page a screen reader announces on its own). It would talk over the voice.
+- End and mute are real buttons, at least 44 px, reachable by keyboard and by switch (a 1-button control some people use instead of touch). The words stay after the voice chat ends.
 
 ### Seen in
 
@@ -2710,7 +2710,7 @@ Read the answer aloud and show the words as they are spoken.
 
 - Often combined with Voice input: The other half of a voice chat: speaking the ask.
 - Often combined with Stop generation: Speaking over the AI is a stop, by voice.
-- Often combined with Streaming response: The live words fill in like streamed text, in time with the voice.
+- Often combined with Streaming response: The live words fill in like streamed text (text that arrives word by word), in time with the voice.
 
 ### Sources
 
@@ -2749,7 +2749,7 @@ Let people stop the AI and keep what is already there.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Sent | Send turns into Stop at once - before the first word arrives. | Starts work. | 0 s | - |
-| Streaming | The answer grows; Stop stays in the same place. | Writes. | - | Generating a response |
+| Streaming | The answer streams in (arrives word by word). Stop stays in the same place. | Writes. | - | Generating a response |
 | Stop pressed | Stop shows it was pressed. | Stops writing. | under 100 ms | - |
 | Stopped | Every word written so far stays, with a short note and Continue or Try again. | Idle. | at once | Response stopped |
 | Continued | The answer picks up from the last word - not from the start. | Writes again. | on tap | Generating a response |
@@ -2759,7 +2759,7 @@ Let people stop the AI and keep what is already there.
 
 - **Phone:** Stop replaces Send in the same spot, at least 44 px, so the thumb is already there. Never hide it behind a menu.
 - **Tablet:** As on the phone. With a keyboard, Escape stops too.
-- **Desktop:** Stop replaces Send. Escape stops, and the composer stays editable so people can type the next ask while it finishes.
+- **Desktop:** Stop replaces Send. Escape stops too. The composer (the box where you type) stays editable, so people can type the next ask while it finishes.
 
 ### Use when
 
@@ -2769,7 +2769,7 @@ Let people stop the AI and keep what is already there.
 
 ### Don't use when
 
-- The AI is doing things, not just writing - stopping must also say what was already done. Use Watch mode and takeover instead.
+- The AI is doing things, not only writing. Stopping must also say what it already did. Use Watch mode and takeover instead.
 - People want to change the direction, not end it. Use Update mid-run instead.
 - Answers are always instant - there is nothing to stop. Use Streaming response instead.
 
@@ -2777,8 +2777,8 @@ Let people stop the AI and keep what is already there.
 
 - **A. Stop button:** Where Send was, with a word and a square. Works from the very first moment.
 - **B. The partial answer:** Stays on screen exactly as written. Nothing is thrown away.
-- **C. The caret:** Shows the AI is still writing - it goes the moment Stop is pressed.
-- **D. The composer:** Stays usable, so the next ask can be typed straight away.
+- **C. The caret:** The blinking mark at the end of the text. It shows the AI is still writing, and it goes the moment Stop is pressed.
+- **D. The composer:** Stays usable, so people can type the next ask straight away.
 
 ### Do and Avoid
 
@@ -2797,7 +2797,7 @@ Let people stop the AI and keep what is already there.
 
 - Stop is a real button with the name "Stop generating", and it takes the focus Send had.
 - Escape stops on a keyboard, from anywhere in the conversation.
-- Announce "Response stopped" once in the polite status region - the partial text is not read out again.
+- Announce "Response stopped" once in the polite status region (the part of the page a screen reader reads out on its own). Do not read the partial text out again.
 - Stop is at least 44 by 44 px on touch screens.
 
 ### Seen in
@@ -2847,7 +2847,7 @@ Try again, or change the ask, without losing the last try.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| First answer | The answer streams in. | Writes. | 0-1 s | Generating a response |
+| First answer | The answer streams in (arrives word by word). | Writes. | 0-1 s | Generating a response |
 | Actions | Try again and Copy appear under the answer; a pencil sits by the ask. | Idle. | when done | Response complete |
 | Try again or edit | Try again replays the same ask. Edit opens the ask in place, with Cancel and Send. | Idle. | on tap | - |
 | New version | A new answer streams in the same place. | Writes again. | - | Generating a response |
@@ -2884,13 +2884,13 @@ Try again, or change the ask, without losing the last try.
 - **Do:** Every try is kept. People can go back to the one they liked. (Your bike, back on the road by Friday.↻ Try again ‹ 2 / 2 ›)
 - **Avoid:** The new answer replaces the old one. People stop trying again, in case they lose a good one. (Your bike, back on the road by Friday.↻ Try againThe first tagline is gone.)
 - **Do:** Editing the ask changes 1 detail and keeps the old answer as a version. (…a bike repair shop in LeedsEdit the ask in place, then send.)
-- **Avoid:** No edit, so people retype the whole ask and the thread fills with near-copies. (Write a 1-line tagline for a bike repair shopTo change it, type the whole ask again below.)
+- **Avoid:** There is no edit, so people retype the whole ask. The thread fills with near-copies. (Write a 1-line tagline for a bike repair shopTo change it, type the whole ask again below.)
 
 ### Writing
 
 - Say "Try again", not "Regenerate". It says what people get.
 - Show versions as "2 / 2" with arrows. No version names to learn.
-- If trying again will remove later messages in a branch, say so before it happens: "Messages after this will move to version 1."
+- If trying again will remove later messages in a branch (a side path of the chat), say so before it happens: "Messages after this will move to version 1."
 
 ### Accessibility
 
@@ -2936,7 +2936,7 @@ Change how long or how formal an answer is with 1 control, not a new ask.
 
 - **Setting:** Ifeoma asks for a reply to Ada, whose bag strap broke.
 - **Trigger:** The draft is right, but too long for a phone message.
-- **Without it:** She types "make it shorter". A second version appears below, and she re-reads it to check the refund is still there.
+- **Without it:** She types "make it shorter". A second version appears below. She re-reads it to check the refund is still there.
 - **With it:** She taps Shorter. The same reply is rewritten in place.
 - **Outcome:** 45 → 26 words, with the repair, the ₦18,000 and the courier marked as kept. She sends it.
 
@@ -2944,7 +2944,7 @@ Change how long or how formal an answer is with 1 control, not a new ask.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Draft | The reply streams in. | Writes. | 0-2 s | Generating a response |
+| Draft | The reply streams in (arrives word by word). | Writes. | 0-2 s | Generating a response |
 | Controls | Shorter, Longer, More formal and More friendly sit under the reply. | Idle. | when done | Response complete |
 | Press | The pressed control fills in; the others fade. | Idle. | on tap | - |
 | Rewrite in place | The new version writes over the old one, in the same place. | Rewrites. | - | Rewriting |
@@ -2954,7 +2954,7 @@ Change how long or how formal an answer is with 1 control, not a new ask.
 
 - **Phone:** The controls sit in 1 row under the answer and scroll sideways if needed, each 44 px tall. Undo sits next to the word count.
 - **Tablet:** As on the phone, with all controls visible.
-- **Desktop:** A row under the answer, or on the selection toolbar to change only part of a text. A slider suits length when people want fine steps.
+- **Desktop:** A row under the answer, or on the selection toolbar (the small bar that appears over highlighted text) to change only part of a text. A slider suits length when people want fine steps.
 
 ### Use when
 
@@ -3034,7 +3034,7 @@ Let people edit what the AI made directly, and get the AI's version back.
 
 - **Setting:** Marta asks for a note about sports day.
 - **Trigger:** The date is wrong - it moved to Thursday. She clicks it and types the right one.
-- **Without it:** She asks the AI to add a line about lunch, and the date quietly goes back to Friday. 200 parents get the wrong day.
+- **Without it:** She asks the AI to add a line about lunch. The date quietly goes back to Friday. 200 parents get the wrong day.
 - **With it:** Her change is marked as hers. The AI adds lunch and says it kept her date.
 - **Outcome:** The note goes out with the right date. The AI version is still 1 tap away.
 
@@ -3042,8 +3042,8 @@ Let people edit what the AI made directly, and get the AI's version back.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Draft | The AI's note streams in, with "Click to edit". | Writes. | 0-2 s | Generating a response |
-| Editing | She types over the date, in place, with a caret. | Idle. | on click | - |
+| Draft | The AI's note streams in (arrives word by word), with "Click to edit". | Writes. | 0-2 s | Generating a response |
+| Editing | She types over the date, in place, with a caret (the blinking text cursor). | Idle. | on click | - |
 | Marked as hers | Her change is underlined. "1 edit by you" and "Revert to AI version" sit under the text. | Idle. | when she stops typing | 1 edit saved |
 | Ask for more | "Add a line about lunch". | Starts. | - | - |
 | AI changes the text | The new line writes in. Her date stays as she wrote it. | Writes around her edit. | - | Generating a response |
@@ -3239,15 +3239,15 @@ Let people say what was wrong, not only thumbs up or down.
 |---|---|---|---|---|
 | Answer | The answer, with copy and 2 thumbs under it. | Idle. | when done | Response complete |
 | Rated | The thumb fills. A small form opens below the answer, not over it. | Idle. | on tap | Feedback form opened |
-| Reason | 4 or 5 reasons as chips. 1 tap picks 1. | Idle. | on tap | - |
+| Reason | 4 or 5 reasons as chips (small pill-shaped buttons). 1 tap picks 1. | Idle. | on tap | - |
 | Note | An optional note, and "Send this chat with my feedback", off until ticked. | Idle. | optional | - |
 | Sent | The form closes. 1 line says what was sent. | Idle. | on Send | Feedback sent |
 
 ### On each device
 
-- **Phone:** The form opens in place under the answer, or as a short bottom sheet. Chips wrap to 2 rows. The keyboard only opens if people tap the note.
+- **Phone:** The form opens in place under the answer, or as a short bottom sheet (a panel that slides up from the bottom). Chips wrap to 2 rows. The keyboard opens only if people tap the note.
 - **Tablet:** As on the phone.
-- **Desktop:** The thumbs show on hover and focus, and always on the latest answer. The form opens under the answer, never as a full-page modal.
+- **Desktop:** The thumbs show on hover and focus, and always on the latest answer. The form opens under the answer, never as a full-page modal (a box that blocks the rest of the page).
 
 ### Use when
 
@@ -3259,7 +3259,7 @@ Let people say what was wrong, not only thumbs up or down.
 
 - People want to fix this answer now, not report it. Use Regenerate, edit and branches instead.
 - The answer was blocked or failed - say why and offer a way on first. Use Error, refusal and limits instead.
-- People judge many small items in a row, like 20 suggestions - a form on each one slows them down. A thumb is enough there.
+- People judge many small items in a row, like 20 suggestions. A form on each one slows them down. A thumb is enough there.
 
 ### Anatomy
 
@@ -3267,7 +3267,7 @@ Let people say what was wrong, not only thumbs up or down.
 - **B. Reasons:** A short list of the common failures, in plain words. 1 tap.
 - **C. Note:** Optional. For the detail no chip can hold.
 - **D. Share this chat:** Off until people tick it. Says what else goes with the feedback.
-- **E. Send:** Works with just a reason. The note is never required.
+- **E. Send:** Works with a reason alone. The note is never required.
 
 ### Do and Avoid
 
@@ -3285,10 +3285,10 @@ Let people say what was wrong, not only thumbs up or down.
 
 ### Accessibility
 
-- Name the buttons "Good answer" and "Bad answer", and show their pressed state with aria-pressed.
+- Name the buttons "Good answer" and "Bad answer", and show their pressed state with aria-pressed (the code that tells a screen reader a button is on).
 - Move focus into the form when it opens, and back to the thumb when it closes. Escape closes it.
 - Reason chips are a group of toggle buttons with a visible label, not colour alone.
-- Announce "Feedback sent" in the polite status region. Do not use a toast that disappears before it is read.
+- Announce "Feedback sent" in the polite status region (the part of the page a screen reader reads out on its own). Do not use a toast (a small message that pops up and fades) that disappears before people read it.
 
 ### Seen in
 
@@ -3353,17 +3353,17 @@ Keep every version the AI made, and let people go back to any of them.
 
 - People ask the AI to change the same thing many times - a document, code, a design.
 - A later change can remove something good from an earlier one.
-- An AI agent changes many files, and people need a safe point to go back to.
+- An AI agent (an AI that takes actions for you) changes many files. People need a safe point to go back to.
 
 ### Don't use when
 
 - The output is a short chat answer - versions under the answer are enough. Use Regenerate, edit and branches instead.
 - People need to judge each small change before it lands. Use Draft mode and review instead.
-- People need a record of what an agent did in the world, like emails sent - those cannot be restored. Use Activity log and undo instead.
+- People need a record of what an agent did in the world, like emails sent. Those cannot be restored. Use Activity log and undo instead.
 
 ### Anatomy
 
-- **A. Version list:** Every version, newest first. Nothing is ever removed from it by a restore.
+- **A. Version list:** Every version, newest first. A restore never removes anything from it.
 - **B. What made it:** The ask behind each version, so people find the one they want by what they asked.
 - **C. Now:** Marks the version people are looking at in the document.
 - **D. Preview:** "Previewing version 2" - the old version shows in place before anything changes.
@@ -3381,7 +3381,7 @@ Keep every version the AI made, and let people go back to any of them.
 - Label each version with the ask that made it: "Make it shorter". Add the time in smaller text.
 - Say "Restore", not "Revert" or "Roll back".
 - Say what restore does before and after: "Restores as a new version", "Version 3 is still in History".
-- If only AI changes are kept, say so: "Checkpoints save the AI's changes, not yours."
+- If checkpoints (saved copies you can go back to) keep only the AI's changes, say so: "Checkpoints save the AI's changes, not yours."
 
 ### Accessibility
 
@@ -3430,7 +3430,7 @@ Link every claim in an AI answer to the source it came from.
 
 > When I ask the AI a factual question, I want to see where each part of the answer comes from, so I can decide in seconds whether to trust it.
 
-- **Setting:** Priya needs 1 number for a slide: how much of a web page people actually read.
+- **Setting:** Priya needs 1 number for a slide: how much of a web page people read.
 - **Trigger:** She asks the assistant. It answers in 3 confident sentences.
 - **Without it:** Nothing says where the number came from. She cannot put it on a slide, so she searches again herself.
 - **With it:** Each sentence ends in a small number. She taps 1 and the source opens in a sheet, with the line it came from.
@@ -3440,9 +3440,9 @@ Link every claim in an AI answer to the source it came from.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Question sent | Her question, and the composer clears. | Reads the question and decides it needs sources. | 0 s | - |
+| Question sent | Her question, and the composer (the box she typed in) clears. | Reads the question and decides it needs sources. | 0 s | - |
 | Searching | "Searching 6 sources" with the site icons appearing 1 by 1. | Finds and reads pages. | 0 to 1.5 s | Searching |
-| Answering | The answer streams in. A number appears at the end of each sentence as it lands. | Writes the answer and links each claim to the passage behind it. | 1.5 to 4.5 s | Generating a response |
+| Answering | The answer streams in (it arrives word by word). A number appears at the end of each sentence as it lands. | Writes the answer and links each claim to the passage behind it. | 1.5 to 4.5 s | Generating a response |
 | Sources shown | On a phone, a "3 sources" row under the answer. On desktop, the list beside it. | Done writing; the full list is now fixed. | 4.5 s | - |
 | Previewing a source | The title, the site, the date, and the exact passage, highlighted. | Nothing - this is the person checking. | on tap | Source 1 of 3, Nielsen Norman Group |
 | Done | The answer with its markers, and the sources 1 tap away. | Waits for the next question. | 7 s | Response complete, 3 sources |
@@ -3450,8 +3450,8 @@ Link every claim in an AI answer to the source it came from.
 ### On each device
 
 - **Phone:** Markers are tap targets of at least 24 px. The source opens in a bottom sheet, not a hover card, and the answer stays where it was.
-- **Tablet:** In landscape there is room for a narrow source column; in portrait, use the phone's sheet. Perplexity's Apr 2026 iPad redesign added richer citation displays.
-- **Desktop:** Sources sit in a column beside the answer, open by default. Hovering a marker highlights its source; clicking keeps it open.
+- **Tablet:** In landscape there is room for a narrow source column. In portrait, use the phone's sheet. Perplexity's Apr 2026 iPad redesign added richer citation displays.
+- **Desktop:** Sources sit in a column beside the answer, open by default. Hovering a marker highlights its source. Clicking keeps it open.
 
 ### Use when
 
@@ -3494,7 +3494,7 @@ Link every claim in an AI answer to the source it came from.
 - Each marker is a real button with a name like "Source 1: Nielsen Norman Group", not just "1".
 - Markers are at least 24 by 24 px, so they pass the WCAG 2.2 target-size rule on a phone.
 - Opening a source moves focus into the sheet; closing it returns focus to the marker.
-- The answer is not a live region. Announce only that the response is complete and how many sources it has.
+- The answer is not a live region (the part of the page a screen reader announces on its own). Announce only that the answer is complete and how many sources it has.
 - Do not show the source only on hover - keyboard and touch users never see a hover.
 
 ### Seen in
@@ -3537,7 +3537,7 @@ Mark what the AI made, so people always know what they are reading.
 - **Setting:** Ines opens the notes from a meeting she missed. Tom wrote some, an AI wrote the rest.
 - **Trigger:** The summary says she must send the budget "by Friday".
 - **Without it:** Nothing marks the summary as AI. She thinks Tom set the deadline and plans her week around it.
-- **With it:** A label says "Summarised with AI". Tapped, it says what the AI did and that dates can be wrong.
+- **With it:** A label says "Summarised with AI". She taps it. It says what the AI did and that dates can be wrong.
 - **Outcome:** She checks the recording before she plans her week. If she fixes the date, the label says she edited it.
 
 ### States over time
@@ -3546,7 +3546,7 @@ Mark what the AI made, so people always know what they are reading.
 |---|---|---|---|---|
 | Mixed page | A colleague's notes with his name, then the AI summary with its label and a line in the margin. | Done earlier. | on open | - |
 | Reading | The label sits at the top of the AI part, before the first line: "Summarised with AI". | - | - | - |
-| Explained | Tapping the label opens a small popover: what the AI did, what was not checked, and a link to the source. | - | on tap | About this summary |
+| Explained | Tapping the label opens a small popover (a card that floats over the page): what the AI did, what was not checked, and a link to the source. | - | on tap | About this summary |
 | Edited | After a person edits the text, the label changes to "Edited by you · from AI", with Revert to AI. | - | on edit | - |
 | Knows | The reader knows who wrote what and what to check. | - | - | - |
 
@@ -3570,7 +3570,7 @@ Mark what the AI made, so people always know what they are reading.
 
 ### Anatomy
 
-- **A. Label:** Names what the AI did - "Summarised with AI", not just "AI". Tapping it opens the popover.
+- **A. Label:** Names what the AI did - "Summarised with AI", not a bare "AI". Tapping it opens the popover.
 - **B. AI area:** A line in the margin shows where the AI part starts and ends.
 - **C. What the AI did:** 1 sentence: the task and the input - the 42 min recording.
 - **D. What to check:** What was not checked, and what can be wrong. In amber.
@@ -3579,13 +3579,13 @@ Mark what the AI made, so people always know what they are reading.
 ### Do and Avoid
 
 - **Do:** Says what the AI did, and opens what to check. (✦ Summarised with AIInes sends the budget by Friday.Tap the label to see what to check.)
-- **Avoid:** A bare sparkle. Some people miss it; others know it is AI but not what to check. (✦Ines sends the budget by Friday.Tap: “AI”)
+- **Avoid:** A bare sparkle. Some people miss it. Others know it is AI but not what to check. (✦Ines sends the budget by Friday.Tap: “AI”)
 - **Do:** After a person edits it, the label says so, and the AI version is 1 tap away. (Edited by you · from AIInes sends the budget by Monday.Revert to AI)
 - **Avoid:** The label still says AI after a person fixed it. The label stops meaning anything. (✦ Summarised with AIInes sends the budget by Monday.)
 
 ### Writing
 
-- Name the action: "Summarised with AI", "Drafted with AI", "Translated with AI". Not just "AI".
+- Name the action: "Summarised with AI", "Drafted with AI", "Translated with AI". Not a bare "AI".
 - In the popover, say what the AI used, what nobody checked, and what can be wrong, in 3 short lines.
 - Use the same words for the same thing everywhere in the product.
 - Never let AI text pass as a person's. If a person edited it, say "Edited by" and their name.
@@ -3593,7 +3593,7 @@ Mark what the AI made, so people always know what they are reading.
 ### Accessibility
 
 - The label is a button with a full name, like "Summarised with AI, about this summary", not "sparkle".
-- Mark the AI area as a region named "AI summary", so screen reader users hear where it starts and ends.
+- Mark the AI area as a region (a named block a screen reader can jump to) called "AI summary", so screen reader users hear where it starts and ends.
 - The popover opens on Enter and Space, closes on Escape, and returns focus to the label.
 - Do not use colour or a glow alone to mark AI text - always have the words.
 
@@ -3606,7 +3606,7 @@ Mark what the AI made, so people always know what they are reading.
 ### Related patterns
 
 - Often combined with Explanation: The label is the door to why and how the AI made this.
-- Often combined with Disclaimer: The label says which part is AI; the disclaimer says what AI may get wrong.
+- Often combined with Disclaimer: The label says which part is AI. The disclaimer says what AI may get wrong.
 - Often combined with Citations and sources: Link the AI text to what it came from.
 - Often combined with Edit output and revert to AI: When people edit AI text, the label changes to say so.
 
@@ -3643,8 +3643,8 @@ Say what the AI may get wrong, once, in the right place, in plain words.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Asked | The question. | Starts. | 0 s | - |
-| Pop-up (avoid) | A dialog before every answer. People tap I understand without reading. | Waits. | every time | Dialog: AI can make mistakes |
-| Answer | The answer streams in. The quiet line under the composer is always there. | Writes. | - | Generating a response |
+| Pop-up (avoid) | A pop-up before every answer. People tap I understand without reading. | Waits. | every time | Dialog: AI can make mistakes |
+| Answer | The answer streams in (it arrives word by word). The quiet line under the composer (the box people type in) is always there. | Writes. | - | Generating a response |
 | Caveat | For high-stakes topics only: 1 line in amber at the end of the answer, about this answer, with a next step. | Writes. | end of the answer | - |
 | Done | The caveat stays with the answer, so it is there when people come back or share it. | Idle. | when done | Response complete |
 
@@ -3690,8 +3690,8 @@ Say what the AI may get wrong, once, in the right place, in plain words.
 
 - Do not rely on amber alone. Start the caveat with a warning icon that has a text name, like "Caution".
 - Keep the caveat inside the answer's text, so it is read in order with the answer.
-- The quiet line must pass 4.5:1 contrast, even though it is quiet.
-- Never trap focus in a pop-up that blocks every answer. If a 1-time notice is needed, it can be dismissed and not shown again.
+- The quiet line must pass 4.5:1 contrast (the colour difference between text and background), even though it is quiet.
+- Never trap keyboard focus (so people cannot tab out) in a pop-up that blocks every answer. If a 1-time notice is needed, people dismiss it once and never see it again.
 
 ### Seen in
 
@@ -3701,7 +3701,7 @@ Say what the AI may get wrong, once, in the right place, in plain words.
 
 ### Related patterns
 
-- Often combined with AI label and disclosure: The label marks which part is AI; the disclaimer says what may be wrong.
+- Often combined with AI label and disclosure: The label marks which part is AI. The disclaimer says what may be wrong.
 - Often combined with Citations and sources: Sources let people check the answer the disclaimer warns about.
 - Alternative to Confidence display: Shows how sure the AI is, part by part, instead of 1 general warning.
 - Often combined with Capability disclosure: Say what the AI cannot do before the first ask, not after every answer.
@@ -3752,11 +3752,11 @@ Say no clearly, say why, and offer a way on.
 
 - **Phone:** The message sits in the thread where the answer would be - not a pop-up. Buttons are full-width or side by side at 44 px.
 - **Tablet:** As on the phone.
-- **Desktop:** The same message in the thread. A limit that affects the whole app can also show once in the composer, near Send.
+- **Desktop:** The same message in the thread. A limit that affects the whole app can also show once in the composer (the box people type in), near Send.
 
 ### Use when
 
-- Any AI feature. Errors, refusals and limits will happen; the only choice is how they look.
+- Any AI feature. Errors, refusals and limits will happen. The only choice is how they look.
 - The AI can refuse some asks for safety or policy reasons.
 - There are usage limits, quotas or modes that run out.
 
@@ -3764,7 +3764,7 @@ Say no clearly, say why, and offer a way on.
 
 - The AI could answer, but is unsure - show how sure it is instead. Use Confidence display instead.
 - The AI needs more detail to answer - ask a question, not an error. Use Escalation and human handoff instead.
-- An agent is about to do something risky - ask first, before anything fails. Use Approval gate instead.
+- An agent (an AI that can take actions for you) is about to do something risky - ask first, before anything fails. Use Approval gate instead.
 
 ### Anatomy
 
@@ -3784,14 +3784,14 @@ Say no clearly, say why, and offer a way on.
 ### Writing
 
 - Lead with what happened, in plain words: "The answer stopped part-way", "You've used today's deep research".
-- Give the reason in 1 line. For limits, give the reset time, not just "later".
+- Give the reason in 1 line. For limits, give the reset time, not only "later".
 - Refuse once, briefly, without a lecture. Then offer what you can do.
 - Never show an error code as the main message. Put it in a details row if support needs it.
 
 ### Accessibility
 
-- Announce the title once in the polite status region - not the whole message.
-- Do not move focus to the error. Make the main way on the next thing in tab order.
+- Announce the title once in the polite status region (the part of the page a screen reader reads out when it is not busy) - not the whole message.
+- Do not move focus to the error. Make the main way on the next thing in tab order (the order the Tab key moves through).
 - Do not rely on colour: the alert icon and the words carry the meaning.
 - Partial answers stay as text, so people using screen readers do not lose them.
 
@@ -3835,7 +3835,7 @@ Show what the AI remembers about a person, and let them change or forget it.
 - **Setting:** Kenji asks for this week's running plan.
 - **Trigger:** The plan is easy, to protect his knee. His knee healed weeks ago.
 - **Without it:** He asks how it knows. "You mentioned it in August." There is nothing he can see or change.
-- **With it:** "Used 2 memories" opens the list. He deletes the knee memory.
+- **With it:** He taps "Used 2 memories" and the list opens. He deletes the knee memory.
 - **Outcome:** He asks again and gets a real training week, with hills on Thursday.
 
 ### States over time
@@ -3853,7 +3853,7 @@ Show what the AI remembers about a person, and let them change or forget it.
 
 - **Phone:** The "Used 2 memories" link opens a bottom sheet with the list. Edit and delete sit at the end of each row, at least 44 px.
 - **Tablet:** As on the phone, or as a side panel in landscape.
-- **Desktop:** The link opens a popover by the answer. The full list, with search, Pause and Delete all, lives in Settings.
+- **Desktop:** The link opens a popover (a small card that floats over the page) by the answer. The full list, with search, Pause and Delete all, lives in Settings.
 
 ### Use when
 
@@ -3932,7 +3932,7 @@ Ask before data is used for training or shared, and make the choice easy to find
 > When an AI product wants to use what I share to train its models, I want to be asked in plain words and find my answer again easily, so my clients' work stays where I put it.
 
 - **Setting:** Fatima opens a new AI tool to build a glossary for a client contract.
-- **Trigger:** The product wants to train its AI on what people share.
+- **Trigger:** The product wants to use what people share to train its AI (teach it from real examples).
 - **Without it:** A pre-ticked box at sign-up says yes for her. Her client's contract may now be used for training.
 - **With it:** A clear question, what is used, 2 equal buttons. She taps Don't allow. Her file says "Not used for training".
 - **Outcome:** Months later she finds the same choice in 1 place in Settings, 1 tap to change.
@@ -3977,7 +3977,7 @@ Ask before data is used for training or shared, and make the choice easy to find
 - **Do:** Says what is used, and gives 2 equal choices. (Use your chats to train our AI?Used: messages, files. Never: temporary chats.Don’t allowAllow)
 - **Avoid:** "Help us improve" hides what happens, and "maybe later" is small and grey. People say yes without knowing to what. (Help us improve!Sounds goodmaybe later)
 - **Do:** The choice shows again where it matters, and lives in 1 obvious place. (📄 client-contract.pdfNot used for trainingSettings › Data)
-- **Avoid:** The choice was made once and hidden 4 levels deep. People forget what they chose. (📄 client-contract.pdfSettings › Account › Privacy › Advanced)
+- **Avoid:** People chose once. Then the product buried the choice 4 levels deep, and people forget what they chose. (📄 client-contract.pdfSettings › Account › Privacy › Advanced)
 
 ### Writing
 
@@ -3988,7 +3988,7 @@ Ask before data is used for training or shared, and make the choice easy to find
 
 ### Accessibility
 
-- Both buttons are real buttons with the same size, contrast and focus style. Neither has focus by default.
+- Both buttons are real buttons with the same size, contrast and focus style. Neither has focus (the keyboard's current spot) by default.
 - If the question blocks the product, it is a dialog with a clear heading and no close button that means yes.
 - Switches in Settings have a visible text state ("On", "Off") and a label that names the use.
 - The short version of what is used is real text, not an image, and is read before the buttons.
@@ -4042,7 +4042,7 @@ Let people talk without it being saved, and show that it is not.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | New chat | An empty chat with a ghost icon in the top bar. | Idle. | 0 s | - |
-| Temporary on | "Temporary chat" in the header, the rules in 1 line, and a composer that says "not saved". | Idle. | before the first message | Temporary chat. Not saved to history or memory |
+| Temporary on | "Temporary chat" in the header, the rules in 1 line, and a composer (the box people type in) that says "not saved". | Idle. | before the first message | Temporary chat. Not saved to history or memory |
 | Asks | The ask, as in any chat. | Starts. | - | - |
 | Answer | The answer. The chat still looks temporary. Nothing new appears in history. | Writes. | - | Generating a response |
 | Leave | Closing asks once: Close, or Save to history. Saving makes it a normal chat. | Idle. | on close | Chat saved to history, if saved |
@@ -4063,7 +4063,7 @@ Let people talk without it being saved, and show that it is not.
 ### Don't use when
 
 - People want to keep the chat but fix what the AI remembers. Use Memory controls instead.
-- The worry is training on all chats, not 1 chat - give a setting for that. Use Consent and data controls instead.
+- The worry is the AI training on (learning from) all chats, not 1 chat - give a setting for that. Use Consent and data controls instead.
 - The work needs to last - a project, a long document. A temporary chat would lose it.
 
 ### Anatomy
@@ -4129,8 +4129,8 @@ Say why the AI did this, in words a person can act on.
 
 - **Setting:** Wanjiru adds a taxi receipt from the airport, late at night.
 - **Trigger:** The AI check marks it "Needs review".
-- **Without it:** No reason, or only a model score. She sends it again unchanged, and it is flagged again.
-- **With it:** Why? shows 2 reasons with the numbers, the rule they come from, and what she can do.
+- **Without it:** No reason, or only a model score (a raw number from the AI). She sends it again unchanged, and the AI flags it again.
+- **With it:** She taps Why? and sees 2 reasons with the numbers, the rule they come from, and what she can do.
 - **Outcome:** She adds 1 line about the late flight. It goes to her manager on the first try.
 
 ### States over time
@@ -4147,7 +4147,7 @@ Say why the AI did this, in words a person can act on.
 
 - **Phone:** Why? sits next to the flag. The explanation opens in place under the item, so the numbers and the fix are on 1 screen.
 - **Tablet:** As on desktop.
-- **Desktop:** Why? opens a popover next to the item. Longer detail - the full rule, past cases - sits behind a link in the popover.
+- **Desktop:** Why? opens a popover (a small card that floats over the page) next to the item. Longer detail - the full rule, past cases - sits behind a link in the popover.
 
 ### Use when
 
@@ -4167,13 +4167,13 @@ Say why the AI did this, in words a person can act on.
 - **B. Why?:** 1 tap from the decision. Always there when the AI decides something.
 - **C. Reasons:** 2 or 3, in plain words, with the real numbers: KSh 4,200 against a KSh 3,000 limit.
 - **D. Where it comes from:** The rule or data behind the reason, linked, so people can check it.
-- **E. What to do:** The next step, and who really decides.
+- **E. What to do:** The next step, and who makes the final decision.
 
 ### Do and Avoid
 
 - **Do:** The reason, with the numbers and the rule. People know what is wrong. (Needs reviewKSh 4,200 is over the KSh 3,000 taxi limit.From Travel policy 4.2)
 - **Avoid:** A model score says how sure the AI is, not why. People cannot act on it. (Needs reviewRisk score 0.82 (limit 0.75))
-- **Do:** Ends with what people can do, and who really decides. (23:40 is outside work hours.To send it, add a reason. Your manager decides.)
+- **Do:** Ends with what people can do, and who makes the final decision. (23:40 is outside work hours.To send it, add a reason. Your manager decides.)
 - **Avoid:** A reason with no way on. People feel judged by a machine and stop trusting it. (23:40 is outside work hours.This decision is final.)
 
 ### Writing
@@ -4228,7 +4228,7 @@ Show the plan before the agent starts, so people can fix it early.
 
 ### Story
 
-> When I hand a task with several steps to an AI agent, I want to see its plan in plain words before it starts, so I can fix a wrong step while it costs nothing.
+> When I hand a task with several steps to an AI agent (an AI that can take actions for me), I want to see its plan in plain words before it starts. Then I can fix a wrong step while it costs nothing.
 
 - **Setting:** Grace asks the agent to book the coach and museum tickets for Friday's trip.
 - **Trigger:** The agent has worked out 4 steps and is ready to use the school card.
@@ -4261,7 +4261,7 @@ Show the plan before the agent starts, so people can fix it early.
 
 ### Don't use when
 
-- The task is 1 quick step - a plan for it is just an extra tap.
+- The task is 1 quick step - a plan for it is only an extra tap.
 - Only 1 step is risky. Ask at that step instead of showing the whole plan. Use Approval gate instead.
 - People want to watch and steer while it works, not agree a plan first. Use Watch mode and takeover instead.
 
@@ -4289,7 +4289,7 @@ Show the plan before the agent starts, so people can fix it early.
 
 ### Accessibility
 
-- Announce "Plan ready for review" in the polite status region. Do not move focus.
+- Announce "Plan ready for review" in the polite status region (the part of the page a screen reader reads out on its own, without interrupting). Do not move focus.
 - Mark the plan up as an ordered list, so screen readers say "3 of 4".
 - Each edit button names its step: "Edit step 3, Book 32 pupil tickets".
 - During the run, show done, now and next with icons and words, not colour alone.
@@ -4305,7 +4305,7 @@ Show the plan before the agent starts, so people can fix it early.
 - Alternative to Approval gate: Ask at the 1 risky step, instead of agreeing the whole plan first.
 - Often combined with Thinking and processing steps: The plan's steps can become the steps shown while it works.
 - Often combined with Watch mode and takeover: After the plan, watch the work and step in if it goes off plan.
-- Often combined with Activity log and undo: What actually happened, step by step, after the run.
+- Often combined with Activity log and undo: What really happened, step by step, after the run.
 
 ### Sources
 
@@ -4328,7 +4328,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ### Story
 
-> When an AI agent is about to do something that affects other people or cannot be undone, I want it to stop and show me exactly what it will do, so I stay in charge of what goes out in my name.
+> When an AI agent (an AI that can take actions for me) is about to do something that affects other people or cannot be undone, I want it to stop and show me exactly what it will do. Then I stay in charge of what goes out in my name.
 
 - **Setting:** Kofi asks the agent to chase 3 unpaid invoices.
 - **Trigger:** The agent has drafted 3 emails and is about to send them.
@@ -4349,7 +4349,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ### On each device
 
-- **Phone:** The gate sits at the bottom of the thread, by the thumb, and can also arrive as a push notification when the agent works in the background.
+- **Phone:** The gate sits at the bottom of the thread, by the thumb. It can also arrive as a push notification when the agent works in the background.
 - **Tablet:** As on the phone.
 - **Desktop:** The gate sits in the thread above the composer. Long details - a full command, a full email - open in an expandable section.
 
@@ -4361,7 +4361,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ### Don't use when
 
-- The step is safe and undoable, like reading or drafting - asking every time trains people to approve without looking. Use Autonomy dial instead.
+- The step is safe and undoable, like reading or drafting. Asking every time trains people to approve without looking. Use Autonomy dial instead.
 - People want to see the whole plan before anything starts. Use Intent preview and plan instead.
 - People want to watch and step in while it works. Use Watch mode and takeover instead.
 
@@ -4377,7 +4377,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 - **Do:** Says what, to whom, and that it is final. The button names the action. (Send 3 emails?Lumen Studio · Hart & Co · Okafor DesignEmails can’t be unsent.Send 3 emails)
 - **Avoid:** "Continue? OK" says nothing about what will happen. People tap it without reading. (Continue?OKCancel)
-- **Do:** Safe steps just run. The gate appears only before the step that cannot be undone. (✓ Found 3 unpaid invoices✓ Drafted 3 remindersSend 3 emails? - 1 question, at the step that matters)
+- **Do:** Safe steps run on their own. The gate appears only before the step that cannot be undone. (✓ Found 3 unpaid invoices✓ Drafted 3 remindersSend 3 emails? - 1 question, at the step that matters)
 - **Avoid:** A gate on every step. By the 4th, people approve without reading - including the 1 that matters. (Allow reading invoices? ✓Allow drafting? ✓Allow opening mail? ✓Allow sending? ✓)
 
 ### Writing
@@ -4389,8 +4389,8 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ### Accessibility
 
-- Announce "Needs your approval" in the polite status region when the gate appears.
-- Do not steal focus. Make the gate the next thing in tab order, and reachable from a notification.
+- Announce "Needs your approval" in the polite status region (the part of the page a screen reader reads out on its own, without interrupting) when the gate appears.
+- Do not steal focus. Make the gate the next stop for the Tab key, and reachable from a notification.
 - Approve and decline are real buttons, at least 44 px, with the action in their names.
 - Never pre-select approve for actions that cannot be undone, and never accept on Enter by default.
 
@@ -4429,12 +4429,12 @@ Let people set how much the agent may do alone, from ask-every-time to just-do-i
 
 ### Story
 
-> When an AI agent does the same kinds of jobs for me every day, I want to choose which ones it may do alone and which ones wait for me, so I am not asked about small things and not surprised by big ones.
+> When an AI agent (an AI that can take actions for me) does the same kinds of jobs for me every day, I want to choose which ones it may do alone and which ones wait for me. Then I am not asked about small things and not surprised by big ones.
 
 - **Setting:** Amara lets the shop assistant handle customer messages - replies and refunds.
 - **Trigger:** 3 messages come in: 1 question, 1 small refund and 1 big refund.
-- **Without it:** The agent asks about all 3. By the third tap she approves without reading - or she turns asking off for everything.
-- **With it:** The dial is set to "Ask for big ones". The reply and the small refund just happen. Only ₦45,000 waits.
+- **Without it:** The agent asks about all 3. By the 3rd tap she approves without reading - or she turns asking off for everything.
+- **With it:** The dial is set to "Ask for big ones". The reply and the small refund go through on their own. Only ₦45,000 waits.
 - **Outcome:** She approves 1 refund and sees which 2 the agent did alone.
 
 ### States over time
@@ -4489,7 +4489,7 @@ Let people set how much the agent may do alone, from ask-every-time to just-do-i
 
 ### Accessibility
 
-- Build the dial as a radio group with a visible label, not as a slider with no steps.
+- Build the dial as a radio group (a set of options where only 1 can be picked) with a visible label, not as a slider with no steps.
 - Each option's name says what it does, so it reads well on its own.
 - "Done alone" and "Waiting for you" are words, not only colour dots.
 - Announce "Needs your approval" when a job stops, and the count when there are several.
@@ -4527,7 +4527,7 @@ Let people watch an agent work and step in at any moment.
 
 ### Story
 
-> When an AI agent works in a website or app for me, I want to watch what it does and take the controls the moment it goes wrong, so I can fix 1 thing without starting over.
+> When an AI agent (an AI that can take actions for me) works in a website or app for me, I want to watch what it does and take the controls the moment it goes wrong. Then I can fix 1 thing without starting over.
 
 - **Setting:** Hannah asks the agent to renew her residents' parking permit on the council site.
 - **Trigger:** The agent picks a car from last year's permit - the car she sold in May.
@@ -4589,7 +4589,7 @@ Let people watch an agent work and step in at any moment.
 
 ### Accessibility
 
-- Put narration in a polite live region, and announce only changes of step, not every keystroke.
+- Put narration in a polite live region (the part of the page a screen reader reads out on its own, without interrupting). Announce only changes of step, not every keystroke.
 - Announce control changes: "You have control. The agent is paused" and "Agent resumed".
 - Take over and Stop are real buttons, reachable by keyboard at all times, not only on hover.
 - Show who is in control with words and an icon, not only a coloured border.
@@ -4626,7 +4626,7 @@ Record every action an agent took, and let people undo the ones they can.
 
 ### Story
 
-> When an AI agent has changed things for me, I want a list of each thing it did and a way to undo the ones I don't want, so I can trust it with real work.
+> When an AI agent (an AI that can take actions for me) has changed things for me, I want a list of each thing it did and a way to undo the ones I don't want. Then I can trust it with real work.
 
 - **Setting:** Oliver asks the agent to clear Thursday afternoon for a big wedding order.
 - **Trigger:** The agent is done. Then he remembers: the design review with Ama is about his new boxes.
@@ -4639,7 +4639,7 @@ Record every action an agent took, and let people undo the ones they can.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Report | A header with the count, the time span and how long undo works. Then 1 line per action. | Idle. | when the task ends | Task complete |
-| Find it | Each line has a time, a past-tense verb and the target. Safe reads say "Nothing changed". | Idle. | - | - |
+| Find it | Each line has a time, a past-tense verb and the target. Steps that only read something say "Nothing changed". | Idle. | - | - |
 | Undo | The person taps Undo on 1 line. Lines that can't be undone say so, and offer a fix instead. | Reverses that 1 action. | on tap | - |
 | Undone | The line is struck through, "Undone by you", and a new line records the undo. | Idle. | about 1 s | Action undone |
 
@@ -4647,7 +4647,7 @@ Record every action an agent took, and let people undo the ones they can.
 
 - **Phone:** The log sits in the thread under the result, newest action last. Each Undo is a 44 px target at the end of its line.
 - **Tablet:** As on desktop.
-- **Desktop:** The chat on the left, the log in a pane on the right, with times in a fixed column so the eye can scan them.
+- **Desktop:** The chat on the left, the log in a pane on the right. Times sit in a fixed column so the eye can scan them.
 
 ### Use when
 
@@ -4664,7 +4664,7 @@ Record every action an agent took, and let people undo the ones they can.
 ### Anatomy
 
 - **A. Header:** How many actions, when, and how long undo works.
-- **B. 1 line per action:** Time, past-tense verb and target. Reads are listed too, marked "Nothing changed".
+- **B. 1 line per action:** Time, past-tense verb and target. Steps that only read something are listed too, marked "Nothing changed".
 - **C. Undo:** On each line that can be reversed. Undoes that line only.
 - **D. Can't undo:** Said in words on lines that can't be reversed, like a sent email.
 
@@ -4723,7 +4723,7 @@ Hand over to a person cleanly when the AI should not go on.
 
 ### Story
 
-> When an AI assistant can't solve my problem, I want it to pass me to a person who already knows the story, so I don't have to explain it all again.
+> When an AI assistant can't solve my problem, I want it to pass me to a person who already knows the story. Then I don't have to explain it all again.
 
 - **Setting:** Wanjiru opens the help chat: she was charged twice for October.
 - **Trigger:** The assistant finds the 2 payments, but it is not allowed to refund.
@@ -4737,7 +4737,7 @@ Hand over to a person cleanly when the AI should not go on.
 |---|---|---|---|---|
 | Asked | The problem. | Reads it. | 0 s | - |
 | AI tries | The assistant, marked AI, finds what it can: 2 payments, 4 minutes apart. | Answers. | - | Generating a response |
-| Can't go on | Either the person asks for a human, or the AI says what it can't do and offers a person: "Shall I pass this to them?" | Stops trying. | as soon as it knows | - |
+| Can't go on | The person asks for a human. Or the AI says what it can't do and offers a person: "Shall I pass this to them?" | Stops trying. | as soon as it knows | - |
 | Handoff | Who it goes to, that it is a person, the wait, and what they will see. | Hands over the chat and a short summary. | - | Connecting you to a person |
 | Person joins | A clear change of voice: "Otieno · Billing team". The first message uses the facts. | Silent. | after the wait | Otieno from Billing joined |
 | Solved | What the person did, in 1 past-tense line. | Silent. | - | - |
@@ -4784,9 +4784,9 @@ Hand over to a person cleanly when the AI should not go on.
 
 ### Accessibility
 
-- Announce "Connecting you to a person" and then who joined, in the polite status region.
+- Announce "Connecting you to a person" and then who joined, in the polite status region (the part of the page a screen reader reads out on its own, without interrupting).
 - Name every speaker in text, not only with an avatar or colour.
-- Keep focus in the composer through the handoff, so people can keep typing.
+- Keep focus in the composer (the box where people type) through the handoff, so people can keep typing.
 - Don't time people out while they wait. If the chat must close, say so and offer another way.
 
 ### Seen in
@@ -4798,7 +4798,7 @@ Hand over to a person cleanly when the AI should not go on.
 
 - Often combined with Error, refusal and limits: When the AI can't help, a person is 1 of the ways forward.
 - Often combined with Summary: The short summary that goes with the chat to the person.
-- Alternative to Approval gate: The AI can act, but asks the user for a yes first.
+- Alternative to Approval gate: The AI can act, but asks the person for a yes first.
 - Often combined with AI label and disclosure: Marks which messages come from the AI and which from a person.
 
 ### Sources
@@ -4820,7 +4820,7 @@ Give people 1 place to see, start and manage the agents working for them.
 
 ### Story
 
-> When several AI agents are working for me at once, I want 1 place that shows which ones need me, so I can unblock them first and leave the rest alone.
+> When several AI agents (AIs that can take actions for me) are working for me at once, I want 1 place that shows which ones need me. Then I can unblock them first and leave the rest alone.
 
 - **Setting:** Siobhán has 4 agents running: invoices, a weekly report, travel and a supplier check.
 - **Trigger:** The supplier check has been waiting for her yes since 07:15.
@@ -4834,7 +4834,7 @@ Give people 1 place to see, start and manage the agents working for them.
 |---|---|---|---|---|
 | Workspace | A count by status, then 1 row per agent: name, what it is doing, time, status. | Agents keep working. | on open | - |
 | Needs you | The agent waiting for a person sits first and says so in words. | That agent is paused. | while it waits | 1 agent needs you |
-| Hunt for it | With newest first, the waiting agent is at the bottom - on a phone, below the fold. | Still paused. | - | - |
+| Hunt for it | With newest first, the waiting agent is at the bottom - on a phone, off the bottom of the screen. | Still paused. | - | - |
 | Open it | The agent's work so far and its question. Pause and Stop are always there. | Paused. | on tap | - |
 | Answer | The person approves. The row changes to Running. | Resumes. | on tap | - |
 | Back to list | The count updates: "None need you". | Agents keep working. | - | Supplier check is running again |
@@ -4843,7 +4843,7 @@ Give people 1 place to see, start and manage the agents working for them.
 
 - **Phone:** A list, with agents that need you first. Opening 1 fills the screen, with a back link to the list. Waiting agents also send a notification.
 - **Tablet:** As on desktop.
-- **Desktop:** The list on the left, the open agent on the right, so people can work down the list without losing their place.
+- **Desktop:** The list on the left, the open agent on the right. People can work down the list without losing their place.
 
 ### Use when
 
@@ -4919,11 +4919,11 @@ Let an agent run on a schedule or in the background, and report back briefly.
 
 ### Story
 
-> When I need the same check done every day, I want an agent to run it on a schedule while I am away and tell me only what changed, so I can act on it in a minute.
+> When I need the same check done every day, I want an agent (an AI that can take actions for me) to run it on a schedule while I am away and tell me only what changed. Then I can act on it in a minute.
 
 - **Setting:** Mei asks the agent to check 3 job boards every weekday at 8:00.
 - **Trigger:** On Tuesday it runs at 8:00 while she makes breakfast.
-- **Without it:** She checks 3 boards by hand each morning - or gets a long log and misses the 1 good job in line 6.
+- **Without it:** She checks 3 boards by hand each morning. Or she gets a long log and misses the 1 good job in line 6.
 - **With it:** A notification says "3 new jobs · 1 fits your rate", and names the job.
 - **Outcome:** She opens the contract review and replies. The card shows the next run: Wed 8:00.
 

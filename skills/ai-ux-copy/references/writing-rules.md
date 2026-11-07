@@ -18,7 +18,7 @@ From every pattern's "Writing" section. Source: https://axpatterns.design. CC BY
 - Don't promise magic. Avoid "anything", "genius" and "always".
 
 #### Suggested prompts
-- Write each example as a whole ask a real person would type, in their words - not a feature name.
+- Write each example as a whole ask a real person would type, in their words. Not a feature name.
 - Keep pills to about 6 words. Put detail on a second line of a card, not in the pill.
 - Mark the parts people should change - "[Kyoto]", "[April]" - when the example fills the box.
 - No exclamation marks, no "please". Sentence case.
@@ -189,7 +189,7 @@ From every pattern's "Writing" section. Source: https://axpatterns.design. CC BY
 #### Regenerate, edit and branches
 - Say "Try again", not "Regenerate". It says what people get.
 - Show versions as "2 / 2" with arrows. No version names to learn.
-- If trying again will remove later messages in a branch, say so before it happens: "Messages after this will move to version 1."
+- If trying again will remove later messages in a branch (a side path of the chat), say so before it happens: "Messages after this will move to version 1."
 
 #### Adjust length and tone
 - Name controls by the result: "Shorter", "Longer", "More formal", "More friendly", so people know what they get before they tap.
@@ -218,7 +218,7 @@ From every pattern's "Writing" section. Source: https://axpatterns.design. CC BY
 - Label each version with the ask that made it: "Make it shorter". Add the time in smaller text.
 - Say "Restore", not "Revert" or "Roll back".
 - Say what restore does before and after: "Restores as a new version", "Version 3 is still in History".
-- If only AI changes are kept, say so: "Checkpoints save the AI's changes, not yours."
+- If checkpoints (saved copies you can go back to) keep only the AI's changes, say so: "Checkpoints save the AI's changes, not yours."
 
 ### 6. Trust
 
@@ -231,7 +231,7 @@ From every pattern's "Writing" section. Source: https://axpatterns.design. CC BY
 - When nothing was found, say "No sources found - check this before you use it", not nothing.
 
 #### AI label and disclosure
-- Name the action: "Summarised with AI", "Drafted with AI", "Translated with AI". Not just "AI".
+- Name the action: "Summarised with AI", "Drafted with AI", "Translated with AI". Not a bare "AI".
 - In the popover, say what the AI used, what nobody checked, and what can be wrong, in 3 short lines.
 - Use the same words for the same thing everywhere in the product.
 - Never let AI text pass as a person's. If a person edited it, say "Edited by" and their name.
@@ -244,7 +244,7 @@ From every pattern's "Writing" section. Source: https://axpatterns.design. CC BY
 
 #### Error, refusal and limits
 - Lead with what happened, in plain words: "The answer stopped part-way", "You've used today's deep research".
-- Give the reason in 1 line. For limits, give the reset time, not just "later".
+- Give the reason in 1 line. For limits, give the reset time, not only "later".
 - Refuse once, briefly, without a lecture. Then offer what you can do.
 - Never show an error code as the main message. Put it in a details row if support needs it.
 

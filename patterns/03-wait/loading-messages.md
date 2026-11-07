@@ -28,7 +28,7 @@ Say what the AI is doing right now, not just that it is busy.
 | Reading | "Reading lease.pdf · page 20 of 40", with the count going up. | Reads the file. | after about 1 s | Reading lease.pdf |
 | Finding | The line changes: "Finding the parts about pets". | Searches the file. | - | Finding the parts about pets |
 | Checking | "Checking clause 14.2 and 3 others". | Checks the matches. | - | Checking 4 clauses |
-| Answer | The line goes away and the answer streams in its place. | Writes. | about 8 s | Generating a response |
+| Answer | The line goes away. The answer streams (arrives word by word) in its place. | Writes. | about 8 s | Generating a response |
 | Done | The answer, naming the clause it came from. | Idle. | when done | Response complete |
 
 ## On each device
@@ -40,7 +40,7 @@ Say what the AI is doing right now, not just that it is busy.
 ## Use when
 
 - The wait is longer than about 1 second, so people notice it.
-- The AI does work people would recognise - reading a file, searching, checking - and naming it shows it is on track.
+- The AI does work people would recognise - reading a file, searching, checking. Naming it shows it is on track.
 - There is 1 stage at a time, so 1 line is enough.
 
 ## Don't use when
@@ -72,9 +72,9 @@ Say what the AI is doing right now, not just that it is busy.
 
 ## Accessibility
 
-- Put the line in a polite status region. Announce when the stage changes, not every page count.
+- Put the line in a polite status region (a part of the page a screen reader announces on its own, when there is a pause). Announce when the stage changes, not every page count.
 - Don't move focus to the message. People keep their place.
-- With reduced motion, the dots stand still. The words still change.
+- With reduced motion (a device setting that turns off animation), the dots stand still. The words still change.
 - Stop stays a real button named "Stop" for the whole wait.
 
 ## Seen in

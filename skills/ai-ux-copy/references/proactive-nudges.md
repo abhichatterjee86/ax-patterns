@@ -45,7 +45,7 @@ Let the AI offer help at the right moment, and make it easy to say no.
 
 ## Don't use when
 
-- People are in the middle of typing or a task with a deadline - wait, or offer it on demand. Use Inline action on selection instead.
+- People are in the middle of typing or a task with a deadline - wait, or offer it when they ask. Use Inline action on selection instead.
 - The offer is general, like "Need help?" - show example asks instead. Use Suggested prompts instead.
 - The AI would act, not just offer - ask first, before acting. Use Approval gate instead.
 
@@ -62,7 +62,7 @@ Let the AI offer help at the right moment, and make it easy to say no.
 - **Do:** Waits for a pause, and sits below the work. (…if it stays dry.412 words. Shorten to 5 lines?Shorten · Not now · Stop these tips)
 - **Avoid:** Same offer, but it arrives mid-sentence and covers the text. People lose their place. (Next week we pour th412 words. Shorten to 5 lines?Shown over the text, mid-sentence)
 - **Do:** Says why it is showing and what it will do. (This email is 412 words.Shorten it to 5 lines for the site team?Shorten · Not now)
-- **Avoid:** A vague offer that is really an upsell. People learn to close every nudge without reading. (✦ Want me to help?Try AI Pro free for 7 daysTry it · ✕)
+- **Avoid:** A vague offer that is a sales pitch in disguise. People learn to close every nudge without reading. (✦ Want me to help?Try AI Pro free for 7 daysTry it · ✕)
 
 ## Writing
 
@@ -73,9 +73,9 @@ Let the AI offer help at the right moment, and make it easy to say no.
 
 ## Accessibility
 
-- Announce the nudge once in the polite status region ("Suggestion: shorten this email"). Never move focus to it.
+- Announce the nudge once through a live region (the part of the page a screen reader announces on its own), without interrupting: "Suggestion: shorten this email". Never move focus to it.
 - Make it reachable as the next item after the text field, and dismissable with Escape.
-- Do not auto-hide it on a timer while a screen reader user may still be reaching it - hide it when typing starts.
+- Do not hide it on a timer while a screen reader user may still be reaching it. Hide it when typing starts.
 - Buttons are at least 44 px on touch screens, and name the action: Shorten, Not now.
 
 ## Seen in

@@ -38,7 +38,7 @@
 
 ## Use when
 
-- A few jobs cover most of what people want from this kind of item - summarise an email, translate a message, explain an error.
+- A few jobs cover most of what people want from this kind of item. For example: summarise an email, translate a message, explain an error.
 - Typing the ask is slow, like on a phone, or people type the same ask again and again.
 - The job is about the whole item on screen, so the AI already knows what "this" is.
 
@@ -52,7 +52,7 @@
 
 - **A. Action chips:** 2 to 4 named jobs, on the item they act on. 1 tap each.
 - **B. Result title:** What it is and what it came from: "Summary of 14 replies".
-- **C. Result:** Short and scannable. Points for a summary, a draft for a reply.
+- **C. Result:** Short and easy to scan. Points for a summary, a draft for a reply.
 - **D. Next actions:** The likely next jobs, like Draft a reply. A draft is never sent by itself.
 
 ## Do and Avoid

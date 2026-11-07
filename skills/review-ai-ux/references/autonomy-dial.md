@@ -12,12 +12,12 @@ Let people set how much the agent may do alone, from ask-every-time to just-do-i
 
 ## Story
 
-> When an AI agent does the same kinds of jobs for me every day, I want to choose which ones it may do alone and which ones wait for me, so I am not asked about small things and not surprised by big ones.
+> When an AI agent (an AI that can take actions for me) does the same kinds of jobs for me every day, I want to choose which ones it may do alone and which ones wait for me. Then I am not asked about small things and not surprised by big ones.
 
 - **Setting:** Amara lets the shop assistant handle customer messages - replies and refunds.
 - **Trigger:** 3 messages come in: 1 question, 1 small refund and 1 big refund.
-- **Without it:** The agent asks about all 3. By the third tap she approves without reading - or she turns asking off for everything.
-- **With it:** The dial is set to "Ask for big ones". The reply and the small refund just happen. Only ₦45,000 waits.
+- **Without it:** The agent asks about all 3. By the 3rd tap she approves without reading - or she turns asking off for everything.
+- **With it:** The dial is set to "Ask for big ones". The reply and the small refund go through on their own. Only ₦45,000 waits.
 - **Outcome:** She approves 1 refund and sees which 2 the agent did alone.
 
 ## States over time
@@ -72,7 +72,7 @@ Let people set how much the agent may do alone, from ask-every-time to just-do-i
 
 ## Accessibility
 
-- Build the dial as a radio group with a visible label, not as a slider with no steps.
+- Build the dial as a radio group (a set of options where only 1 can be picked) with a visible label, not as a slider with no steps.
 - Each option's name says what it does, so it reads well on its own.
 - "Done alone" and "Waiting for you" are words, not only colour dots.
 - Announce "Needs your approval" when a job stops, and the count when there are several.

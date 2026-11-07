@@ -36,11 +36,11 @@ Say no clearly, say why, and offer a way on.
 
 - **Phone:** The message sits in the thread where the answer would be - not a pop-up. Buttons are full-width or side by side at 44 px.
 - **Tablet:** As on the phone.
-- **Desktop:** The same message in the thread. A limit that affects the whole app can also show once in the composer, near Send.
+- **Desktop:** The same message in the thread. A limit that affects the whole app can also show once in the composer (the box people type in), near Send.
 
 ## Use when
 
-- Any AI feature. Errors, refusals and limits will happen; the only choice is how they look.
+- Any AI feature. Errors, refusals and limits will happen. The only choice is how they look.
 - The AI can refuse some asks for safety or policy reasons.
 - There are usage limits, quotas or modes that run out.
 
@@ -48,7 +48,7 @@ Say no clearly, say why, and offer a way on.
 
 - The AI could answer, but is unsure - show how sure it is instead. Use Confidence display instead.
 - The AI needs more detail to answer - ask a question, not an error. Use Escalation and human handoff instead.
-- An agent is about to do something risky - ask first, before anything fails. Use Approval gate instead.
+- An agent (an AI that can take actions for you) is about to do something risky - ask first, before anything fails. Use Approval gate instead.
 
 ## Anatomy
 
@@ -68,14 +68,14 @@ Say no clearly, say why, and offer a way on.
 ## Writing
 
 - Lead with what happened, in plain words: "The answer stopped part-way", "You've used today's deep research".
-- Give the reason in 1 line. For limits, give the reset time, not just "later".
+- Give the reason in 1 line. For limits, give the reset time, not only "later".
 - Refuse once, briefly, without a lecture. Then offer what you can do.
 - Never show an error code as the main message. Put it in a details row if support needs it.
 
 ## Accessibility
 
-- Announce the title once in the polite status region - not the whole message.
-- Do not move focus to the error. Make the main way on the next thing in tab order.
+- Announce the title once in the polite status region (the part of the page a screen reader reads out when it is not busy) - not the whole message.
+- Do not move focus to the error. Make the main way on the next thing in tab order (the order the Tab key moves through).
 - Do not rely on colour: the alert icon and the words carry the meaning.
 - Partial answers stay as text, so people using screen readers do not lose them.
 

@@ -26,15 +26,15 @@ Let people say what was wrong, not only thumbs up or down.
 |---|---|---|---|---|
 | Answer | The answer, with copy and 2 thumbs under it. | Idle. | when done | Response complete |
 | Rated | The thumb fills. A small form opens below the answer, not over it. | Idle. | on tap | Feedback form opened |
-| Reason | 4 or 5 reasons as chips. 1 tap picks 1. | Idle. | on tap | - |
+| Reason | 4 or 5 reasons as chips (small pill-shaped buttons). 1 tap picks 1. | Idle. | on tap | - |
 | Note | An optional note, and "Send this chat with my feedback", off until ticked. | Idle. | optional | - |
 | Sent | The form closes. 1 line says what was sent. | Idle. | on Send | Feedback sent |
 
 ## On each device
 
-- **Phone:** The form opens in place under the answer, or as a short bottom sheet. Chips wrap to 2 rows. The keyboard only opens if people tap the note.
+- **Phone:** The form opens in place under the answer, or as a short bottom sheet (a panel that slides up from the bottom). Chips wrap to 2 rows. The keyboard opens only if people tap the note.
 - **Tablet:** As on the phone.
-- **Desktop:** The thumbs show on hover and focus, and always on the latest answer. The form opens under the answer, never as a full-page modal.
+- **Desktop:** The thumbs show on hover and focus, and always on the latest answer. The form opens under the answer, never as a full-page modal (a box that blocks the rest of the page).
 
 ## Use when
 
@@ -46,7 +46,7 @@ Let people say what was wrong, not only thumbs up or down.
 
 - People want to fix this answer now, not report it. Use Regenerate, edit and branches instead.
 - The answer was blocked or failed - say why and offer a way on first. Use Error, refusal and limits instead.
-- People judge many small items in a row, like 20 suggestions - a form on each one slows them down. A thumb is enough there.
+- People judge many small items in a row, like 20 suggestions. A form on each one slows them down. A thumb is enough there.
 
 ## Anatomy
 
@@ -54,7 +54,7 @@ Let people say what was wrong, not only thumbs up or down.
 - **B. Reasons:** A short list of the common failures, in plain words. 1 tap.
 - **C. Note:** Optional. For the detail no chip can hold.
 - **D. Share this chat:** Off until people tick it. Says what else goes with the feedback.
-- **E. Send:** Works with just a reason. The note is never required.
+- **E. Send:** Works with a reason alone. The note is never required.
 
 ## Do and Avoid
 
@@ -72,10 +72,10 @@ Let people say what was wrong, not only thumbs up or down.
 
 ## Accessibility
 
-- Name the buttons "Good answer" and "Bad answer", and show their pressed state with aria-pressed.
+- Name the buttons "Good answer" and "Bad answer", and show their pressed state with aria-pressed (the code that tells a screen reader a button is on).
 - Move focus into the form when it opens, and back to the thumb when it closes. Escape closes it.
 - Reason chips are a group of toggle buttons with a visible label, not colour alone.
-- Announce "Feedback sent" in the polite status region. Do not use a toast that disappears before it is read.
+- Announce "Feedback sent" in the polite status region (the part of the page a screen reader reads out on its own). Do not use a toast (a small message that pops up and fades) that disappears before people read it.
 
 ## Seen in
 

@@ -25,16 +25,16 @@ Answer with the right widget - a table, a chart, a card - not only prose.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Asked | The ask. | Starts work. | 0 s | - |
-| Skeleton | A grey outline in the shape of the widget, so the layout does not jump later. | Builds the data. | 0.5-2 s | Generating a response |
+| Skeleton | A grey outline in the shape of the widget (the table or cards the AI builds), so the layout does not jump later. | Builds the data. | 0.5-2 s | Generating a response |
 | Widget ready | 1 line that answers, then the table or cards, with at most 2 actions. | Idle. | when done | Response complete |
 | Change it in place | A switch inside the widget (Monthly / Yearly) changes the numbers. No new message. | Idle - the widget does it. | on tap | - |
-| Act | The person taps "Choose Flex"; the card shows what was done. | Records the choice. | on tap | Flex chosen |
+| Act | The person taps "Choose Flex". The card shows what was done. | Records the choice. | on tap | Flex chosen |
 
 ## On each device
 
 - **Phone:** A 4-column table does not fit. Show the same data as a row of cards to swipe, with the next card peeking in. Keep actions at the bottom, by the thumb, and at least 44 px tall.
-- **Tablet:** The table fits inline. Open full screen only for big tables, maps or editing.
-- **Desktop:** The widget sits inline in the thread. A big or long-lived widget can open side by side; the inline card then shrinks to a small chip so the chat keeps its place.
+- **Tablet:** The table fits inline (inside the chat thread). Open full screen only for big tables, maps or editing.
+- **Desktop:** The widget sits inline in the thread. A big or long-lived widget can open side by side. The inline card then shrinks to a small chip, so the chat keeps its place.
 
 ## Use when
 

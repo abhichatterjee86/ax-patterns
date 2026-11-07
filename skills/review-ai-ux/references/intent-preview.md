@@ -12,7 +12,7 @@ Show the plan before the agent starts, so people can fix it early.
 
 ## Story
 
-> When I hand a task with several steps to an AI agent, I want to see its plan in plain words before it starts, so I can fix a wrong step while it costs nothing.
+> When I hand a task with several steps to an AI agent (an AI that can take actions for me), I want to see its plan in plain words before it starts. Then I can fix a wrong step while it costs nothing.
 
 - **Setting:** Grace asks the agent to book the coach and museum tickets for Friday's trip.
 - **Trigger:** The agent has worked out 4 steps and is ready to use the school card.
@@ -45,7 +45,7 @@ Show the plan before the agent starts, so people can fix it early.
 
 ## Don't use when
 
-- The task is 1 quick step - a plan for it is just an extra tap.
+- The task is 1 quick step - a plan for it is only an extra tap.
 - Only 1 step is risky. Ask at that step instead of showing the whole plan. Use Approval gate instead.
 - People want to watch and steer while it works, not agree a plan first. Use Watch mode and takeover instead.
 
@@ -73,7 +73,7 @@ Show the plan before the agent starts, so people can fix it early.
 
 ## Accessibility
 
-- Announce "Plan ready for review" in the polite status region. Do not move focus.
+- Announce "Plan ready for review" in the polite status region (the part of the page a screen reader reads out on its own, without interrupting). Do not move focus.
 - Mark the plan up as an ordered list, so screen readers say "3 of 4".
 - Each edit button names its step: "Edit step 3, Book 32 pupil tickets".
 - During the run, show done, now and next with icons and words, not colour alone.
@@ -89,7 +89,7 @@ Show the plan before the agent starts, so people can fix it early.
 - Alternative to Approval gate: Ask at the 1 risky step, instead of agreeing the whole plan first.
 - Often combined with Thinking and processing steps: The plan's steps can become the steps shown while it works.
 - Often combined with Watch mode and takeover: After the plan, watch the work and step in if it goes off plan.
-- Often combined with Activity log and undo: What actually happened, step by step, after the run.
+- Often combined with Activity log and undo: What really happened, step by step, after the run.
 
 ## Sources
 

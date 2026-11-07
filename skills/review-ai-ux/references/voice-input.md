@@ -29,12 +29,12 @@ Let people speak the ask, and show them what was heard before it is sent.
 | Check the words | The words sit in the box, not sent. Unsure words are marked. | Idle. | on stop | Stopped listening. Check the text, then send |
 | Fix 1 word | Tapping a marked word offers other words it might be. 1 tap fixes it. | Idle. | on tap | - |
 | Sent at once | The avoid version: the message goes as soon as listening stops, mistakes and all. | Reads the misheard ask. | on stop | Message sent |
-| Answering | The sent message is marked "Spoken". The answer streams in. | Writes. | - | Generating a response |
+| Answering | The sent message is marked "Spoken". The answer streams in (arrives word by word). | Writes. | - | Generating a response |
 | Done | An answer for what he meant. | Idle. | when done | Response complete |
 
 ## On each device
 
-- **Phone:** The mic sits next to Send, by the thumb. Hold to talk suits noisy places; tap to start and stop suits longer asks.
+- **Phone:** The mic sits next to Send, by the thumb. Hold to talk suits noisy places. Tap to start and stop suits longer asks.
 - **Tablet:** As on the phone. In split view, the listening bar stays inside the app's own box.
 - **Desktop:** The mic sits in the box with a keyboard shortcut. Typing while listening stops listening and keeps the words.
 
@@ -63,7 +63,7 @@ Let people speak the ask, and show them what was heard before it is sent.
 - **Do:** The words wait in the box, and the unsure 1 is marked. (Check the words, then send.…for 10 acres of maize?)
 - **Avoid:** Sent at once. A misheard number becomes a wrong answer before anyone can see it. (…for 10 acres of maize?Sent as soon as he stopped.)
 - **Do:** Shows it is listening, for how long, the words so far, and how to stop or cancel. (How much fertiliser do I need…● 0:03 · Tap to stop · ✕)
-- **Avoid:** Just a dot. People can't tell if they are heard, or how to stop without sending. (…●)
+- **Avoid:** Only a dot. People can't tell if they are heard, or how to stop without sending. (…●)
 
 ## Writing
 
@@ -74,9 +74,9 @@ Let people speak the ask, and show them what was heard before it is sent.
 
 ## Accessibility
 
-- Announce "Listening" and "Stopped listening" in the polite status region. Never read the live words out while the person speaks.
+- Announce "Listening" and "Stopped listening" in the polite status region (the part of the page a screen reader announces on its own). Never read the live words out while the person speaks.
 - The mic button's name changes with its state: "Start dictation", "Stop dictation".
-- Keep a visible label on every button that matches its name, so voice control users can say it.
+- Keep a visible label on every button that matches its name, so people who use voice control can say it.
 - Never auto-send on silence. People who speak slowly, stammer or pause to think need time.
 
 ## Seen in

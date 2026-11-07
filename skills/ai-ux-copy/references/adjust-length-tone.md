@@ -16,7 +16,7 @@ Change how long or how formal an answer is with 1 control, not a new ask.
 
 - **Setting:** Ifeoma asks for a reply to Ada, whose bag strap broke.
 - **Trigger:** The draft is right, but too long for a phone message.
-- **Without it:** She types "make it shorter". A second version appears below, and she re-reads it to check the refund is still there.
+- **Without it:** She types "make it shorter". A second version appears below. She re-reads it to check the refund is still there.
 - **With it:** She taps Shorter. The same reply is rewritten in place.
 - **Outcome:** 45 → 26 words, with the repair, the ₦18,000 and the courier marked as kept. She sends it.
 
@@ -24,7 +24,7 @@ Change how long or how formal an answer is with 1 control, not a new ask.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Draft | The reply streams in. | Writes. | 0-2 s | Generating a response |
+| Draft | The reply streams in (arrives word by word). | Writes. | 0-2 s | Generating a response |
 | Controls | Shorter, Longer, More formal and More friendly sit under the reply. | Idle. | when done | Response complete |
 | Press | The pressed control fills in; the others fade. | Idle. | on tap | - |
 | Rewrite in place | The new version writes over the old one, in the same place. | Rewrites. | - | Rewriting |
@@ -34,7 +34,7 @@ Change how long or how formal an answer is with 1 control, not a new ask.
 
 - **Phone:** The controls sit in 1 row under the answer and scroll sideways if needed, each 44 px tall. Undo sits next to the word count.
 - **Tablet:** As on the phone, with all controls visible.
-- **Desktop:** A row under the answer, or on the selection toolbar to change only part of a text. A slider suits length when people want fine steps.
+- **Desktop:** A row under the answer, or on the selection toolbar (the small bar that appears over highlighted text) to change only part of a text. A slider suits length when people want fine steps.
 
 ## Use when
 

@@ -12,11 +12,11 @@ Let an agent run on a schedule or in the background, and report back briefly.
 
 ## Story
 
-> When I need the same check done every day, I want an agent to run it on a schedule while I am away and tell me only what changed, so I can act on it in a minute.
+> When I need the same check done every day, I want an agent (an AI that can take actions for me) to run it on a schedule while I am away and tell me only what changed. Then I can act on it in a minute.
 
 - **Setting:** Mei asks the agent to check 3 job boards every weekday at 8:00.
 - **Trigger:** On Tuesday it runs at 8:00 while she makes breakfast.
-- **Without it:** She checks 3 boards by hand each morning - or gets a long log and misses the 1 good job in line 6.
+- **Without it:** She checks 3 boards by hand each morning. Or she gets a long log and misses the 1 good job in line 6.
 - **With it:** A notification says "3 new jobs · 1 fits your rate", and names the job.
 - **Outcome:** She opens the contract review and replies. The card shows the next run: Wed 8:00.
 

@@ -27,8 +27,8 @@ Let people pick how the AI should work, in plain words, not model names.
 | Ask typed | His ask in the composer, with a "Fast" chip beside the + button. | Idle. | 0 s | - |
 | Picker open | Fast, Thinking and Research, each with 1 line on what it does and how long it takes. Research shows 3 left today. | Idle. | on tap | - |
 | Picked | The check moves to Research, and the chip now reads "Research". | Idle. | on tap | Research selected |
-| Working | "Researching · reading site 6 of 14 · about 5 min". A quick mode just shows it is writing. | Works in the chosen mode. | seconds to minutes | Researching |
-| Answer | The answer streams in. | Writes. | - | - |
+| Working | "Researching · reading site 6 of 14 · about 5 min". A quick mode only shows it is writing. | Works in the chosen mode. | seconds to minutes | Researching |
+| Answer | The answer streams in (arrives word by word). | Writes. | - | - |
 | Labelled | "Answered with Research · 14 sources" under the answer. | Idle. | when done | Response complete |
 
 ## On each device
@@ -45,14 +45,14 @@ Let people pick how the AI should work, in plain words, not model names.
 
 ## Don't use when
 
-- The product can pick well on its own. Offer Auto as the default, with the picker as an override.
+- The product can pick well on its own. Offer Auto as the default, and keep the picker for people who want to change it.
 - The difference is only how long or formal the answer is. Use Adjust length and tone instead.
 - The ask needs exact values, not a way of working. Use Structured prompt instead.
 
 ## Anatomy
 
 - **A. Mode chip:** Shows the current mode in the composer, and opens the picker.
-- **B. Mode name:** A plain word for how it works: "Research". Not a model name.
+- **B. Mode name:** A plain word for how it works: "Research". Not a model name (the name of the AI engine underneath).
 - **C. What it does and how long:** 1 line in everyday words, with the time: "Reads many websites and cites them · about 5 min".
 - **D. Limit:** "3 left today", in amber, before the pick - not after the run fails.
 - **E. Current mode:** A check on the mode in use, so it is clear what sending will do.
@@ -74,7 +74,7 @@ Let people pick how the AI should work, in plain words, not model names.
 ## Accessibility
 
 - The chip's name includes the current mode: "Mode: Research".
-- The picker is a group of radio options. Each option's description is part of its name, so it is read with it.
+- The picker is a group of radio options (a set where only 1 can be picked). Each option's description is part of its name, so a screen reader reads them together.
 - Announce the change: "Research selected".
 - Escape closes the picker and puts focus back on the chip.
 

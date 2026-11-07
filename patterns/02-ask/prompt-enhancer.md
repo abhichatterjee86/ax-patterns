@@ -33,7 +33,7 @@ Offer to improve the ask before it is sent, and show the change.
 
 ## On each device
 
-- **Phone:** Enhance sits in the tool row of the box. The rewrite fills the box and grows it; Undo sits right under the text, by the thumb.
+- **Phone:** Enhance sits in the tool row of the box. The rewrite fills the box and grows it. Undo sits right under the text, by the thumb.
 - **Tablet:** As on the phone. In landscape there is room to show the original above the rewrite.
 - **Desktop:** As on the phone, with room for a "Show original" link beside Undo, so people can compare before they choose.
 
@@ -73,7 +73,7 @@ Offer to improve the ask before it is sent, and show the change.
 ## Accessibility
 
 - Announce "Improving your prompt" when it starts and "Prompt enhanced. 2 additions" when it ends.
-- Mark added words with an underline as well as colour, and expose them to screen readers as added text.
+- Mark added words with an underline as well as colour, and tell screen readers they are added text.
 - Keep focus in the prompt box after the rewrite, so people can read and edit it with the keyboard.
 - Undo is a real button, and the usual undo keys work too.
 

@@ -12,7 +12,7 @@ Let people watch an agent work and step in at any moment.
 
 ## Story
 
-> When an AI agent works in a website or app for me, I want to watch what it does and take the controls the moment it goes wrong, so I can fix 1 thing without starting over.
+> When an AI agent (an AI that can take actions for me) works in a website or app for me, I want to watch what it does and take the controls the moment it goes wrong. Then I can fix 1 thing without starting over.
 
 - **Setting:** Hannah asks the agent to renew her residents' parking permit on the council site.
 - **Trigger:** The agent picks a car from last year's permit - the car she sold in May.
@@ -74,7 +74,7 @@ Let people watch an agent work and step in at any moment.
 
 ## Accessibility
 
-- Put narration in a polite live region, and announce only changes of step, not every keystroke.
+- Put narration in a polite live region (the part of the page a screen reader reads out on its own, without interrupting). Announce only changes of step, not every keystroke.
 - Announce control changes: "You have control. The agent is paused" and "Agent resumed".
 - Take over and Stop are real buttons, reachable by keyboard at all times, not only on hover.
 - Show who is in control with words and an icon, not only a coloured border.

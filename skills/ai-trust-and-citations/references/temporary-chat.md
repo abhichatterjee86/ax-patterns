@@ -25,7 +25,7 @@ Let people talk without it being saved, and show that it is not.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | New chat | An empty chat with a ghost icon in the top bar. | Idle. | 0 s | - |
-| Temporary on | "Temporary chat" in the header, the rules in 1 line, and a composer that says "not saved". | Idle. | before the first message | Temporary chat. Not saved to history or memory |
+| Temporary on | "Temporary chat" in the header, the rules in 1 line, and a composer (the box people type in) that says "not saved". | Idle. | before the first message | Temporary chat. Not saved to history or memory |
 | Asks | The ask, as in any chat. | Starts. | - | - |
 | Answer | The answer. The chat still looks temporary. Nothing new appears in history. | Writes. | - | Generating a response |
 | Leave | Closing asks once: Close, or Save to history. Saving makes it a normal chat. | Idle. | on close | Chat saved to history, if saved |
@@ -46,7 +46,7 @@ Let people talk without it being saved, and show that it is not.
 ## Don't use when
 
 - People want to keep the chat but fix what the AI remembers. Use Memory controls instead.
-- The worry is training on all chats, not 1 chat - give a setting for that. Use Consent and data controls instead.
+- The worry is the AI training on (learning from) all chats, not 1 chat - give a setting for that. Use Consent and data controls instead.
 - The work needs to last - a project, a long document. A temporary chat would lose it.
 
 ## Anatomy

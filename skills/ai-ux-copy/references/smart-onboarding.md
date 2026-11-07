@@ -12,11 +12,11 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 ## Story
 
-> When I start using an AI tool, I want it to ask me only the 1 or 2 things it really needs, and show me what it set, so its first answers fit me and I can change them later.
+> When I start using an AI tool, I want it to ask me only the 1 or 2 things it truly needs, and show me what it set, so its first answers fit me and I can change them later.
 
 - **Setting:** Mei opens a new lesson planning helper the school has bought.
 - **Trigger:** "2 questions · about 20 seconds." She taps Start.
-- **Without it:** A form of 8 fields. She fills 2, skips, and the first lesson plan is pitched at young children.
+- **Without it:** A form of 8 fields. She fills 2, skips, and the first lesson plan is written for young children.
 - **With it:** She taps Science, Year 9, then Lesson plans. A card says what it set, with Change.
 - **Outcome:** She taps the first starter and gets a Year 9 plan she can use next week.
 
@@ -36,7 +36,7 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 - **Phone:** 1 question per screen, answers as large chips, Skip always in the same corner. The keyboard never opens.
 - **Tablet:** As on the phone, with room for both answer rows on 1 screen.
-- **Desktop:** The questions can sit in the empty chat as 1 card, instead of full screens, so people can see the tool behind them.
+- **Desktop:** The questions can sit in the empty chat as 1 card, instead of full screens. Then people can see the tool behind them.
 
 ## Use when
 
@@ -46,7 +46,7 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 ## Don't use when
 
-- The AI can learn the fact from the first ask - ask then, in context, not up front.
+- The AI can learn the fact from the first ask - ask then, in the moment, not up front.
 - People only need to know what the tool does, not set it up. Use Capability disclosure instead.
 - The facts are personal and change often - let people manage what the AI remembers. Use Memory controls instead.
 
@@ -55,7 +55,7 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 - **A. Progress:** "2 of 2" - people see the end from the start.
 - **B. Question and why:** 1 question, and 1 line on what the answer changes.
 - **C. Tap answers:** Chips, not text fields. 1 tap each. An Other chip for the rest.
-- **D. Skip:** Always there. Skipping gives sensible defaults, not a broken tool.
+- **D. Skip:** Always there. Skipping gives sensible defaults (settings the tool picks for you), not a broken tool.
 - **E. So far:** The answers given, in 1 chip, so people can check them as they go.
 
 ## Do and Avoid
@@ -74,10 +74,10 @@ Learn what a person needs in 1 or 2 questions, then set the AI up for them.
 
 ## Accessibility
 
-- Each question is a group with a label; the chips are radio buttons or toggle buttons with aria-pressed.
+- Each question is a group with a label. The chips are radio buttons, or toggle buttons that tell screen readers whether they are on (with aria-pressed).
 - Announce progress when a question appears: "Question 2 of 2".
 - Skip is a real button with the same name on every screen, reachable before the answers in tab order.
-- Never time out a question. People who use switch access or a screen reader may take longer.
+- Never time out a question. People who use switch access (1 or 2 buttons instead of a keyboard) or a screen reader may take longer.
 
 ## Seen in
 

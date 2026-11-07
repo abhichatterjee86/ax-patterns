@@ -41,17 +41,17 @@ Keep every version the AI made, and let people go back to any of them.
 
 - People ask the AI to change the same thing many times - a document, code, a design.
 - A later change can remove something good from an earlier one.
-- An AI agent changes many files, and people need a safe point to go back to.
+- An AI agent (an AI that takes actions for you) changes many files. People need a safe point to go back to.
 
 ## Don't use when
 
 - The output is a short chat answer - versions under the answer are enough. Use Regenerate, edit and branches instead.
 - People need to judge each small change before it lands. Use Draft mode and review instead.
-- People need a record of what an agent did in the world, like emails sent - those cannot be restored. Use Activity log and undo instead.
+- People need a record of what an agent did in the world, like emails sent. Those cannot be restored. Use Activity log and undo instead.
 
 ## Anatomy
 
-- **A. Version list:** Every version, newest first. Nothing is ever removed from it by a restore.
+- **A. Version list:** Every version, newest first. A restore never removes anything from it.
 - **B. What made it:** The ask behind each version, so people find the one they want by what they asked.
 - **C. Now:** Marks the version people are looking at in the document.
 - **D. Preview:** "Previewing version 2" - the old version shows in place before anything changes.
@@ -69,7 +69,7 @@ Keep every version the AI made, and let people go back to any of them.
 - Label each version with the ask that made it: "Make it shorter". Add the time in smaller text.
 - Say "Restore", not "Revert" or "Roll back".
 - Say what restore does before and after: "Restores as a new version", "Version 3 is still in History".
-- If only AI changes are kept, say so: "Checkpoints save the AI's changes, not yours."
+- If checkpoints (saved copies you can go back to) keep only the AI's changes, say so: "Checkpoints save the AI's changes, not yours."
 
 ## Accessibility
 

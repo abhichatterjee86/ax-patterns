@@ -34,7 +34,7 @@ Let 1 ask mix text, images, camera and screen, and show how each part is read.
 
 ## On each device
 
-- **Phone:** The camera is the main use: photo or live. The on bar sits at the top; the OS indicator shows too. Screen sharing stops when the screen locks.
+- **Phone:** The camera is the main use: photo or live. The on bar sits at the top. The OS indicator (the phone's own camera-on dot) shows too. Screen sharing stops when the screen locks.
 - **Tablet:** As on the phone, plus screen sharing of the app beside it in split view.
 - **Desktop:** Paste or drop a screenshot, or share 1 window - never the whole screen by default. The on bar names what is shared.
 
@@ -48,7 +48,7 @@ Let 1 ask mix text, images, camera and screen, and show how each part is read.
 
 - People only need to attach documents to read - files are enough. Use Attachments and context chips instead.
 - Speech alone does the job - a spoken ask with no picture. Use Voice input instead.
-- The AI must act on the screen, not just look - that needs an agent people can watch. Use Watch mode and takeover instead.
+- The AI must act on the screen, not only look - that needs an agent (an AI that can take actions for you) people can watch. Use Watch mode and takeover instead.
 
 ## Anatomy
 
@@ -73,8 +73,8 @@ Let 1 ask mix text, images, camera and screen, and show how each part is read.
 
 ## Accessibility
 
-- Give a sent photo the alt text the AI read from it, so screen reader users get the same reading.
-- Announce "Camera sharing on" and "Camera sharing off" in the polite status region.
+- Give a sent photo the alt text (the words a screen reader says for an image) the AI read from it, so people who use a screen reader get the same reading.
+- Announce "Camera sharing on" and "Camera sharing off" in the polite status region (the part of the page a screen reader announces on its own).
 - Stop is a real button, reachable at any time, at least 44 px.
 - Never make an image the only way to ask - typing and voice always work too.
 

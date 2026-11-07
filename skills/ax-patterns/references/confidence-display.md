@@ -32,7 +32,7 @@ Show how sure the AI is, so people know when to check.
 
 ## On each device
 
-- **Phone:** Fields stack. The flag sits on the field with its reason under it. "Show on scan" opens the crop full width above the field.
+- **Phone:** Fields stack. The flag sits on the field with its reason under it. "Show on scan" opens the crop (the cut-out part of the scan) full width above the field.
 - **Tablet:** The scan sits beside the fields, as on desktop.
 - **Desktop:** The scan sits beside the fields. Focus on a flagged field highlights the matching place on the scan.
 

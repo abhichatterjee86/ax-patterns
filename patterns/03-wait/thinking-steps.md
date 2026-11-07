@@ -28,14 +28,14 @@ Make 1 to 60 seconds of silence feel like progress, with steps people can open.
 | First step | A Thinking header, a timer and the first step in plain words. | Reads the input. | within 1 s | Thinking |
 | Next steps | Done steps get a tick; the current one pulses; the next one is faint. | Works step by step. | every 1-3 s | - |
 | Last step | The last step runs. The timer keeps counting. | Checks its work. | - | - |
-| Answer starts | The steps fold into 1 line - or stay open if set - and the answer streams below. | Writes the answer. | on the first word | - |
+| Answer starts | The steps fold into 1 line - or stay open if set. The answer streams (arrives word by word) below. | Writes the answer. | on the first word | - |
 | Done | 1 line, "Thought for 8 s · 5 steps", that opens the steps again. | Idle. | - | Response complete |
 
 ## On each device
 
-- **Phone:** Show only the current step, on 1 line, with the timer. The full list opens in a sheet. When the answer starts, fold to 1 line so the answer gets the screen.
+- **Phone:** Show only the current step, on 1 line, with the timer. The full list opens in a sheet (a panel that slides up from the bottom). When the answer starts, fold to 1 line so the answer gets the screen.
 - **Tablet:** The full list fits above the answer. Fold it when the answer starts.
-- **Desktop:** The list sits above the answer, or in a side panel for long agent runs. Each done step can open to show what it found.
+- **Desktop:** The list sits above the answer. For a long run by an agent (an AI that can take actions for you), it sits in a side panel. Each done step can open to show what it found.
 
 ## Use when
 
@@ -74,9 +74,9 @@ Make 1 to 60 seconds of silence feel like progress, with steps people can open.
 ## Accessibility
 
 - Announce only the start ("Thinking") and the end ("Response complete") - not every step.
-- The folded line is a real button with aria-expanded, so people can open the steps again.
-- The pulse on the current step stops under reduced motion; the tick and the words carry the meaning.
-- The timer is not announced every second. It sits in the visual layer only.
+- The folded line is a real button with aria-expanded (the code that tells a screen reader if it is open or closed), so people can open the steps again.
+- Under reduced motion (a device setting that turns off animation), the pulse on the current step stops. The tick and the words carry the meaning.
+- Screen readers do not read the timer every second. It is on screen only.
 
 ## Seen in
 

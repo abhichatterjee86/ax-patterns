@@ -16,7 +16,7 @@ Read the answer aloud and show the words as they are spoken.
 
 - **Setting:** Fatima has dough on her hands. She asks out loud for the next step.
 - **Trigger:** The answer has 2 times to remember: 10 minutes and 20 minutes.
-- **Without it:** An orb talks. Halfway through kneading she forgets the time and asks again.
+- **Without it:** An orb (a glowing ball on the screen) talks. Halfway through kneading she forgets the time and asks again.
 - **With it:** Each word appears in the chat as it is spoken. A glance shows "10 minutes".
 - **Outcome:** She ends the voice chat with a knuckle. The steps stay in the chat for later.
 
@@ -26,11 +26,11 @@ Read the answer aloud and show the words as they are spoken.
 |---|---|---|---|---|
 | Voice on | The text box becomes a voice bar: "Listening", mute and End. | Listens. | 0 s | Voice chat on. Listening |
 | Person speaks | Her words appear in her bubble as she says them. | Listens. | while she talks | - |
-| AI speaks | Each word appears as it is spoken; the current word is highlighted. The bar says "Speaking". | Speaks. | about 2-3 words a second | Speaking |
-| Cut in | She speaks; the AI stops at once. Its line ends with "stopped, you spoke". | Stops and listens. | within a moment | Listening |
+| AI speaks | Each word appears as it is spoken. The current word is highlighted. The bar says "Speaking". | Speaks. | about 2-3 words a second | Speaking |
+| Cut in | She speaks. The AI stops at once. Its line ends with "stopped, you spoke". | Stops and listens. | within a moment | Listening |
 | Short answer | A short answer to the new question, shown and spoken. | Speaks. | - | Speaking |
 | Done talking | The full answer as text. The bar goes back to "Listening". | Listens. | after the last word | Listening |
-| Ended | "Voice chat ended". The words stay in the thread; the text box is back. | Idle. | on End | Voice chat ended |
+| Ended | "Voice chat ended". The words stay in the thread. The text box is back. | Idle. | on End | Voice chat ended |
 
 ## On each device
 
@@ -75,8 +75,8 @@ Read the answer aloud and show the words as they are spoken.
 
 - Show every spoken word as text, in time with the voice. People who are deaf or hard of hearing need it.
 - Speech starts only when the person starts it, and can be paused or stopped at once.
-- Announce only state changes: "Listening", "Speaking", "Voice chat ended". Never read the transcript out through the status region - it would talk over the voice.
-- End and mute are real buttons, at least 44 px, reachable by keyboard and switch. The words stay after the voice chat ends.
+- Announce only state changes: "Listening", "Speaking", "Voice chat ended". Never read the transcript (the written words) out through the status region (the part of the page a screen reader announces on its own). It would talk over the voice.
+- End and mute are real buttons, at least 44 px, reachable by keyboard and by switch (a 1-button control some people use instead of touch). The words stay after the voice chat ends.
 
 ## Seen in
 
@@ -88,7 +88,7 @@ Read the answer aloud and show the words as they are spoken.
 
 - Often combined with Voice input: The other half of a voice chat: speaking the ask.
 - Often combined with Stop generation: Speaking over the AI is a stop, by voice.
-- Often combined with Streaming response: The live words fill in like streamed text, in time with the voice.
+- Often combined with Streaming response: The live words fill in like streamed text (text that arrives word by word), in time with the voice.
 
 ## Sources
 

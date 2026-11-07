@@ -12,7 +12,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ## Story
 
-> When an AI agent is about to do something that affects other people or cannot be undone, I want it to stop and show me exactly what it will do, so I stay in charge of what goes out in my name.
+> When an AI agent (an AI that can take actions for me) is about to do something that affects other people or cannot be undone, I want it to stop and show me exactly what it will do. Then I stay in charge of what goes out in my name.
 
 - **Setting:** Kofi asks the agent to chase 3 unpaid invoices.
 - **Trigger:** The agent has drafted 3 emails and is about to send them.
@@ -33,7 +33,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ## On each device
 
-- **Phone:** The gate sits at the bottom of the thread, by the thumb, and can also arrive as a push notification when the agent works in the background.
+- **Phone:** The gate sits at the bottom of the thread, by the thumb. It can also arrive as a push notification when the agent works in the background.
 - **Tablet:** As on the phone.
 - **Desktop:** The gate sits in the thread above the composer. Long details - a full command, a full email - open in an expandable section.
 
@@ -45,7 +45,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ## Don't use when
 
-- The step is safe and undoable, like reading or drafting - asking every time trains people to approve without looking. Use Autonomy dial instead.
+- The step is safe and undoable, like reading or drafting. Asking every time trains people to approve without looking. Use Autonomy dial instead.
 - People want to see the whole plan before anything starts. Use Intent preview and plan instead.
 - People want to watch and step in while it works. Use Watch mode and takeover instead.
 
@@ -61,7 +61,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 - **Do:** Says what, to whom, and that it is final. The button names the action. (Send 3 emails?Lumen Studio · Hart & Co · Okafor DesignEmails can’t be unsent.Send 3 emails)
 - **Avoid:** "Continue? OK" says nothing about what will happen. People tap it without reading. (Continue?OKCancel)
-- **Do:** Safe steps just run. The gate appears only before the step that cannot be undone. (✓ Found 3 unpaid invoices✓ Drafted 3 remindersSend 3 emails? - 1 question, at the step that matters)
+- **Do:** Safe steps run on their own. The gate appears only before the step that cannot be undone. (✓ Found 3 unpaid invoices✓ Drafted 3 remindersSend 3 emails? - 1 question, at the step that matters)
 - **Avoid:** A gate on every step. By the 4th, people approve without reading - including the 1 that matters. (Allow reading invoices? ✓Allow drafting? ✓Allow opening mail? ✓Allow sending? ✓)
 
 ## Writing
@@ -73,8 +73,8 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 ## Accessibility
 
-- Announce "Needs your approval" in the polite status region when the gate appears.
-- Do not steal focus. Make the gate the next thing in tab order, and reachable from a notification.
+- Announce "Needs your approval" in the polite status region (the part of the page a screen reader reads out on its own, without interrupting) when the gate appears.
+- Do not steal focus. Make the gate the next stop for the Tab key, and reachable from a notification.
 - Approve and decline are real buttons, at least 44 px, with the action in their names.
 - Never pre-select approve for actions that cannot be undone, and never accept on Enter by default.
 

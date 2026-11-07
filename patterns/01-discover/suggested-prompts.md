@@ -27,14 +27,14 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 | Empty state | A greeting, 1 line on what the AI can do, 3 or 4 examples, and the box. | Idle. | on open | - |
 | Focus | The example under the finger or the mouse lifts. | Idle. | on hover or focus | - |
 | Picked | The chosen example is marked. | Idle. | on tap | - |
-| Filled the box | An editable example lands in the box with its changeable parts ready to edit. | Idle. | at once | Prompt added to the message box |
+| Filled the box | The example lands in the box. Its changeable parts are ready to edit. | Idle. | at once | Prompt added to the message box |
 | Edited | The person changes the parts that are theirs, then sends. | Idle. | as typed | - |
 | Sent | A ready-to-go example sends straight away, like any message. | Starts answering. | on tap | Message sent |
-| Answering | The examples are gone; the conversation has started. | Answers. | after send | Generating a response |
+| Answering | The examples are gone. The conversation has started. | Answers. | after send | Generating a response |
 
 ## On each device
 
-- **Phone:** 3 or 4 pills just above the box, where the thumb already is. They scroll sideways if they do not fit - never 2 rows of tiny chips.
+- **Phone:** 3 or 4 pills (small rounded buttons) just above the box, where the thumb already is. They scroll sideways if they do not fit - never 2 rows of tiny chips.
 - **Tablet:** Cards with 1 line of detail fit 2 to a row, above the box.
 - **Desktop:** Cards in a row of 3 or 4 above the box, or beside a greeting. Each card can carry a short line on what you will get.
 
@@ -54,7 +54,7 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 
 - **A. Greeting and scope:** 1 line on what the AI can do, so the examples make sense.
 - **B. A suggestion:** A specific, real ask - a place, a goal, a format - not a category.
-- **C. What a tap does:** A pencil means it fills the box to edit; an arrow means it sends at once.
+- **C. What a tap does:** A pencil means it fills the box to edit. An arrow means it sends at once.
 - **D. The box:** Right below, so the examples read as "things you could type here".
 - **E. More ideas:** A shuffle for people the first 4 did not fit.
 
@@ -67,7 +67,7 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 
 ## Writing
 
-- Write each example as a whole ask a real person would type, in their words - not a feature name.
+- Write each example as a whole ask a real person would type, in their words. Not a feature name.
 - Keep pills to about 6 words. Put detail on a second line of a card, not in the pill.
 - Mark the parts people should change - "[Kyoto]", "[April]" - when the example fills the box.
 - No exclamation marks, no "please". Sentence case.
@@ -76,7 +76,7 @@ Offer 3 or 4 example asks, so people know what to type and what the AI can do.
 
 - Each suggestion is a real button whose name is the whole ask, not just the short label.
 - Say in the name what a tap does: "Fill the message box with: Plan a 3-day trip…".
-- After filling the box, move focus into it, so a keyboard or screen reader user can edit at once.
+- After filling the box, move focus into it. Then a keyboard or screen reader user can edit at once.
 - Suggestions are reachable by Tab in reading order, before the box.
 
 ## Seen in

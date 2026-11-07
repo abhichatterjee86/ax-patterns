@@ -25,11 +25,11 @@ Let people add to or correct the ask while the AI is still working.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Asks | Her ask in the chat. | Starts work. | 0 s | - |
-| Working | "Checking venues · 3 of 12" with a bar. The composer says "Add to the task", with Stop beside it. | Works. | minutes | Researching |
+| Working | "Checking venues · 3 of 12" with a bar. The composer (the box where she types) says "Add to the task", with Stop beside it. | Works. | minutes | Researching |
 | Types a change | Her change in the composer. Update appears next to Stop. | Keeps working. | - | - |
 | Update sent | Her message in the thread, "Added while working". In the work card: "Got it - only step-free venues. Keeping the 7 already checked." | Takes it in without stopping. | on tap | Update added to the task |
 | Uses it | "Checking step-free access". The count keeps going from where it was. | Works with the change. | - | - |
-| Queued | If it can't be used now: her message in a drawer, "Queued · runs after this task", with Edit and Remove. | Finishes the run first. | on tap | Message queued |
+| Queued | If it can't be used now: her message in a drawer (a small panel that slides open), "Queued · runs after this task", with Edit and Remove. | Finishes the run first. | on tap | Message queued |
 | Starts again | The old way: "Sending stops the work". The count drops to 0 and 7 checked venues are lost. | Starts over. | on tap | Stopped. Starting again |
 | Answer | 5 venues, marked "Includes your update · step-free only". | Idle. | when done | Response complete |
 
@@ -41,7 +41,7 @@ Let people add to or correct the ask while the AI is still working.
 
 ## Use when
 
-- The work runs long enough that people think of something while it runs - research, reports, agent tasks.
+- The work runs long enough that people think of something while it runs - research, reports, tasks for an agent (an AI that can take actions for you).
 - Most of the work done so far is still useful after the change.
 - People often add a limit or a detail, rather than change the whole ask.
 
@@ -57,7 +57,7 @@ Let people add to or correct the ask while the AI is still working.
 - **B. Got it:** 1 line that says what was taken in and what was kept.
 - **C. Progress that keeps going:** The count carries on from where it was. Nothing resets.
 - **D. Stop:** Still there. Updating and stopping are 2 different buttons.
-- **E. Add to the task:** The composer's placeholder while it works, so people know they can add to it.
+- **E. Add to the task:** The composer's placeholder (the grey hint text in the box) while it works, so people know they can add to it.
 
 ## Do and Avoid
 
@@ -75,7 +75,7 @@ Let people add to or correct the ask while the AI is still working.
 
 ## Accessibility
 
-- The composer stays focusable while the AI works. Stop and Update are separate buttons with their own names.
+- People can still move keyboard focus to the composer while the AI works. Stop and Update are separate buttons with their own names.
 - Announce "Update added to the task" or "Message queued" when it is sent.
 - Don't move focus to the work card when the update is taken in.
 - Queued messages are a list people can reach by keyboard, with Edit and Remove on each.

@@ -25,7 +25,7 @@ Let people stop the AI and keep what is already there.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Sent | Send turns into Stop at once - before the first word arrives. | Starts work. | 0 s | - |
-| Streaming | The answer grows; Stop stays in the same place. | Writes. | - | Generating a response |
+| Streaming | The answer streams in (arrives word by word). Stop stays in the same place. | Writes. | - | Generating a response |
 | Stop pressed | Stop shows it was pressed. | Stops writing. | under 100 ms | - |
 | Stopped | Every word written so far stays, with a short note and Continue or Try again. | Idle. | at once | Response stopped |
 | Continued | The answer picks up from the last word - not from the start. | Writes again. | on tap | Generating a response |
@@ -35,7 +35,7 @@ Let people stop the AI and keep what is already there.
 
 - **Phone:** Stop replaces Send in the same spot, at least 44 px, so the thumb is already there. Never hide it behind a menu.
 - **Tablet:** As on the phone. With a keyboard, Escape stops too.
-- **Desktop:** Stop replaces Send. Escape stops, and the composer stays editable so people can type the next ask while it finishes.
+- **Desktop:** Stop replaces Send. Escape stops too. The composer (the box where you type) stays editable, so people can type the next ask while it finishes.
 
 ## Use when
 
@@ -45,7 +45,7 @@ Let people stop the AI and keep what is already there.
 
 ## Don't use when
 
-- The AI is doing things, not just writing - stopping must also say what was already done. Use Watch mode and takeover instead.
+- The AI is doing things, not only writing. Stopping must also say what it already did. Use Watch mode and takeover instead.
 - People want to change the direction, not end it. Use Update mid-run instead.
 - Answers are always instant - there is nothing to stop. Use Streaming response instead.
 
@@ -53,8 +53,8 @@ Let people stop the AI and keep what is already there.
 
 - **A. Stop button:** Where Send was, with a word and a square. Works from the very first moment.
 - **B. The partial answer:** Stays on screen exactly as written. Nothing is thrown away.
-- **C. The caret:** Shows the AI is still writing - it goes the moment Stop is pressed.
-- **D. The composer:** Stays usable, so the next ask can be typed straight away.
+- **C. The caret:** The blinking mark at the end of the text. It shows the AI is still writing, and it goes the moment Stop is pressed.
+- **D. The composer:** Stays usable, so people can type the next ask straight away.
 
 ## Do and Avoid
 
@@ -73,7 +73,7 @@ Let people stop the AI and keep what is already there.
 
 - Stop is a real button with the name "Stop generating", and it takes the focus Send had.
 - Escape stops on a keyboard, from anywhere in the conversation.
-- Announce "Response stopped" once in the polite status region - the partial text is not read out again.
+- Announce "Response stopped" once in the polite status region (the part of the page a screen reader reads out on its own). Do not read the partial text out again.
 - Stop is at least 44 by 44 px on touch screens.
 
 ## Seen in

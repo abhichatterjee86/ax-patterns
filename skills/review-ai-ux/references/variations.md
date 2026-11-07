@@ -27,12 +27,12 @@ Offer 2 to 4 versions to pick from, side by side.
 | Asked | The ask. | Starts work. | 0 s | - |
 | Writing | "Writing 3 versions", with all 3 filling in at once. | Writes 3 versions. | 0.5-3 s | Generating a response |
 | Pick 1 | "3 versions - pick 1 to use." Each has a label, the text and "Use this". "3 more" sits below. | Idle. | when all are done | 3 versions ready |
-| Picking | The chosen version lifts; the others fade. | Idle. | on tap | - |
+| Picking | The chosen version lifts. The others fade. | Idle. | on tap | - |
 | Kept | The pick becomes the answer. "2 other versions" opens the rest again. | Idle. | after the tap | Version 2 chosen |
 
 ## On each device
 
-- **Phone:** Versions stack in 1 column, 2 lines each, with the label on top. 3 fit on 1 screen; 6 do not, and people stop comparing.
+- **Phone:** Versions stack in 1 column, 2 lines each, with the label on top. 3 fit on 1 screen. 6 do not, and people stop comparing.
 - **Tablet:** 2 or 3 side by side. Images sit in a 2 x 2 grid.
 - **Desktop:** 3 or 4 side by side, so the eye moves across and compares. Hover shows the full text of a long version.
 
@@ -57,7 +57,7 @@ Offer 2 to 4 versions to pick from, side by side.
 
 ## Do and Avoid
 
-- **Do:** Each version is really different, and its label says how. Choosing is quick. (ShortStreet party Sat, 2 pm. Bring a dish!WarmHello neighbours! Games, music and food…With detailsRoad closes 1 pm, please move cars…)
+- **Do:** Each version is clearly different, and its label says how. Choosing is quick. (ShortStreet party Sat, 2 pm. Bring a dish!WarmHello neighbours! Games, music and food…With detailsRoad closes 1 pm, please move cars…)
 - **Avoid:** 3 versions that differ by 1 word. People cannot see the difference and pick at random. (Hello neighbours! Join our street party…Hi neighbours! Join our street party…Hello neighbours! Come to our street party…)
 - **Do:** The pick becomes the answer. The others are folded, not gone. (Hello neighbours! Street party on Saturday…✓ Using “Warm” · › 2 other versions)
 - **Avoid:** Picking deletes the rest. If the pick was wrong, people must ask again. (Hello neighbours! Street party on Saturday…The other versions were removed.)

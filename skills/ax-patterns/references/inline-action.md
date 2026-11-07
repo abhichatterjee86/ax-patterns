@@ -12,11 +12,11 @@ Act on the text or object a person has selected, right where it is.
 
 ## Story
 
-> When 1 part of my text needs work, I want to select it and ask the AI right there, so I can fix just that part and see the change before it goes in.
+> When 1 part of my text needs work, I want to select it and ask the AI right there, so I can fix only that part and see the change before it goes in.
 
 - **Setting:** Daniel is writing a cover letter for a new nursing job.
 - **Trigger:** 1 sentence is long and flat. He selects it.
-- **Without it:** He copies the sentence into a chat, asks for a shorter one, copies the answer back and fixes the spacing.
+- **Without it:** He copies the sentence into a chat and asks for a shorter one. Then he copies the answer back and fixes the spacing.
 - **With it:** A small menu appears by the selection. He taps Shorter and sees the new sentence before it goes in.
 - **Outcome:** He taps Replace. Only that sentence changes, and Undo is there if he wants it back.
 
@@ -53,14 +53,14 @@ Act on the text or object a person has selected, right where it is.
 
 - **A. Selection:** What the AI will work on, and nothing else. The rest of the text stays as it is.
 - **B. Preset actions:** 3 or 4 short actions that fit the selection. 1 tap each.
-- **C. Ask about this text:** A field for anything the presets don't cover, already scoped to the selection.
+- **C. Ask about this text:** A field for anything the presets don't cover. It already works on the selection only.
 - **D. Preview:** The new version, shown beside the old one. Nothing changes until he chooses.
 - **E. Result actions:** Replace, Insert below, Try again, Discard. Each says what it does to his text.
 
 ## Do and Avoid
 
 - **Do:** A preview first. He chooses to replace, add below, or throw it away. (I have worked on a busy ward for 6 years…For 6 years I have cared for patients before and after surgery.Replace · Insert below · Discard)
-- **Avoid:** The text is swapped at once. He never read the new sentence before it went in. (For 6 years I have cared for patients before and after surgery.Replaced. The old sentence is gone.)
+- **Avoid:** The text swaps at once. He never read the new sentence before it went in. (For 6 years I have cared for patients before and after surgery.Replaced. The old sentence is gone.)
 - **Do:** A few actions that fit 1 sentence, and a field for anything else. (Ask about this textShorter · Friendlier · Fix spelling)
 - **Avoid:** Every AI action in the product. People scan, give up, or pick one that makes no sense for 1 sentence. (Summarise · Translate · Make table · Brainstorm · Write poem · Continue · Explain · Outline · Action items · Find quotes · Make tweet · …)
 
@@ -73,10 +73,10 @@ Act on the text or object a person has selected, right where it is.
 
 ## Accessibility
 
-- The menu opens from the keyboard on a selection too, not only on mouse up.
+- The menu opens from the keyboard on a selection too, not only when the mouse button is released.
 - When the menu opens, focus moves into it. Escape closes it and puts focus back on the selection.
 - Announce "Suggestion ready" when the preview appears, and read the new text before the buttons.
-- On touch screens, buttons in the sheet are at least 44 px, and the menu never covers the system's copy and paste menu.
+- On touch screens, buttons in the sheet are at least 44 px. The menu never covers the system's copy and paste menu.
 
 ## Seen in
 

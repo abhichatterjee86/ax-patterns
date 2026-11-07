@@ -16,7 +16,7 @@ Let people edit what the AI made directly, and get the AI's version back.
 
 - **Setting:** Marta asks for a note about sports day.
 - **Trigger:** The date is wrong - it moved to Thursday. She clicks it and types the right one.
-- **Without it:** She asks the AI to add a line about lunch, and the date quietly goes back to Friday. 200 parents get the wrong day.
+- **Without it:** She asks the AI to add a line about lunch. The date quietly goes back to Friday. 200 parents get the wrong day.
 - **With it:** Her change is marked as hers. The AI adds lunch and says it kept her date.
 - **Outcome:** The note goes out with the right date. The AI version is still 1 tap away.
 
@@ -24,8 +24,8 @@ Let people edit what the AI made directly, and get the AI's version back.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Draft | The AI's note streams in, with "Click to edit". | Writes. | 0-2 s | Generating a response |
-| Editing | She types over the date, in place, with a caret. | Idle. | on click | - |
+| Draft | The AI's note streams in (arrives word by word), with "Click to edit". | Writes. | 0-2 s | Generating a response |
+| Editing | She types over the date, in place, with a caret (the blinking text cursor). | Idle. | on click | - |
 | Marked as hers | Her change is underlined. "1 edit by you" and "Revert to AI version" sit under the text. | Idle. | when she stops typing | 1 edit saved |
 | Ask for more | "Add a line about lunch". | Starts. | - | - |
 | AI changes the text | The new line writes in. Her date stays as she wrote it. | Writes around her edit. | - | Generating a response |

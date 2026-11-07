@@ -29,7 +29,7 @@ Turn a vague ask into fields, so people give the AI what it needs.
 | 1 is missing | She taps Make quiz with no class. An amber note by the field: "Choose a class, so the questions fit the age." | Idle - nothing is sent yet. | on tap | Choose a class to continue |
 | Ask is ready | The built ask reads in full: "10 multiple-choice questions on fractions for Class 5". Make quiz lights up. | Idle. | when all needed fields are in | - |
 | Sent | The form folds into 1 ask bubble, with Edit fields under it. | Starts work. | on tap | Message sent |
-| Answer | The quiz streams in, matching every field. | Writes. | - | Generating a response |
+| Answer | The quiz streams in (arrives word by word), matching every field. | Writes. | - | Generating a response |
 | Done | The full quiz. Edit fields reopens the form with her values kept. | Idle. | when done | Response complete |
 
 ## On each device
@@ -60,7 +60,7 @@ Turn a vague ask into fields, so people give the AI what it needs.
 
 ## Do and Avoid
 
-- **Do:** Only the values the AI really needs. The built ask shows what will be sent. (Topic · FractionsQuestions · 10Class · neededAsk: 10 questions on fractions for Class 5)
+- **Do:** Only the values the AI needs. The built ask shows what will be sent. (Topic · FractionsQuestions · 10Class · neededAsk: 10 questions on fractions for Class 5)
 - **Avoid:** Every setting becomes a required field. People give up, or type anything to get past. (Topic* · Tone* · Audience* · Format*Length* · Style* · Language* · Reading age*Persona* · Output* · Examples* · Rules*12 required fields)
 - **Do:** The note sits by the empty field and says why it is needed. (Class · Choose a classChoose a class, so the questions fit the age.Make quiz)
 - **Avoid:** The button is greyed out with no reason. People don't know what is missing. (Class · Choose a classMake quiz)
@@ -74,8 +74,8 @@ Turn a vague ask into fields, so people give the AI what it needs.
 
 ## Accessibility
 
-- Every field has a visible label tied to it. Placeholder text is never the only label.
-- Chips work as a radio group: arrow keys move, Space picks, and the picked one is announced.
+- Every field has a visible label tied to it. Placeholder text (the grey example inside the field) is never the only label.
+- Chips work as a radio group (a set where only 1 can be picked): arrow keys move, Space picks, and a screen reader announces the picked one.
 - When a needed value is missing, move focus to that field and announce the note: "Choose a class to continue".
 - The built ask is plain text, so a screen reader can read the whole ask before it is sent.
 

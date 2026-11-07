@@ -26,7 +26,7 @@ Let people leave a long task and be told when it is done.
 |---|---|---|---|---|
 | Asks | Her ask in the chat. | Plans the work. | 0 s | - |
 | Says how long | "This takes about 10 minutes. It keeps going if you close the app." A Notify me switch is on. Start. | Waits for Start. | before it starts | - |
-| Running | "Searching supplier sites · 4 of 10", a bar, "You can leave", and Stop. | Works in the cloud. | minutes | Research started. About 10 minutes |
+| Running | "Searching supplier sites · 4 of 10", a bar, "You can leave", and Stop. | Works in the cloud (on a server, not on her phone). | minutes | Research started. About 10 minutes |
 | She leaves | Another app. A small live status at the top: "Research · 6 of 10". | Keeps working. | - | - |
 | Told | A notification: "Supplier research is ready" with the result in 1 line - or "needs you" with the question. | Done, or paused for 1 answer. | when it ends or needs her | Supplier research is ready |
 | Opens | The result, "Done in 9 min", with the table - or the question with Allow once and Skip this site. | Idle, or goes on after her answer. | on tap | - |
@@ -40,7 +40,7 @@ Let people leave a long task and be told when it is done.
 
 ## Use when
 
-- The work takes minutes or more - research, long reports, agent tasks.
+- The work takes minutes or more - research, long reports, tasks for an agent (an AI that can take actions for you).
 - People have other things to do and shouldn't have to watch.
 - The task may stop to ask a question, so people need to know when it is waiting on them.
 
@@ -74,7 +74,7 @@ Let people leave a long task and be told when it is done.
 ## Accessibility
 
 - Announce the start with the time: "Research started. About 10 minutes".
-- Tapping the notification opens the result or the question with focus on its title, not at the top of the chat.
+- Tapping the notification opens the result or the question. Focus lands on its title, not at the top of the chat.
 - Progress has a text count ("4 of 10") as well as a bar.
 - Never rely on sound alone. The notification text and the chat both carry the news.
 

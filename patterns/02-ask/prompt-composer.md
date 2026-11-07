@@ -17,7 +17,7 @@ A box that grows with the ask and keeps its tools within reach.
 - **Setting:** Meera wants the top 5 support problems from last week, with an example of each.
 - **Trigger:** Her ask is 2 sentences long, and the tickets are in a file.
 - **Without it:** A 1-line box hides half of what she typed, and the file has to go in a separate message.
-- **With it:** The box grows as she types, the file sits in it as a chip, and Send lights up when it is ready.
+- **With it:** The box grows as she types. The file sits in it as a chip, and Send lights up when it is ready.
 - **Outcome:** 1 message, everything in it. The answer is right the first time.
 
 ## States over time
@@ -25,11 +25,11 @@ A box that grows with the ask and keeps its tools within reach.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Empty | A short hint, the tools on the left, the mic and a greyed Send on the right. | Idle. | 0 s | - |
-| Focused | The box lifts slightly; on a phone the keyboard opens. | Idle. | on tap | - |
-| Typing | Words appear; Send turns on with the first character. | Idle. | as typed | - |
+| Focused | The box lifts slightly. On a phone the keyboard opens. | Idle. | on tap | - |
+| Typing | Words appear. Send turns on with the first character. | Idle. | as typed | - |
 | Grows | The box grows to about 6 lines, then scrolls inside itself. | Idle. | after line 1 | - |
 | File added | The file appears as a chip with its name, size and an x to remove it. | Reads the file in the background. | on drop or pick | tickets.csv attached |
-| Ready | Send is fully on. Enter sends on desktop; on a phone, only the button does. | Idle. | - | - |
+| Ready | Send is fully on. Enter sends on desktop. On a phone, only the button does. | Idle. | - | - |
 | Sent | The box clears into the conversation and Send becomes Stop. | Starts working. | on send | Message sent |
 
 ## On each device
@@ -75,9 +75,9 @@ A box that grows with the ask and keeps its tools within reach.
 
 ## Accessibility
 
-- The input is a real textarea with a visible label or an aria-label that names it, like "Message".
-- Send and the tools button are real buttons with names; the disabled Send uses aria-disabled so it can still be found.
-- Announce attached files and errors in a polite status region: "tickets.csv attached".
+- The input is a real textarea with a visible label, or an aria-label (a name only screen readers hear), like "Message".
+- Send and the tools button are real buttons with names. The disabled Send uses aria-disabled (a tag that tells a screen reader it is off), so it can still be found.
+- Announce attached files and errors in a polite status region (the part of the page a screen reader announces on its own): "tickets.csv attached".
 - Never send on Enter on a phone - people use Return for new lines and lose half-written asks.
 - Keep focus in the input after sending, so a follow-up can be typed at once.
 

@@ -17,7 +17,7 @@ Show what the AI remembers about a person, and let them change or forget it.
 - **Setting:** Kenji asks for this week's running plan.
 - **Trigger:** The plan is easy, to protect his knee. His knee healed weeks ago.
 - **Without it:** He asks how it knows. "You mentioned it in August." There is nothing he can see or change.
-- **With it:** "Used 2 memories" opens the list. He deletes the knee memory.
+- **With it:** He taps "Used 2 memories" and the list opens. He deletes the knee memory.
 - **Outcome:** He asks again and gets a real training week, with hills on Thursday.
 
 ## States over time
@@ -35,7 +35,7 @@ Show what the AI remembers about a person, and let them change or forget it.
 
 - **Phone:** The "Used 2 memories" link opens a bottom sheet with the list. Edit and delete sit at the end of each row, at least 44 px.
 - **Tablet:** As on the phone, or as a side panel in landscape.
-- **Desktop:** The link opens a popover by the answer. The full list, with search, Pause and Delete all, lives in Settings.
+- **Desktop:** The link opens a popover (a small card that floats over the page) by the answer. The full list, with search, Pause and Delete all, lives in Settings.
 
 ## Use when
 

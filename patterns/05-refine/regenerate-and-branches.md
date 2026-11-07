@@ -24,7 +24,7 @@ Try again, or change the ask, without losing the last try.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| First answer | The answer streams in. | Writes. | 0-1 s | Generating a response |
+| First answer | The answer streams in (arrives word by word). | Writes. | 0-1 s | Generating a response |
 | Actions | Try again and Copy appear under the answer; a pencil sits by the ask. | Idle. | when done | Response complete |
 | Try again or edit | Try again replays the same ask. Edit opens the ask in place, with Cancel and Send. | Idle. | on tap | - |
 | New version | A new answer streams in the same place. | Writes again. | - | Generating a response |
@@ -61,13 +61,13 @@ Try again, or change the ask, without losing the last try.
 - **Do:** Every try is kept. People can go back to the one they liked. (Your bike, back on the road by Friday.↻ Try again ‹ 2 / 2 ›)
 - **Avoid:** The new answer replaces the old one. People stop trying again, in case they lose a good one. (Your bike, back on the road by Friday.↻ Try againThe first tagline is gone.)
 - **Do:** Editing the ask changes 1 detail and keeps the old answer as a version. (…a bike repair shop in LeedsEdit the ask in place, then send.)
-- **Avoid:** No edit, so people retype the whole ask and the thread fills with near-copies. (Write a 1-line tagline for a bike repair shopTo change it, type the whole ask again below.)
+- **Avoid:** There is no edit, so people retype the whole ask. The thread fills with near-copies. (Write a 1-line tagline for a bike repair shopTo change it, type the whole ask again below.)
 
 ## Writing
 
 - Say "Try again", not "Regenerate". It says what people get.
 - Show versions as "2 / 2" with arrows. No version names to learn.
-- If trying again will remove later messages in a branch, say so before it happens: "Messages after this will move to version 1."
+- If trying again will remove later messages in a branch (a side path of the chat), say so before it happens: "Messages after this will move to version 1."
 
 ## Accessibility
 

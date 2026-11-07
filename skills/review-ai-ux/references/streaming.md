@@ -15,7 +15,7 @@ Show the answer as it is written, so waiting feels like reading.
 > When I ask the AI for something long, I want to start reading before it has finished, so the wait feels like progress and I can stop it if it goes the wrong way.
 
 - **Setting:** Arjun asks the assistant for a 3-step plan for next week's launch.
-- **Trigger:** A long answer takes the model 5 seconds to write.
+- **Trigger:** A long answer takes the AI 5 seconds to write.
 - **Without it:** A spinner for 5 seconds, then a wall of text. He cannot tell if it is stuck, and step 1 is already wrong.
 - **With it:** The first words land in under a second. By step 2 he sees it misread the date, and presses Stop.
 - **Outcome:** He keeps what was right, fixes the date in 1 line, and asks again.
@@ -24,10 +24,10 @@ Show the answer as it is written, so waiting feels like reading.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Message sent | His message, and the composer locked to a Stop button. | Receives the ask. | 0 s | - |
+| Message sent | His message, and the composer (the box where he types) locked to a Stop button. | Receives the ask. | 0 s | - |
 | Waiting | 3 quiet dots where the answer will be. Stop is already there. | Thinks before the first word. | 0 to 1.2 s | Generating a response |
 | Still working | Only on a slow answer: "Still working - long answers take a moment." | Still thinking. | after 4 s | - |
-| First words | The answer starts in place, with a caret at its end. | Sends the first tokens. | 1.2 s | - |
+| First words | The answer starts in place, with a caret (a blinking line) at its end. | Sends the first tokens (pieces of words). | 1.2 s | - |
 | Streaming | Text grows in whole words. The page does not jump; it follows only if he has not scrolled away. | Writes the rest. | 1.2 to 5 s | - |
 | Done | The caret goes, Stop becomes the composer again, and Copy, Retry and feedback appear. | Finished. | 5 s | Response complete |
 | Stopped | Everything written so far stays, with a note that he stopped it and a Continue button. | Stops at once. | on Stop | Response stopped |
@@ -47,7 +47,7 @@ Show the answer as it is written, so waiting feels like reading.
 
 ## Don't use when
 
-- The output is a table, chart or form that only makes sense when complete - show a skeleton, then the whole thing. Use Generative UI and structured output instead.
+- The output is a table, chart or form that only makes sense when complete. Show a skeleton (a grey outline of the shape to come), then the whole thing. Use Generative UI and structured output instead.
 - The AI is working for minutes on a task, not writing - show steps instead of text. Use Thinking and processing steps instead.
 - The answer is under 1 second. Streaming then only adds flicker.
 
@@ -76,10 +76,10 @@ Show the answer as it is written, so waiting feels like reading.
 
 ## Accessibility
 
-- The chat history is a log with aria-live off. The streaming text is never a live region - screen readers would re-read or drop it token by token.
-- A hidden status region, polite and atomic, announces only 4 things: "Generating a response", "Response complete", "Response stopped" and "Response failed".
+- The chat history is a log with aria-live off. The streaming text is never a live region (the part of the page a screen reader announces on its own). Screen readers would re-read it or drop it, token by token.
+- A hidden status region, set to polite (it waits for a pause) and atomic (it reads the whole message), announces only 4 things: "Generating a response", "Response complete", "Response stopped" and "Response failed".
 - Stop is a real button. Focus stays in the composer while the answer streams and returns there when Stop goes away.
-- Under reduced motion, text appears in sentence chunks instead of word by word, and the caret does not blink.
+- Under reduced motion (a device setting that turns off animation), text appears in sentence chunks, not word by word. The caret does not blink.
 - Do not auto-scroll if the person has scrolled up to read - offer a "Jump to latest" button instead.
 
 ## Seen in

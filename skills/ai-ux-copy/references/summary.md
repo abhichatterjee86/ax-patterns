@@ -38,7 +38,7 @@ Give the short version first, with a way into the long one.
 
 ## Use when
 
-- The source is long and people need the gist before deciding to read it - threads, meetings, reports.
+- The source is long and people need the short version before deciding to read it - threads, meetings, reports.
 - People come back to something that changed while they were away.
 - Several people need the same short picture - a handover, a stand-up.
 
@@ -74,7 +74,7 @@ Give the short version first, with a way into the long one.
 
 - Give the summary a heading ("Summary, made by AI") and put it before the thread in reading order.
 - Name each source link by its target: "Message 31, from Priya".
-- Announce "Summary updated" in the polite status region when it changes. Do not move focus.
+- Announce "Summary updated" when it changes. Use the polite status region (the part of the page a screen reader reads out when it is next free). Do not move focus.
 - Collapse is a real button that says if the summary is open or closed, and the choice is remembered.
 
 ## Seen in

@@ -138,4 +138,4 @@ Last synced: 2026-11-07.
 - Pattern text and figures (`patterns/`, `references/`): [CC BY 4.0](LICENSE-CONTENT.md) - quote, teach, build on them, with credit and a link.
 - Skills, prompts and scripts: [MIT](LICENSE).
 
-Written by [Abhi Chatterjee](https://axpatterns.design/about), Lead UX/UI Designer. Cite as: "AX Patterns by Abhi Chatterjee, https://axpatterns.design, CC BY 4.0".
+Written by [Abhi Chatterjee](https://axpatterns.design/about), Senior AI Interaction Designer. Cite as: "AX Patterns by Abhi Chatterjee, https://axpatterns.design, CC BY 4.0".

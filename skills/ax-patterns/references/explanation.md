@@ -16,8 +16,8 @@ Say why the AI did this, in words a person can act on.
 
 - **Setting:** Wanjiru adds a taxi receipt from the airport, late at night.
 - **Trigger:** The AI check marks it "Needs review".
-- **Without it:** No reason, or only a model score. She sends it again unchanged, and it is flagged again.
-- **With it:** Why? shows 2 reasons with the numbers, the rule they come from, and what she can do.
+- **Without it:** No reason, or only a model score (a raw number from the AI). She sends it again unchanged, and the AI flags it again.
+- **With it:** She taps Why? and sees 2 reasons with the numbers, the rule they come from, and what she can do.
 - **Outcome:** She adds 1 line about the late flight. It goes to her manager on the first try.
 
 ## States over time
@@ -34,7 +34,7 @@ Say why the AI did this, in words a person can act on.
 
 - **Phone:** Why? sits next to the flag. The explanation opens in place under the item, so the numbers and the fix are on 1 screen.
 - **Tablet:** As on desktop.
-- **Desktop:** Why? opens a popover next to the item. Longer detail - the full rule, past cases - sits behind a link in the popover.
+- **Desktop:** Why? opens a popover (a small card that floats over the page) next to the item. Longer detail - the full rule, past cases - sits behind a link in the popover.
 
 ## Use when
 
@@ -54,13 +54,13 @@ Say why the AI did this, in words a person can act on.
 - **B. Why?:** 1 tap from the decision. Always there when the AI decides something.
 - **C. Reasons:** 2 or 3, in plain words, with the real numbers: KSh 4,200 against a KSh 3,000 limit.
 - **D. Where it comes from:** The rule or data behind the reason, linked, so people can check it.
-- **E. What to do:** The next step, and who really decides.
+- **E. What to do:** The next step, and who makes the final decision.
 
 ## Do and Avoid
 
 - **Do:** The reason, with the numbers and the rule. People know what is wrong. (Needs reviewKSh 4,200 is over the KSh 3,000 taxi limit.From Travel policy 4.2)
 - **Avoid:** A model score says how sure the AI is, not why. People cannot act on it. (Needs reviewRisk score 0.82 (limit 0.75))
-- **Do:** Ends with what people can do, and who really decides. (23:40 is outside work hours.To send it, add a reason. Your manager decides.)
+- **Do:** Ends with what people can do, and who makes the final decision. (23:40 is outside work hours.To send it, add a reason. Your manager decides.)
 - **Avoid:** A reason with no way on. People feel judged by a machine and stop trusting it. (23:40 is outside work hours.This decision is final.)
 
 ## Writing

@@ -34,9 +34,9 @@ Put long output beside the chat on desktop, and in a full sheet on a phone.
 
 ## On each device
 
-- **Phone:** A full-screen sheet with the composer still at the bottom and a clear way back to the chat. Never a squeezed split view.
+- **Phone:** A full-screen sheet. The composer (the box where you type) stays at the bottom, with a clear way back to the chat. Never a squeezed split view.
 - **Tablet:** Beside the chat in landscape. In portrait, a sheet from the bottom that can be dragged to full height.
-- **Desktop:** Beside the chat, about half the width or more. The chat narrows but stays readable; a close button sits in the pane header.
+- **Desktop:** Beside the chat, about half the width or more. The chat narrows but stays readable. A close button sits in the pane header.
 
 ## Use when
 
@@ -48,7 +48,7 @@ Put long output beside the chat on desktop, and in a full sheet on a phone.
 
 - The answer is short and read once - keep it in the chat. Use Streaming response instead.
 - The output is a small interactive card - a chart, a booking - that fits in the thread. Use Generative UI and structured output instead.
-- People need to watch an agent work, not read its output. Use Agent workspace and management instead.
+- People need to watch an agent (an AI that takes actions for you) work, not read its output. Use Agent workspace and management instead.
 
 ## Anatomy
 
@@ -73,7 +73,7 @@ Put long output beside the chat on desktop, and in a full sheet on a phone.
 
 ## Accessibility
 
-- The pane is a labelled region (aria-labelledby its title). On a phone, the sheet is a dialog with a visible close.
+- The pane is a labelled region (a named part of the page a screen reader can jump to), with aria-labelledby pointing at its title. On a phone, the sheet is a dialog with a visible close.
 - Opening the pane moves focus to its title; closing returns focus to the card that opened it.
 - Announce saves once: "Version 2 saved".
 - Marked changes use a background and text, not colour alone.

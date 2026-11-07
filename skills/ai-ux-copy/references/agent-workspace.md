@@ -12,7 +12,7 @@ Give people 1 place to see, start and manage the agents working for them.
 
 ## Story
 
-> When several AI agents are working for me at once, I want 1 place that shows which ones need me, so I can unblock them first and leave the rest alone.
+> When several AI agents (AIs that can take actions for me) are working for me at once, I want 1 place that shows which ones need me. Then I can unblock them first and leave the rest alone.
 
 - **Setting:** Siobhán has 4 agents running: invoices, a weekly report, travel and a supplier check.
 - **Trigger:** The supplier check has been waiting for her yes since 07:15.
@@ -26,7 +26,7 @@ Give people 1 place to see, start and manage the agents working for them.
 |---|---|---|---|---|
 | Workspace | A count by status, then 1 row per agent: name, what it is doing, time, status. | Agents keep working. | on open | - |
 | Needs you | The agent waiting for a person sits first and says so in words. | That agent is paused. | while it waits | 1 agent needs you |
-| Hunt for it | With newest first, the waiting agent is at the bottom - on a phone, below the fold. | Still paused. | - | - |
+| Hunt for it | With newest first, the waiting agent is at the bottom - on a phone, off the bottom of the screen. | Still paused. | - | - |
 | Open it | The agent's work so far and its question. Pause and Stop are always there. | Paused. | on tap | - |
 | Answer | The person approves. The row changes to Running. | Resumes. | on tap | - |
 | Back to list | The count updates: "None need you". | Agents keep working. | - | Supplier check is running again |
@@ -35,7 +35,7 @@ Give people 1 place to see, start and manage the agents working for them.
 
 - **Phone:** A list, with agents that need you first. Opening 1 fills the screen, with a back link to the list. Waiting agents also send a notification.
 - **Tablet:** As on desktop.
-- **Desktop:** The list on the left, the open agent on the right, so people can work down the list without losing their place.
+- **Desktop:** The list on the left, the open agent on the right. People can work down the list without losing their place.
 
 ## Use when
 

@@ -17,7 +17,7 @@ Mark what the AI made, so people always know what they are reading.
 - **Setting:** Ines opens the notes from a meeting she missed. Tom wrote some, an AI wrote the rest.
 - **Trigger:** The summary says she must send the budget "by Friday".
 - **Without it:** Nothing marks the summary as AI. She thinks Tom set the deadline and plans her week around it.
-- **With it:** A label says "Summarised with AI". Tapped, it says what the AI did and that dates can be wrong.
+- **With it:** A label says "Summarised with AI". She taps it. It says what the AI did and that dates can be wrong.
 - **Outcome:** She checks the recording before she plans her week. If she fixes the date, the label says she edited it.
 
 ## States over time
@@ -26,7 +26,7 @@ Mark what the AI made, so people always know what they are reading.
 |---|---|---|---|---|
 | Mixed page | A colleague's notes with his name, then the AI summary with its label and a line in the margin. | Done earlier. | on open | - |
 | Reading | The label sits at the top of the AI part, before the first line: "Summarised with AI". | - | - | - |
-| Explained | Tapping the label opens a small popover: what the AI did, what was not checked, and a link to the source. | - | on tap | About this summary |
+| Explained | Tapping the label opens a small popover (a card that floats over the page): what the AI did, what was not checked, and a link to the source. | - | on tap | About this summary |
 | Edited | After a person edits the text, the label changes to "Edited by you · from AI", with Revert to AI. | - | on edit | - |
 | Knows | The reader knows who wrote what and what to check. | - | - | - |
 
@@ -50,7 +50,7 @@ Mark what the AI made, so people always know what they are reading.
 
 ## Anatomy
 
-- **A. Label:** Names what the AI did - "Summarised with AI", not just "AI". Tapping it opens the popover.
+- **A. Label:** Names what the AI did - "Summarised with AI", not a bare "AI". Tapping it opens the popover.
 - **B. AI area:** A line in the margin shows where the AI part starts and ends.
 - **C. What the AI did:** 1 sentence: the task and the input - the 42 min recording.
 - **D. What to check:** What was not checked, and what can be wrong. In amber.
@@ -59,13 +59,13 @@ Mark what the AI made, so people always know what they are reading.
 ## Do and Avoid
 
 - **Do:** Says what the AI did, and opens what to check. (✦ Summarised with AIInes sends the budget by Friday.Tap the label to see what to check.)
-- **Avoid:** A bare sparkle. Some people miss it; others know it is AI but not what to check. (✦Ines sends the budget by Friday.Tap: “AI”)
+- **Avoid:** A bare sparkle. Some people miss it. Others know it is AI but not what to check. (✦Ines sends the budget by Friday.Tap: “AI”)
 - **Do:** After a person edits it, the label says so, and the AI version is 1 tap away. (Edited by you · from AIInes sends the budget by Monday.Revert to AI)
 - **Avoid:** The label still says AI after a person fixed it. The label stops meaning anything. (✦ Summarised with AIInes sends the budget by Monday.)
 
 ## Writing
 
-- Name the action: "Summarised with AI", "Drafted with AI", "Translated with AI". Not just "AI".
+- Name the action: "Summarised with AI", "Drafted with AI", "Translated with AI". Not a bare "AI".
 - In the popover, say what the AI used, what nobody checked, and what can be wrong, in 3 short lines.
 - Use the same words for the same thing everywhere in the product.
 - Never let AI text pass as a person's. If a person edited it, say "Edited by" and their name.
@@ -73,7 +73,7 @@ Mark what the AI made, so people always know what they are reading.
 ## Accessibility
 
 - The label is a button with a full name, like "Summarised with AI, about this summary", not "sparkle".
-- Mark the AI area as a region named "AI summary", so screen reader users hear where it starts and ends.
+- Mark the AI area as a region (a named block a screen reader can jump to) called "AI summary", so screen reader users hear where it starts and ends.
 - The popover opens on Enter and Space, closes on Escape, and returns focus to the label.
 - Do not use colour or a glow alone to mark AI text - always have the words.
 
@@ -86,7 +86,7 @@ Mark what the AI made, so people always know what they are reading.
 ## Related patterns
 
 - Often combined with Explanation: The label is the door to why and how the AI made this.
-- Often combined with Disclaimer: The label says which part is AI; the disclaimer says what AI may get wrong.
+- Often combined with Disclaimer: The label says which part is AI. The disclaimer says what AI may get wrong.
 - Often combined with Citations and sources: Link the AI text to what it came from.
 - Often combined with Edit output and revert to AI: When people edit AI text, the label changes to say so.
 

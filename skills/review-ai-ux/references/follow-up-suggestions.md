@@ -24,7 +24,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Answer | The answer streams in. No suggestions yet. | Writes. | 0-2 s | Generating a response |
+| Answer | The answer streams in (arrives word by word). No suggestions yet. | Writes. | 0-2 s | Generating a response |
 | Suggestions | "Ask next" and 3 short asks under the answer, about this answer. | Idle. | when the answer is done | Response complete |
 | Tap | The tapped suggestion fills in. | Idle. | on tap | - |
 | Add to it | If a tap fills the box, the person can add words before sending. | Idle. | optional | - |
@@ -34,7 +34,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 ## On each device
 
 - **Phone:** Suggestions stack as full-width rows under the answer, each at least 44 px tall, so they are easy to tap with a thumb.
-- **Tablet:** A wrapping row of pills under the answer.
+- **Tablet:** A wrapping row of pills (small rounded buttons) under the answer.
 - **Desktop:** A wrapping row of pills under the latest answer. A long suggestion shows in full on hover and focus.
 
 ## Use when
@@ -54,7 +54,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 - **A. Label:** "Ask next" - says these are questions to send, not part of the answer.
 - **B. Specific ask:** Comes from this answer, in the person's own words, ready to send.
 - **C. Something to do:** Not only questions: "Quiz me on this", "Make a checklist".
-- **D. The box:** Always there. Suggestions help; they never replace typing.
+- **D. The box:** Always there. Suggestions help. They never replace typing.
 
 ## Do and Avoid
 
@@ -74,7 +74,7 @@ Offer the next 2 or 3 asks, so the conversation keeps moving.
 
 - Make suggestions a list of real buttons named by their text, after the answer in reading order, under the heading "Ask next".
 - Do not read each suggestion aloud when it appears. "Response complete" is enough; people find them by moving on.
-- When a tap fills the box, move focus to the box with the caret at the end.
+- When a tap fills the box, move focus to the box with the caret (the typing cursor) at the end.
 - When old suggestions are removed, keep focus on the new message, not the top of the page.
 
 ## Seen in

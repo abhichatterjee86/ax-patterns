@@ -12,7 +12,7 @@ Hand over to a person cleanly when the AI should not go on.
 
 ## Story
 
-> When an AI assistant can't solve my problem, I want it to pass me to a person who already knows the story, so I don't have to explain it all again.
+> When an AI assistant can't solve my problem, I want it to pass me to a person who already knows the story. Then I don't have to explain it all again.
 
 - **Setting:** Wanjiru opens the help chat: she was charged twice for October.
 - **Trigger:** The assistant finds the 2 payments, but it is not allowed to refund.
@@ -26,7 +26,7 @@ Hand over to a person cleanly when the AI should not go on.
 |---|---|---|---|---|
 | Asked | The problem. | Reads it. | 0 s | - |
 | AI tries | The assistant, marked AI, finds what it can: 2 payments, 4 minutes apart. | Answers. | - | Generating a response |
-| Can't go on | Either the person asks for a human, or the AI says what it can't do and offers a person: "Shall I pass this to them?" | Stops trying. | as soon as it knows | - |
+| Can't go on | The person asks for a human. Or the AI says what it can't do and offers a person: "Shall I pass this to them?" | Stops trying. | as soon as it knows | - |
 | Handoff | Who it goes to, that it is a person, the wait, and what they will see. | Hands over the chat and a short summary. | - | Connecting you to a person |
 | Person joins | A clear change of voice: "Otieno · Billing team". The first message uses the facts. | Silent. | after the wait | Otieno from Billing joined |
 | Solved | What the person did, in 1 past-tense line. | Silent. | - | - |
@@ -73,9 +73,9 @@ Hand over to a person cleanly when the AI should not go on.
 
 ## Accessibility
 
-- Announce "Connecting you to a person" and then who joined, in the polite status region.
+- Announce "Connecting you to a person" and then who joined, in the polite status region (the part of the page a screen reader reads out on its own, without interrupting).
 - Name every speaker in text, not only with an avatar or colour.
-- Keep focus in the composer through the handoff, so people can keep typing.
+- Keep focus in the composer (the box where people type) through the handoff, so people can keep typing.
 - Don't time people out while they wait. If the chat must close, say so and offer another way.
 
 ## Seen in
@@ -87,7 +87,7 @@ Hand over to a person cleanly when the AI should not go on.
 
 - Often combined with Error, refusal and limits: When the AI can't help, a person is 1 of the ways forward.
 - Often combined with Summary: The short summary that goes with the chat to the person.
-- Alternative to Approval gate: The AI can act, but asks the user for a yes first.
+- Alternative to Approval gate: The AI can act, but asks the person for a yes first.
 - Often combined with AI label and disclosure: Marks which messages come from the AI and which from a person.
 
 ## Sources

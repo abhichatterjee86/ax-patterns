@@ -55,7 +55,7 @@ Let people add files, images and context to the ask, and see what is attached.
 
 - **A. Add:** 1 + button for files, photos and camera. Drag, drop and paste do the same.
 - **B. File chip:** The file's name and type icon, 1 chip per file.
-- **C. Size and status:** Pages or size when ready; progress while uploading; the reason when it failed.
+- **C. Size and status:** Pages or size when ready. Progress while uploading. The reason when it failed.
 - **D. Remove:** An X on each chip, so 1 file can go without starting again.
 - **E. Send:** Waits until every chip is ready, so nothing is sent half uploaded.
 
@@ -75,7 +75,7 @@ Let people add files, images and context to the ask, and see what is attached.
 
 ## Accessibility
 
-- Announce each change in the polite status region: "Kwik-invoice-0412.pdf attached", "Bains-Foods-Oct.pdf is too big".
+- Announce each change in the polite status region (the part of the page a screen reader announces on its own): "Kwik-invoice-0412.pdf attached", "Bains-Foods-Oct.pdf is too big".
 - Each remove button is named with the file: "Remove Kwik-invoice-0412.pdf".
 - Drag and drop always has a button that does the same thing.
 - Don't show a failed upload by colour alone - use an icon and words.

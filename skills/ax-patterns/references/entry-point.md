@@ -16,7 +16,7 @@ Give the AI 1 clear door in the product, so people know where it lives.
 
 - **Setting:** Inês is checking the March rota for 4 nurses in a shared doc.
 - **Trigger:** Something looks wrong. She wants the AI to count the nights.
-- **Without it:** 3 sparkle icons sit on different buttons. She tries 2 before 1 opens a blank chat, and then she has to describe the rota.
+- **Without it:** 3 sparkle icons sit on different buttons. She tries 2 before 1 opens a blank chat. Then she has to describe the rota.
 - **With it:** A button named "Ask AI" sits top right. It opens beside the rota, already looking at it.
 - **Outcome:** She asks 1 short question and learns Ana has 3 nights too many.
 
@@ -28,7 +28,7 @@ Give the AI 1 clear door in the product, so people know where it lives.
 | Finds the door | The button has a sparkle and a name. Hover or focus shows the shortcut. | Idle. | - | - |
 | Opens | The assistant opens beside the page with a chip: "Looking at: Rota - March". | Ready, with the page as context. | on tap or shortcut | Assistant opened |
 | Asks | A short ask, because the page is already shared. | Idle. | - | - |
-| Answering | The answer streams in the panel. The page stays visible. | Writes. | - | Generating a response |
+| Answering | The answer streams into the panel (it arrives word by word). The page stays visible. | Writes. | - | Generating a response |
 | Answered | The answer, next to the work it is about. The same button closes the panel. | Idle. | when done | Response complete |
 
 ## On each device
@@ -71,10 +71,10 @@ Give the AI 1 clear door in the product, so people know where it lives.
 
 ## Accessibility
 
-- The button's accessible name matches its visible label, so voice control users can say "Click Ask AI".
-- The button shows its state with aria-expanded and is at least 44 px on touch screens.
-- Opening moves focus into the panel's box; closing returns focus to the button.
-- The keyboard shortcut is listed in the button's tooltip and in help, and does not clash with the product's own shortcuts.
+- The button's accessible name (what a screen reader calls it) matches its visible label. So voice control users can say "Click Ask AI".
+- The button tells screen readers whether the panel is open (with aria-expanded). It is at least 44 px on touch screens.
+- Opening moves focus into the panel's box. Closing returns focus to the button.
+- The keyboard shortcut is listed in the button's tooltip and in help. It does not clash with the product's own shortcuts.
 
 ## Seen in
 

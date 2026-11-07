@@ -17,7 +17,7 @@ Say what the AI can and cannot do before the first ask.
 - **Setting:** Rahul opens the new study helper for his ACC101 course.
 - **Trigger:** He is not sure what it is for - homework, marks, or both.
 - **Without it:** "Ask me anything!" So he asks for his mid-term mark and gets "Sorry, I can't help with that."
-- **With it:** A short card says it explains and quizzes from the course notes, and that marks are in the Student Portal.
+- **With it:** A short card says it explains and quizzes from the course notes. Marks are in the Student Portal.
 - **Outcome:** He asks for an example of depreciation and gets 1 from chapter 4.
 
 ## States over time
@@ -28,14 +28,14 @@ Say what the AI can and cannot do before the first ask.
 | Reads the card | Each limit says where to go instead. 1 example ask sits under the card. | Idle. | about 10 s | - |
 | Asks | An ask that fits what the card said. The placeholder names the scope. | Idle. | - | - |
 | Goes elsewhere | For a thing the AI can't do, the link in the card takes him to the right place. | Idle. | on tap | - |
-| Answering | The answer streams in. | Writes. | - | Generating a response |
+| Answering | The answer streams in (it arrives word by word). | Writes. | - | Generating a response |
 | Done | On a phone the card folds to 1 line, "What I can and can't do", still 1 tap away. | Idle. | after the first ask | Response complete |
 
 ## On each device
 
 - **Phone:** The card is short - 1 intro line, 3 cans, 2 can'ts. After the first ask it folds to 1 line above the chat.
 - **Tablet:** As on desktop.
-- **Desktop:** The card sits in the empty chat, above the box. It stays at the top of the thread, and help links to the full list.
+- **Desktop:** The card sits in the empty chat, above the box. It stays at the top of the thread. Help links to the full list.
 
 ## Use when
 
@@ -74,9 +74,9 @@ Say what the AI can and cannot do before the first ask.
 ## Accessibility
 
 - Give the card a heading ("What I can and can't do") so screen reader users can jump to it.
-- Use real lists for can and can't, and don't rely on the tick and cross icons alone - the words say it.
+- Use real lists for can and can't. Don't rely on the tick and cross icons alone - the words say it.
 - Links to other places say where they go: "Student Portal", not "here".
-- The folded line is a button with aria-expanded, so the card can be opened again from the keyboard.
+- The folded line is a button that tells screen readers whether the card is open (with aria-expanded). So the card can be opened again from the keyboard.
 
 ## Seen in
 

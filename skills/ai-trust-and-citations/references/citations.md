@@ -14,7 +14,7 @@ Link every claim in an AI answer to the source it came from.
 
 > When I ask the AI a factual question, I want to see where each part of the answer comes from, so I can decide in seconds whether to trust it.
 
-- **Setting:** Priya needs 1 number for a slide: how much of a web page people actually read.
+- **Setting:** Priya needs 1 number for a slide: how much of a web page people read.
 - **Trigger:** She asks the assistant. It answers in 3 confident sentences.
 - **Without it:** Nothing says where the number came from. She cannot put it on a slide, so she searches again herself.
 - **With it:** Each sentence ends in a small number. She taps 1 and the source opens in a sheet, with the line it came from.
@@ -24,9 +24,9 @@ Link every claim in an AI answer to the source it came from.
 
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
-| Question sent | Her question, and the composer clears. | Reads the question and decides it needs sources. | 0 s | - |
+| Question sent | Her question, and the composer (the box she typed in) clears. | Reads the question and decides it needs sources. | 0 s | - |
 | Searching | "Searching 6 sources" with the site icons appearing 1 by 1. | Finds and reads pages. | 0 to 1.5 s | Searching |
-| Answering | The answer streams in. A number appears at the end of each sentence as it lands. | Writes the answer and links each claim to the passage behind it. | 1.5 to 4.5 s | Generating a response |
+| Answering | The answer streams in (it arrives word by word). A number appears at the end of each sentence as it lands. | Writes the answer and links each claim to the passage behind it. | 1.5 to 4.5 s | Generating a response |
 | Sources shown | On a phone, a "3 sources" row under the answer. On desktop, the list beside it. | Done writing; the full list is now fixed. | 4.5 s | - |
 | Previewing a source | The title, the site, the date, and the exact passage, highlighted. | Nothing - this is the person checking. | on tap | Source 1 of 3, Nielsen Norman Group |
 | Done | The answer with its markers, and the sources 1 tap away. | Waits for the next question. | 7 s | Response complete, 3 sources |
@@ -34,8 +34,8 @@ Link every claim in an AI answer to the source it came from.
 ## On each device
 
 - **Phone:** Markers are tap targets of at least 24 px. The source opens in a bottom sheet, not a hover card, and the answer stays where it was.
-- **Tablet:** In landscape there is room for a narrow source column; in portrait, use the phone's sheet. Perplexity's Apr 2026 iPad redesign added richer citation displays.
-- **Desktop:** Sources sit in a column beside the answer, open by default. Hovering a marker highlights its source; clicking keeps it open.
+- **Tablet:** In landscape there is room for a narrow source column. In portrait, use the phone's sheet. Perplexity's Apr 2026 iPad redesign added richer citation displays.
+- **Desktop:** Sources sit in a column beside the answer, open by default. Hovering a marker highlights its source. Clicking keeps it open.
 
 ## Use when
 
@@ -78,7 +78,7 @@ Link every claim in an AI answer to the source it came from.
 - Each marker is a real button with a name like "Source 1: Nielsen Norman Group", not just "1".
 - Markers are at least 24 by 24 px, so they pass the WCAG 2.2 target-size rule on a phone.
 - Opening a source moves focus into the sheet; closing it returns focus to the marker.
-- The answer is not a live region. Announce only that the response is complete and how many sources it has.
+- The answer is not a live region (the part of the page a screen reader announces on its own). Announce only that the answer is complete and how many sources it has.
 - Do not show the source only on hover - keyboard and touch users never see a hover.
 
 ## Seen in

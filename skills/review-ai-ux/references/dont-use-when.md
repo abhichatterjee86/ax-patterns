@@ -23,12 +23,12 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 - People need to see the limits first, not examples. → use **Capability disclosure**
 
 #### Proactive nudges
-- People are in the middle of typing or a task with a deadline - wait, or offer it on demand. → use **Inline action on selection**
+- People are in the middle of typing or a task with a deadline - wait, or offer it when they ask. → use **Inline action on selection**
 - The offer is general, like "Need help?" - show example asks instead. → use **Suggested prompts**
 - The AI would act, not just offer - ask first, before acting. → use **Approval gate**
 
 #### Smart onboarding
-- The AI can learn the fact from the first ask - ask then, in context, not up front.
+- The AI can learn the fact from the first ask - ask then, in the moment, not up front.
 - People only need to know what the tool does, not set it up. → use **Capability disclosure**
 - The facts are personal and change often - let people manage what the AI remembers. → use **Memory controls**
 
@@ -50,7 +50,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 #### Multimodal input
 - People only need to attach documents to read - files are enough. → use **Attachments and context chips**
 - Speech alone does the job - a spoken ask with no picture. → use **Voice input**
-- The AI must act on the screen, not just look - that needs an agent people can watch. → use **Watch mode and takeover**
+- The AI must act on the screen, not only look - that needs an agent (an AI that can take actions for you) people can watch. → use **Watch mode and takeover**
 
 #### Structured prompt
 - The ask is open and creative, and fields would box people in. → use **Prompt composer**
@@ -73,7 +73,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 - The action would send, post or delete something. That needs a check first. → use **Approval gate**
 
 #### Mode and model selection
-- The product can pick well on its own. Offer Auto as the default, with the picker as an override.
+- The product can pick well on its own. Offer Auto as the default, and keep the picker for people who want to change it.
 - The difference is only how long or formal the answer is. → use **Adjust length and tone**
 - The ask needs exact values, not a way of working. → use **Structured prompt**
 
@@ -83,7 +83,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 - The work runs for minutes while people do something else. → use **Long-running tasks and notifications**
 
 #### Streaming response
-- The output is a table, chart or form that only makes sense when complete - show a skeleton, then the whole thing. → use **Generative UI and structured output**
+- The output is a table, chart or form that only makes sense when complete. Show a skeleton (a grey outline of the shape to come), then the whole thing. → use **Generative UI and structured output**
 - The AI is working for minutes on a task, not writing - show steps instead of text. → use **Thinking and processing steps**
 - The answer is under 1 second. Streaming then only adds flicker.
 
@@ -105,7 +105,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 #### Side pane and artifacts
 - The answer is short and read once - keep it in the chat. → use **Streaming response**
 - The output is a small interactive card - a chart, a booking - that fits in the thread. → use **Generative UI and structured output**
-- People need to watch an agent work, not read its output. → use **Agent workspace and management**
+- People need to watch an agent (an AI that takes actions for you) work, not read its output. → use **Agent workspace and management**
 
 #### Generative UI and structured output
 - The answer is 1 fact or 1 sentence. A sentence is faster to read than a card.
@@ -138,7 +138,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 - People want to speak their ask but read the answer. → use **Voice input**
 
 #### Stop generation
-- The AI is doing things, not just writing - stopping must also say what was already done. → use **Watch mode and takeover**
+- The AI is doing things, not only writing. Stopping must also say what it already did. → use **Watch mode and takeover**
 - People want to change the direction, not end it. → use **Update mid-run**
 - Answers are always instant - there is nothing to stop. → use **Streaming response**
 
@@ -165,12 +165,12 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 #### Granular feedback
 - People want to fix this answer now, not report it. → use **Regenerate, edit and branches**
 - The answer was blocked or failed - say why and offer a way on first. → use **Error, refusal and limits**
-- People judge many small items in a row, like 20 suggestions - a form on each one slows them down. A thumb is enough there.
+- People judge many small items in a row, like 20 suggestions. A form on each one slows them down. A thumb is enough there.
 
 #### Version history and checkpoints
 - The output is a short chat answer - versions under the answer are enough. → use **Regenerate, edit and branches**
 - People need to judge each small change before it lands. → use **Draft mode and review**
-- People need a record of what an agent did in the world, like emails sent - those cannot be restored. → use **Activity log and undo**
+- People need a record of what an agent did in the world, like emails sent. Those cannot be restored. → use **Activity log and undo**
 
 #### Citations and sources
 - The output is creative or personal, like a poem or a birthday message - there is nothing to cite.
@@ -190,7 +190,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 #### Error, refusal and limits
 - The AI could answer, but is unsure - show how sure it is instead. → use **Confidence display**
 - The AI needs more detail to answer - ask a question, not an error. → use **Escalation and human handoff**
-- An agent is about to do something risky - ask first, before anything fails. → use **Approval gate**
+- An agent (an AI that can take actions for you) is about to do something risky - ask first, before anything fails. → use **Approval gate**
 
 #### Memory controls
 - People want 1 chat that is not saved or remembered at all. → use **Temporary chat**
@@ -204,7 +204,7 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 
 #### Temporary chat
 - People want to keep the chat but fix what the AI remembers. → use **Memory controls**
-- The worry is training on all chats, not 1 chat - give a setting for that. → use **Consent and data controls**
+- The worry is the AI training on (learning from) all chats, not 1 chat - give a setting for that. → use **Consent and data controls**
 - The work needs to last - a project, a long document. A temporary chat would lose it.
 
 #### Explanation
@@ -213,12 +213,12 @@ From every pattern's "Don't use when" section. Source: https://axpatterns.design
 - People need to know how sure the AI is, more than why. → use **Confidence display**
 
 #### Intent preview and plan
-- The task is 1 quick step - a plan for it is just an extra tap.
+- The task is 1 quick step - a plan for it is only an extra tap.
 - Only 1 step is risky. Ask at that step instead of showing the whole plan. → use **Approval gate**
 - People want to watch and steer while it works, not agree a plan first. → use **Watch mode and takeover**
 
 #### Approval gate
-- The step is safe and undoable, like reading or drafting - asking every time trains people to approve without looking. → use **Autonomy dial**
+- The step is safe and undoable, like reading or drafting. Asking every time trains people to approve without looking. → use **Autonomy dial**
 - People want to see the whole plan before anything starts. → use **Intent preview and plan**
 - People want to watch and step in while it works. → use **Watch mode and takeover**
 

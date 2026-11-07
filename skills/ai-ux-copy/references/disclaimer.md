@@ -25,8 +25,8 @@ Say what the AI may get wrong, once, in the right place, in plain words.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Asked | The question. | Starts. | 0 s | - |
-| Pop-up (avoid) | A dialog before every answer. People tap I understand without reading. | Waits. | every time | Dialog: AI can make mistakes |
-| Answer | The answer streams in. The quiet line under the composer is always there. | Writes. | - | Generating a response |
+| Pop-up (avoid) | A pop-up before every answer. People tap I understand without reading. | Waits. | every time | Dialog: AI can make mistakes |
+| Answer | The answer streams in (it arrives word by word). The quiet line under the composer (the box people type in) is always there. | Writes. | - | Generating a response |
 | Caveat | For high-stakes topics only: 1 line in amber at the end of the answer, about this answer, with a next step. | Writes. | end of the answer | - |
 | Done | The caveat stays with the answer, so it is there when people come back or share it. | Idle. | when done | Response complete |
 
@@ -72,8 +72,8 @@ Say what the AI may get wrong, once, in the right place, in plain words.
 
 - Do not rely on amber alone. Start the caveat with a warning icon that has a text name, like "Caution".
 - Keep the caveat inside the answer's text, so it is read in order with the answer.
-- The quiet line must pass 4.5:1 contrast, even though it is quiet.
-- Never trap focus in a pop-up that blocks every answer. If a 1-time notice is needed, it can be dismissed and not shown again.
+- The quiet line must pass 4.5:1 contrast (the colour difference between text and background), even though it is quiet.
+- Never trap keyboard focus (so people cannot tab out) in a pop-up that blocks every answer. If a 1-time notice is needed, people dismiss it once and never see it again.
 
 ## Seen in
 
@@ -83,7 +83,7 @@ Say what the AI may get wrong, once, in the right place, in plain words.
 
 ## Related patterns
 
-- Often combined with AI label and disclosure: The label marks which part is AI; the disclaimer says what may be wrong.
+- Often combined with AI label and disclosure: The label marks which part is AI. The disclaimer says what may be wrong.
 - Often combined with Citations and sources: Sources let people check the answer the disclaimer warns about.
 - Alternative to Confidence display: Shows how sure the AI is, part by part, instead of 1 general warning.
 - Often combined with Capability disclosure: Say what the AI cannot do before the first ask, not after every answer.

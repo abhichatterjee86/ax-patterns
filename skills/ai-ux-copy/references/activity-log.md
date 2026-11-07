@@ -12,7 +12,7 @@ Record every action an agent took, and let people undo the ones they can.
 
 ## Story
 
-> When an AI agent has changed things for me, I want a list of each thing it did and a way to undo the ones I don't want, so I can trust it with real work.
+> When an AI agent (an AI that can take actions for me) has changed things for me, I want a list of each thing it did and a way to undo the ones I don't want. Then I can trust it with real work.
 
 - **Setting:** Oliver asks the agent to clear Thursday afternoon for a big wedding order.
 - **Trigger:** The agent is done. Then he remembers: the design review with Ama is about his new boxes.
@@ -25,7 +25,7 @@ Record every action an agent took, and let people undo the ones they can.
 | State | The person sees | The AI is | When | Screen reader |
 |---|---|---|---|---|
 | Report | A header with the count, the time span and how long undo works. Then 1 line per action. | Idle. | when the task ends | Task complete |
-| Find it | Each line has a time, a past-tense verb and the target. Safe reads say "Nothing changed". | Idle. | - | - |
+| Find it | Each line has a time, a past-tense verb and the target. Steps that only read something say "Nothing changed". | Idle. | - | - |
 | Undo | The person taps Undo on 1 line. Lines that can't be undone say so, and offer a fix instead. | Reverses that 1 action. | on tap | - |
 | Undone | The line is struck through, "Undone by you", and a new line records the undo. | Idle. | about 1 s | Action undone |
 
@@ -33,7 +33,7 @@ Record every action an agent took, and let people undo the ones they can.
 
 - **Phone:** The log sits in the thread under the result, newest action last. Each Undo is a 44 px target at the end of its line.
 - **Tablet:** As on desktop.
-- **Desktop:** The chat on the left, the log in a pane on the right, with times in a fixed column so the eye can scan them.
+- **Desktop:** The chat on the left, the log in a pane on the right. Times sit in a fixed column so the eye can scan them.
 
 ## Use when
 
@@ -50,7 +50,7 @@ Record every action an agent took, and let people undo the ones they can.
 ## Anatomy
 
 - **A. Header:** How many actions, when, and how long undo works.
-- **B. 1 line per action:** Time, past-tense verb and target. Reads are listed too, marked "Nothing changed".
+- **B. 1 line per action:** Time, past-tense verb and target. Steps that only read something are listed too, marked "Nothing changed".
 - **C. Undo:** On each line that can be reversed. Undoes that line only.
 - **D. Can't undo:** Said in words on lines that can't be reversed, like a sent email.
 
