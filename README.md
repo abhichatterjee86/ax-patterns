@@ -17,14 +17,14 @@ No `npx`? Copy a folder from `skills/` into your tool's skills directory (`.clau
 
 ## The skills
 
-| Skill | Use it when |
-|---|---|
-| [ax-patterns](skills/ax-patterns/SKILL.md) | Designing or building any AI interaction. The 7 moments, the index of all 50 patterns, the rules that hold everywhere. Start here. |
-| [review-ai-ux](skills/review-ai-ux/SKILL.md) | Auditing an existing AI feature. Walks the moments, scores findings Blocker / Major / Minor, names the fix and the pattern. |
-| [ai-wait-states](skills/ai-wait-states/SKILL.md) | Loading lines, thinking steps, streaming, stop, long tasks, mid-run updates - with timings and copy. |
+| Skill                                                            | Use it when                                                                                                                                 |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ax-patterns](skills/ax-patterns/SKILL.md)                       | Designing or building any AI interaction. The 7 moments, the index of all 50 patterns, the rules that hold everywhere. Start here. |
+| [review-ai-ux](skills/review-ai-ux/SKILL.md)                     | Auditing an existing AI feature. Walks the moments, scores findings Blocker / Major / Minor, names the fix and the pattern.                 |
+| [ai-wait-states](skills/ai-wait-states/SKILL.md)                 | Loading lines, thinking steps, streaming, stop, long tasks, mid-run updates - with timings and copy.                                        |
 | [ai-trust-and-citations](skills/ai-trust-and-citations/SKILL.md) | Citations per claim, AI labels, disclaimers that get read, errors and refusals, confidence, explanations, memory, consent, temporary chats. |
-| [agent-approval-gates](skills/agent-approval-gates/SKILL.md) | Plans, approval gates, autonomy levels, watch and takeover, activity logs with undo, escalation, scheduled agents. |
-| [ai-ux-copy](skills/ai-ux-copy/SKILL.md) | The words: buttons, placeholders, statuses, errors, labels, notifications - with the writing rules of every pattern. |
+| [agent-approval-gates](skills/agent-approval-gates/SKILL.md)     | Plans, approval gates, autonomy levels, watch and takeover, activity logs with undo, escalation, scheduled agents.                          |
+| [ai-ux-copy](skills/ai-ux-copy/SKILL.md)                         | The words: buttons, placeholders, statuses, errors, labels, notifications - with the writing rules of every pattern.                        |
 
 Each skill folder also carries the full text of the patterns it uses, under `references/`, so it works offline and never depends on the site being up.
 

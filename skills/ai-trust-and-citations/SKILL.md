@@ -3,9 +3,9 @@ name: ai-trust-and-citations
 description: Design and implement how an AI earns trust - citations and sources per claim, AI labels and disclosure, disclaimers that get read, errors and refusals with a way on, confidence display, explanations of AI decisions, memory controls, consent and data controls, temporary chats. Use when adding sources or references to AI answers, labelling AI-generated content, writing AI error or refusal messages, showing confidence or uncertainty, explaining why the AI did something, or building memory, privacy and data settings for an AI feature.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: https://axpatterns.design
-  repo: https://github.com/abhichatterjee86/ax-patterns
-  version: 2026-11-07
+  source: { { SITE } }
+  repo: { { REPO } }
+  version: { { DATE } }
 ---
 
 # Trust: "Can I rely on it?"
@@ -14,17 +14,17 @@ Trust is not a disclaimer. It is the AI showing its sources, its limits, its mis
 
 ## Pick the pattern by the question the person has
 
-| The person wants to know | Pattern |
-|---|---|
-| Where did this fact come from? | **Citations and sources** (AX-TRU-01) |
-| Did a person or the AI write this? | **AI label and disclosure** (AX-TRU-02) |
-| What might this answer get wrong? | **Disclaimer** (AX-TRU-03) |
+| The person wants to know                | Pattern                                   |
+| --------------------------------------- | ----------------------------------------- |
+| Where did this fact come from?          | **Citations and sources** (AX-TRU-01)     |
+| Did a person or the AI write this?      | **AI label and disclosure** (AX-TRU-02)   |
+| What might this answer get wrong?       | **Disclaimer** (AX-TRU-03)                |
 | Why didn't it answer / what went wrong? | **Error, refusal and limits** (AX-TRU-04) |
-| How sure is it, where should I check? | **Confidence display** (AX-REA-05) |
-| Why did it decide this about my thing? | **Explanation** (AX-TRU-08) |
-| What does it remember about me? | **Memory controls** (AX-TRU-05) |
-| Is my data used to train it or shared? | **Consent and data controls** (AX-TRU-06) |
-| Can I ask this without it being saved? | **Temporary chat** (AX-TRU-07) |
+| How sure is it, where should I check?   | **Confidence display** (AX-REA-05)        |
+| Why did it decide this about my thing?  | **Explanation** (AX-TRU-08)               |
+| What does it remember about me?         | **Memory controls** (AX-TRU-05)           |
+| Is my data used to train it or shared?  | **Consent and data controls** (AX-TRU-06) |
+| Can I ask this without it being saved?  | **Temporary chat** (AX-TRU-07)            |
 
 ## Citations
 

@@ -3,9 +3,9 @@ name: ax-patterns
 description: Design or build any AI interaction - chat, assistant, copilot, agent, AI feature inside a product - using the AX Patterns library of 50 AI interaction patterns organised by the 7 moments of a conversation (Discover, Ask, Wait, Read, Refine, Trust, Delegate). Use when designing an AI product flow, choosing how an AI feature should behave, writing the states of an AI interaction (waiting, streaming, stopping, citing, approving), or when the user mentions AI UX, agentic UX, AI interaction patterns, or AX Patterns.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: https://axpatterns.design
-  repo: https://github.com/abhichatterjee86/ax-patterns
-  version: 2026-11-07
+  source: { { SITE } }
+  repo: { { REPO } }
+  version: { { DATE } }
 ---
 
 # AX Patterns

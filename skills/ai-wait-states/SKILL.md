@@ -3,9 +3,9 @@ name: ai-wait-states
 description: Design and implement everything a person sees while an AI is working - loading messages, thinking and processing steps, streaming responses, stop generation, long-running tasks with notifications, and updating a task mid-run. Use when building or reviewing the waiting, loading, streaming, "thinking", progress or stop states of any AI feature, chat or agent, or when the user asks how to show that the AI is still working.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: https://axpatterns.design
-  repo: https://github.com/abhichatterjee86/ax-patterns
-  version: 2026-11-07
+  source: { { SITE } }
+  repo: { { REPO } }
+  version: { { DATE } }
 ---
 
 # Waiting: "Is it still working?"
@@ -14,15 +14,15 @@ The wait is where AI products lose people. The rule: waiting is made of real wor
 
 ## Pick by duration
 
-| Wait | Pattern | What the person sees |
-|---|---|---|
-| Under 1 s | nothing | The answer itself. A message here only flickers. |
-| 1-3 s, 1 stage | **Specific loading messages** (AX-WAI-03) | 1 line: verb + the real thing. "Reading lease.pdf", "Searching 3 sites". |
-| 3-60 s, several stages | **Thinking and processing steps** (AX-WAI-01) | Steps that name real things, open-able, folding to 1 line when the answer starts: "Thought for 8 s". |
-| Answer takes >1 s to write | **Streaming response** (AX-WAI-02) | Words as they are written, with Stop the whole time. |
-| Minutes or more | **Long-running tasks** (AX-WAI-04) | Time estimate before start, "it keeps going if you close the app", 1 notification when done or when it needs them. |
-| Person thinks of something mid-run | **Update mid-run** (AX-WAI-05) | Composer stays open: "Add to the task". The change joins the work; what's done is kept. |
-| Any wait over 2 s | **Stop generation** (AX-REF-01) | Stop replaces Send. Stopping keeps every word. |
+| Wait                               | Pattern                                       | What the person sees                                                                                               |
+| ---------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Under 1 s                          | nothing                                       | The answer itself. A message here only flickers.                                                                   |
+| 1-3 s, 1 stage                     | **Specific loading messages** (AX-WAI-03)     | 1 line: verb + the real thing. "Reading lease.pdf", "Searching 3 sites".                                           |
+| 3-60 s, several stages             | **Thinking and processing steps** (AX-WAI-01) | Steps that name real things, open-able, folding to 1 line when the answer starts: "Thought for 8 s".               |
+| Answer takes >1 s to write         | **Streaming response** (AX-WAI-02)            | Words as they are written, with Stop the whole time.                                                               |
+| Minutes or more                    | **Long-running tasks** (AX-WAI-04)            | Time estimate before start, "it keeps going if you close the app", 1 notification when done or when it needs them. |
+| Person thinks of something mid-run | **Update mid-run** (AX-WAI-05)                | Composer stays open: "Add to the task". The change joins the work; what's done is kept.                            |
+| Any wait over 2 s                  | **Stop generation** (AX-REF-01)               | Stop replaces Send. Stopping keeps every word.                                                                     |
 
 Combine them: steps → first word → streaming → done, with Stop throughout.
 

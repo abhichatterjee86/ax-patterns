@@ -3,9 +3,9 @@ name: agent-approval-gates
 description: Design and implement how people hand work to an AI agent and stay in control - intent preview and plans, approval gates before irreversible actions, autonomy levels, watch mode and takeover, activity logs with undo, escalation to a human, agent workspaces, scheduled and background agents. Use when building agentic features, tool-using assistants, browser or computer-use agents, automations that send, pay, delete or publish, human-in-the-loop flows, permission prompts, or when the user asks how an agent should ask before acting.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: https://axpatterns.design
-  repo: https://github.com/abhichatterjee86/ax-patterns
-  version: 2026-11-07
+  source: { { SITE } }
+  repo: { { REPO } }
+  version: { { DATE } }
 ---
 
 # Delegate: "Can it act for me?"
@@ -14,16 +14,16 @@ An agent earns autonomy the way a new colleague does: it shows the plan, asks be
 
 ## Pick the pattern by the risk and the moment
 
-| Situation | Pattern |
-|---|---|
-| 3+ steps, a wrong early step spoils the rest, or the ask is ambiguous | **Intent preview and plan** (AX-DEL-01) - before anything starts |
-| 1 step that cannot be undone: send, buy, delete, publish, change shared things | **Approval gate** (AX-DEL-02) - at that step only |
-| The same kinds of jobs repeat, some riskier than others | **Autonomy dial** (AX-DEL-03) - a lasting setting with a real line |
-| Agent clicks and types in real sites or apps; some steps need the person's own hands | **Watch mode and takeover** (AX-DEL-04) |
-| Agent changed several things; some can be reversed | **Activity log and undo** (AX-DEL-05) |
-| The AI can't finish, the topic is risky, or the person asks for a human | **Escalation and human handoff** (AX-DEL-06) |
-| 3+ agents, or the same agent many times; waiting agents cost time | **Agent workspace** (AX-DEL-07) |
-| The task repeats on a timetable and the result matters only when something changed | **Scheduled and background agents** (AX-DEL-08) |
+| Situation                                                                            | Pattern                                                            |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| 3+ steps, a wrong early step spoils the rest, or the ask is ambiguous                | **Intent preview and plan** (AX-DEL-01) - before anything starts   |
+| 1 step that cannot be undone: send, buy, delete, publish, change shared things       | **Approval gate** (AX-DEL-02) - at that step only                  |
+| The same kinds of jobs repeat, some riskier than others                              | **Autonomy dial** (AX-DEL-03) - a lasting setting with a real line |
+| Agent clicks and types in real sites or apps; some steps need the person's own hands | **Watch mode and takeover** (AX-DEL-04)                            |
+| Agent changed several things; some can be reversed                                   | **Activity log and undo** (AX-DEL-05)                              |
+| The AI can't finish, the topic is risky, or the person asks for a human              | **Escalation and human handoff** (AX-DEL-06)                       |
+| 3+ agents, or the same agent many times; waiting agents cost time                    | **Agent workspace** (AX-DEL-07)                                    |
+| The task repeats on a timetable and the result matters only when something changed   | **Scheduled and background agents** (AX-DEL-08)                    |
 
 Plus, from Wait: **Update mid-run** (AX-WAI-05) to steer without stopping, and **Long-running tasks** (AX-WAI-04) when the person should be free to leave.
 
