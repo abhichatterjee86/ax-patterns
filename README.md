@@ -131,7 +131,7 @@ How people hand work to an agent, watch it, approve it and take it back.
 
 The content is generated from the site's own source, so it never drifts from [axpatterns.design](https://axpatterns.design). Fixes to a pattern's text go through the site: press **Suggest** on any pattern page, or open an issue here. Pull requests that change `patterns/` or `references/` directly will be overwritten by the next sync; pull requests for the skills and prompts are welcome.
 
-Last synced: 2026-11-08.
+Last synced: 2026-11-10.
 
 ## Licence
 
