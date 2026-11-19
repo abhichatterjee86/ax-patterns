@@ -4322,7 +4322,7 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 - Moment: 7 Delegate - "Can it act for me?"
 - Maturity: emerging
 - Also called: Confirm action, Human in the loop, Permission prompt
-- Updated: 2026-11-05
+- Updated: 2026-11-18
 - Source: https://axpatterns.design/patterns/approval-gate
 - Licence: CC BY 4.0 (text and figures)
 
@@ -4333,8 +4333,8 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 - **Setting:** Kofi asks the agent to chase 3 unpaid invoices.
 - **Trigger:** The agent has drafted 3 emails and is about to send them.
 - **Without it:** The emails go out at once - 1 of them to a client who paid yesterday.
-- **With it:** The agent stops and shows who gets what, and that emails can't be unsent.
-- **Outcome:** Kofi checks the 3 names, taps Send 3 emails, and the chat records what he approved.
+- **With it:** The agent stops and lists each email with a tick and a preview, and says emails can't be unsent.
+- **Outcome:** Kofi opens Hart & Co's email, remembers they paid yesterday and unticks it. He taps Send 2 emails; the chat records what was sent and what was skipped.
 
 ### States over time
 
@@ -4343,15 +4343,18 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 | Asked | The ask. | Starts work. | 0 s | - |
 | Working | Safe steps run without asking - finding, reading, drafting. | Works. | - | Working |
 | Asks first | The agent pauses: "Waiting for you", what it will do, to whom, and whether it can be undone. | Paused - does nothing until answered. | before the action | Needs your approval |
-| Answer | The person approves, edits first, or declines. | Paused. | on tap | - |
+| Opens 1 | Preview on a row opens the real email (or the file names) under it. Nothing is sent by opening it. | Paused. | on tap | - |
+| Unticks 1 | The person unticks an item. The question and the button count again: "Send 2 emails?". The rest stays ready. | Paused. | on tap | 2 of 3 selected |
+| Edits first | Edit first opens the draft in place to change it. The button becomes "Save and send 3". | Paused - waits for the saved edit. | on tap | Editing |
+| Answer | The person approves what is ticked, saves the edit and approves, or declines. | Paused. | on tap | - |
 | Doing it | The action runs, with its name: "Sending 3 emails". | Acts. | - | - |
-| Recorded | A past-tense line stays in the chat: "Approved · 3 emails sent" or "Declined · nothing was sent". | Idle. | when done | Done, or Skipped |
+| Recorded | A past-tense line stays in the chat and names what was left out: "Approved · 2 emails sent · Hart & Co skipped", "Approved with edits · 3 emails sent" or "Declined · nothing was sent". | Idle. | when done | Done, or Skipped |
 
 ### On each device
 
-- **Phone:** The gate sits at the bottom of the thread, by the thumb. It can also arrive as a push notification when the agent works in the background.
+- **Phone:** The gate sits at the bottom of the thread, by the thumb. Each row is a full-width tap target for its tick; Preview opens 1 item at a time. It can also arrive as a push notification when the agent works in the background.
 - **Tablet:** As on the phone.
-- **Desktop:** The gate sits in the thread above the composer. Long details - a full command, a full email - open in an expandable section.
+- **Desktop:** The gate sits in the thread above the composer. Each item's Preview opens the full email or command under its row; there is room to show 2 previews at once.
 
 ### Use when
 
@@ -4368,13 +4371,18 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 ### Anatomy
 
 - **A. Paused status:** "Waiting for you" - the agent has stopped and will not go on alone.
-- **B. Exactly what:** The action and its targets, in full: who gets the email, which files move.
+- **B. Exactly what:** The action and its targets, in full, with the real count: "Send 3 emails?". The count follows the ticks.
 - **C. Can it be undone:** 1 line on the consequence, in amber when it cannot be undone.
-- **D. Approve:** Names the action - "Send 3 emails" - so a tap is a clear choice, not a reflex.
+- **D. Approve:** Names the action and counts what is ticked - "Send 2 emails" - so a tap is a clear choice, not a reflex.
 - **E. Decline:** Always there. Declining skips this step and nothing runs.
+- **F. A tick on each item:** Every item of a batch starts ticked. Unticking 1 leaves it out without cancelling the rest.
+- **G. Preview:** Opens the real thing under its row - the email's subject and words, or the file names - before anything happens.
+- **H. Edit first:** Opens the draft in place to change it. Nothing runs until the edit is saved.
 
 ### Do and Avoid
 
+- **Do:** Each item has a tick. Leaving 1 out keeps the rest, and the button counts again. (Send 2 emails?☑ Lumen Studio · £1,200☐ Hart & Co · £640☑ Okafor Design · £980Send 2 emails)
+- **Avoid:** All or nothing. To skip 1 client, the person must cancel the whole run and start again. (Send 3 emails?Lumen Studio · Hart & Co · Okafor DesignSend 3 emailsDon’t send)
 - **Do:** Says what, to whom, and that it is final. The button names the action. (Send 3 emails?Lumen Studio · Hart & Co · Okafor DesignEmails can’t be unsent.Send 3 emails)
 - **Avoid:** "Continue? OK" says nothing about what will happen. People tap it without reading. (Continue?OKCancel)
 - **Do:** Safe steps run on their own. The gate appears only before the step that cannot be undone. (✓ Found 3 unpaid invoices✓ Drafted 3 remindersSend 3 emails? - 1 question, at the step that matters)
@@ -4384,14 +4392,17 @@ Before an agent does something it cannot undo, show it and ask for a yes.
 
 - Ask as a question with the real numbers: "Send 3 emails?", "Move 42 files to Archive?".
 - Name the action on the approve button. Not "OK", "Continue" or "Yes".
+- Count what is ticked, in the question and on the button: "Send 2 emails?", "Send 2 emails". Never "Send selected".
 - Say whether it can be undone, in 1 line, before the buttons.
-- Record the answer in the past tense, with no end punctuation: "Approved · 3 emails sent", "Declined · nothing was sent".
+- Record the answer in the past tense, with no end punctuation, and name what was left out: "Approved · 2 emails sent · Hart & Co skipped", "Declined · nothing was sent".
 
 ### Accessibility
 
 - Announce "Needs your approval" in the polite status region (the part of the page a screen reader reads out on its own, without interrupting) when the gate appears.
 - Do not steal focus. Make the gate the next stop for the Tab key, and reachable from a notification.
 - Approve and decline are real buttons, at least 44 px, with the action in their names.
+- Each tick is a real checkbox labelled with its item ("Hart & Co, £640"). When 1 changes, announce the new count politely: "2 of 3 selected".
+- Preview is a button with aria-expanded that controls the region under its row. Opening it does not move focus.
 - Never pre-select approve for actions that cannot be undone, and never accept on Enter by default.
 
 ### Seen in

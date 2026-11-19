@@ -285,8 +285,9 @@ From every pattern's "Writing" section. Source: https://axpatterns.design. CC BY
 #### Approval gate
 - Ask as a question with the real numbers: "Send 3 emails?", "Move 42 files to Archive?".
 - Name the action on the approve button. Not "OK", "Continue" or "Yes".
+- Count what is ticked, in the question and on the button: "Send 2 emails?", "Send 2 emails". Never "Send selected".
 - Say whether it can be undone, in 1 line, before the buttons.
-- Record the answer in the past tense, with no end punctuation: "Approved · 3 emails sent", "Declined · nothing was sent".
+- Record the answer in the past tense, with no end punctuation, and name what was left out: "Approved · 2 emails sent · Hart & Co skipped", "Declined · nothing was sent".
 
 #### Autonomy dial
 - Name levels by what happens: "Ask every time", "Ask for big ones", "Just do it". Not "Low", "Medium", "High".
