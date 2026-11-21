@@ -3,9 +3,9 @@ name: ai-wait-states
 description: Design and implement everything a person sees while an AI is working - loading messages, thinking and processing steps, streaming responses, stop generation, long-running tasks with notifications, and updating a task mid-run. Use when building or reviewing the waiting, loading, streaming, "thinking", progress or stop states of any AI feature, chat or agent, or when the user asks how to show that the AI is still working.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: { { SITE } }
-  repo: { { REPO } }
-  version: { { DATE } }
+  source: "https://axpatterns.design"
+  repo: "https://github.com/abhichatterjee86/ax-patterns"
+  version: "2026-11-21"
 ---
 
 # Waiting: "Is it still working?"

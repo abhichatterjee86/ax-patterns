@@ -3,9 +3,9 @@ name: agent-approval-gates
 description: Design and implement how people hand work to an AI agent and stay in control - intent preview and plans, approval gates before irreversible actions, autonomy levels, watch mode and takeover, activity logs with undo, escalation to a human, agent workspaces, scheduled and background agents. Use when building agentic features, tool-using assistants, browser or computer-use agents, automations that send, pay, delete or publish, human-in-the-loop flows, permission prompts, or when the user asks how an agent should ask before acting.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: { { SITE } }
-  repo: { { REPO } }
-  version: { { DATE } }
+  source: "https://axpatterns.design"
+  repo: "https://github.com/abhichatterjee86/ax-patterns"
+  version: "2026-11-21"
 ---
 
 # Delegate: "Can it act for me?"

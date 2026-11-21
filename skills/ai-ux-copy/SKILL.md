@@ -3,9 +3,9 @@ name: ai-ux-copy
 description: Write the words inside an AI product - button labels, placeholders, loading and thinking lines, stop and error messages, suggested prompts, approval questions, citations, labels, disclaimers, notifications, memory and consent copy - following the writing rules of all 50 AX Patterns. Use when writing or reviewing UX copy, microcopy, UX writing, content design or strings for a chat, assistant, copilot or agent, or when the user asks what a button, status or message in an AI feature should say.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: { { SITE } }
-  repo: { { REPO } }
-  version: { { DATE } }
+  source: "https://axpatterns.design"
+  repo: "https://github.com/abhichatterjee86/ax-patterns"
+  version: "2026-11-21"
 ---
 
 # Writing for AI interactions

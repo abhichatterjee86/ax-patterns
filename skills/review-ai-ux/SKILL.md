@@ -3,9 +3,9 @@ name: review-ai-ux
 description: Audit an existing AI feature, chat flow, assistant, copilot or agent against the AX Patterns library and return a scored, prioritised review. Use when the user asks to review, critique, audit, heuristic-evaluate or improve an AI interaction, pastes screens or code of an AI feature, or asks "what is wrong with this AI flow". Not for designing something new from scratch - use ax-patterns for that.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: { { SITE } }
-  repo: { { REPO } }
-  version: { { DATE } }
+  source: "https://axpatterns.design"
+  repo: "https://github.com/abhichatterjee86/ax-patterns"
+  version: "2026-11-21"
 ---
 
 # Review an AI interaction against AX Patterns

@@ -3,9 +3,9 @@ name: ai-trust-and-citations
 description: Design and implement how an AI earns trust - citations and sources per claim, AI labels and disclosure, disclaimers that get read, errors and refusals with a way on, confidence display, explanations of AI decisions, memory controls, consent and data controls, temporary chats. Use when adding sources or references to AI answers, labelling AI-generated content, writing AI error or refusal messages, showing confidence or uncertainty, explaining why the AI did something, or building memory, privacy and data settings for an AI feature.
 license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
-  source: { { SITE } }
-  repo: { { REPO } }
-  version: { { DATE } }
+  source: "https://axpatterns.design"
+  repo: "https://github.com/abhichatterjee86/ax-patterns"
+  version: "2026-11-21"
 ---
 
 # Trust: "Can I rely on it?"
