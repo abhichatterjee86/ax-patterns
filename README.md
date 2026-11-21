@@ -11,7 +11,7 @@ Every pattern has the story, every state over time, every device, when to use it
 npx skills add abhichatterjee86/ax-patterns
 ```
 
-That installs all 6 skills into your AI coding tool (Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI, Windsurf, Cline, Kiro and 50+ others). Install 1 skill only with `--skill ax-patterns`. Then just ask in plain words - "design the waiting states for my research agent" - and the tool loads the matching skill by itself.
+That installs all 9 skills into your AI coding tool (Claude Code, Cursor, Codex, GitHub Copilot, Gemini CLI, Windsurf, Cline, Kiro and 50+ others). Install 1 skill only with `--skill ax-patterns`. Then just ask in plain words - "design the waiting states for my research agent" - and the tool loads the matching skill by itself.
 
 No `npx`? Copy a folder from `skills/` into your tool's skills directory (`.claude/skills/`, `.cursor/skills/`, `.agents/skills/`), or paste its `SKILL.md` into your rules file.
 
@@ -25,6 +25,14 @@ No `npx`? Copy a folder from `skills/` into your tool's skills directory (`.clau
 | [ai-trust-and-citations](skills/ai-trust-and-citations/SKILL.md) | Citations per claim, AI labels, disclaimers that get read, errors and refusals, confidence, explanations, memory, consent, temporary chats. |
 | [agent-approval-gates](skills/agent-approval-gates/SKILL.md)     | Plans, approval gates, autonomy levels, watch and takeover, activity logs with undo, escalation, scheduled agents.                          |
 | [ai-ux-copy](skills/ai-ux-copy/SKILL.md)                         | The words: buttons, placeholders, statuses, errors, labels, notifications - with the writing rules of every pattern.                        |
+
+And 3 for the way designers work, from how the author runs his own projects:
+
+| Skill                                                    | Use it when                                                                                                                                |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [lock-design-system](skills/lock-design-system/SKILL.md) | Before an AI tool builds your app, or when its screens drift. 1 file of tokens, components, hard rules, a Done when list and a Never list. |
+| [nda-case-study](skills/nda-case-study/SKILL.md)         | Your best work is under NDA. A fictional company, a rebuilt prototype, an In 1 minute summary, wrong turns and a decisions log.            |
+| [ui-done-check](skills/ui-done-check/SKILL.md)           | The last check before a screen is finished: contrast, targets, keyboard, 400% zoom, states, labels and copy.                               |
 
 Each skill folder also carries the full text of the patterns it uses, under `references/`, so it works offline and never depends on the site being up.
 
