@@ -5,7 +5,7 @@ license: MIT (skill) / CC BY 4.0 (pattern text)
 metadata:
   source: "https://axpatterns.design"
   repo: "https://github.com/abhichatterjee86/ax-patterns"
-  version: "2026-11-21"
+  version: "2026-11-24"
 ---
 
 # Delegate: "Can it act for me?"
