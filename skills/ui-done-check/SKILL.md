@@ -5,7 +5,7 @@ license: MIT
 metadata:
   source: "https://axpatterns.design"
   repo: "https://github.com/abhichatterjee86/ax-patterns"
-  version: "2026-11-24"
+  version: "2026-11-25"
   author: "Abhi Chatterjee"
 ---
 
